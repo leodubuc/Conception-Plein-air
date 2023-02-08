@@ -3,12 +3,14 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Fira Code', monospace;
+    --font-primary: 'Fredoka', sans-serif;
+    --font-secondary: 'Hind Madurai', sans-serif;
+    --font-h1: 'B612', sans-serif;
 
-    --font-size-content: 1.1rem;
+    --font-size-content: 1.5rem;
 
     /// Grosseur des textes
-    --font-size-h1: 7.125rem;
-    --font-size-h2: 2rem;
+    --font-size-h1: 4rem;
+    --font-size-h2: 3.75rem;
+    --font-size-h: 3rem;
 }
