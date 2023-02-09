@@ -1,0 +1,25 @@
+.header {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            object-fit: contain;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+
+                li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
