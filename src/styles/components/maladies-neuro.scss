@@ -1,7 +1,6 @@
 .composante_maladies {
     background: url(../../assets/background/maladies_bg.svg);
     background-size: cover;
-
     padding: 150px 0;
     position: relative;
 
@@ -71,6 +70,12 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1850px) {
+    .composante_maladies {
+        background-position: center;
     }
 }
 
