@@ -1,13 +1,13 @@
 .composante_maladies {
     background: url(../../assets/background/maladies_bg.svg);
     background-size: cover;
-    background-position: center;
+
     padding: 150px 0;
     position: relative;
 
     .deco {
         position: absolute;
-        top: 0;
+        top: -10%;
         width: 12%;
     }
 
