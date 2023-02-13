@@ -1,7 +1,6 @@
 .composante_maladies {
     background: url(../../assets/background/maladies_bg.svg);
     background-size: cover;
-
     padding: 150px 0;
     position: relative;
 
@@ -22,10 +21,11 @@
         justify-content: center;
 
         ul {
+            padding: 0;
             width: 50%;
 
             li {
-                background: url(../../assets/images/composante-maladie/list-style.svg)
+                background: url(../../assets/images/illustrations/list-style.svg)
                     no-repeat left center;
                 padding: 20px 0 20px 80px;
                 list-style: none;
@@ -71,6 +71,12 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1850px) {
+    .composante_maladies {
+        background-position: center;
     }
 }
 
@@ -131,8 +137,10 @@
 
 @media only screen and (max-width: 375px) {
     .composante_maladies {
+        padding: 100px 0;
         h1 {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+            font-size: var(--font-size-bigger-content);
         }
         .content {
             ul li {

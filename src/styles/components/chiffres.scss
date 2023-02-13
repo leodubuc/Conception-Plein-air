@@ -3,7 +3,6 @@
     background-size: cover;
     padding: 200px 0 300px 0;
     margin-bottom: -130px;
-
     position: relative;
 
     .deco {
@@ -36,6 +35,12 @@
                 background-color: var(--color-white);
                 margin: 0 25px;
                 padding: 50px 25px;
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    transform: translateY(-30px);
+                    transition: 0.4s $ease-in-out-back;
+                }
 
                 span {
                     font-size: 60px;
@@ -65,6 +70,123 @@
 
             .service {
                 border-radius: 41% 59% 44% 56% / 43% 67% 33% 57%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .composante_chiffres {
+        .wrapper {
+            .numbers {
+                div {
+                    span {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .composante_chiffres {
+        background-position: center;
+        .wrapper {
+            h1 {
+                max-width: none;
+            }
+            .numbers {
+                div {
+                    margin: 0 15px;
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .composante_chiffres {
+        padding-bottom: 200px;
+        .deco {
+            top: -8%;
+        }
+        .wrapper {
+            .numbers {
+                flex-direction: column;
+                div {
+                    p {
+                        max-width: 70%;
+                    }
+                }
+                .proches {
+                    margin: 0 0 0 -250px;
+                }
+                .malades {
+                    margin: -50px 0 0 250px;
+                }
+
+                .heures {
+                    margin: -100px 0 0 -250px;
+                }
+
+                .service {
+                    margin: -70px 0 0 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .composante_chiffres {
+        .deco {
+            top: 0;
+            width: 30%;
+        }
+        .wrapper {
+            .numbers {
+                div {
+                    padding: 25px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .composante_chiffres {
+        padding-bottom: 200px;
+
+        .deco {
+            top: 2%;
+        }
+        .wrapper {
+            .numbers {
+                div {
+                    p {
+                        max-width: 80%;
+                    }
+                }
+                .proches {
+                    margin: 0 0 0 -100px;
+                }
+                .malades {
+                    margin: 0 0 0 150px;
+                }
+
+                .heures {
+                    margin: -15px 0 0 -130px;
+                    padding: 40px 20px;
+                }
+
+                .service {
+                    margin: 0 0 0 150px;
+                    padding: 40px 20px;
+                }
             }
         }
     }
