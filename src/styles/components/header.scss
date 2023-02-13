@@ -28,6 +28,12 @@
                 li {
                     margin-left: 50px;
                     font-weight: 500;
+                    transition: 0.4s $ease-in-out-expo;
+
+                    &:hover {
+                        transition: 0.4s $ease-in-out-back;
+                        transform: translateY(-10px);
+                    }
                 }
 
                 .connexion {
@@ -42,6 +48,15 @@
                     border: none;
                     filter: drop-shadow(4px 6px 0px #bbd78e);
 
+                    transition: 0.4s $ease-in-out-back;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: translateX(4px) translateY(6px);
+                        filter: none;
+                        transition: 0.4s $ease-in-out-back;
+                    }
+
                     a {
                         color: var(--color-black);
                     }
@@ -54,6 +69,15 @@
                     border: none;
                     filter: drop-shadow(4px 6px 0px #1757a1);
                     font-weight: 500;
+
+                    transition: 0.4s $ease-in-out-back;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: translateX(4px) translateY(6px);
+                        filter: none;
+                        transition: 0.4s $ease-in-out-back;
+                    }
 
                     a {
                         color: var(--color-very-pale-green);
