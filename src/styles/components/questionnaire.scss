@@ -1,7 +1,21 @@
 .questionnaire {
     background-color: var(--color-mid-pale-blue);
-    padding: 100px 0 250px 0;
+    padding: 150px 0 250px 0;
+    position: relative;
 
+    .deco1 {
+        position: absolute;
+        top: -30%;
+        right: 0;
+        width: 15%;
+    }
+
+    .deco2 {
+        position: absolute;
+        bottom: -30%;
+        left: 0;
+        width: 12%;
+    }
     .wrapper {
         text-align: center;
 
@@ -10,10 +24,122 @@
         }
 
         .question {
-            background-color: var(--color-white);
-            border-radius: 133px;
+            background: var(--color-white);
+            border-radius: 130px;
+            padding: 100px 100px;
+            position: relative;
+            z-index: 0;
 
-            padding: 75px 0;
+            &::after {
+                content: '';
+                position: absolute;
+                top: -25px;
+                left: 40px;
+                width: 100%;
+                height: 100%;
+                border: 9px solid var(--color-deep-blue);
+                background-color: none;
+                border-radius: 110px;
+                z-index: -1;
+            }
+
+            .answers {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .questionnaire {
+        .deco1 {
+            top: -20%;
+        }
+
+        .deco2 {
+            bottom: -15%;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .questionnaire {
+        padding: 100px 0 150px 0;
+        .deco1 {
+            top: -10%;
+        }
+
+        .deco2 {
+            bottom: -20%;
+            width: 17%;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .questionnaire {
+        .deco1 {
+            top: -15%;
+            width: 20%;
+        }
+
+        .deco2 {
+            width: 20%;
+        }
+        .wrapper {
+            .question {
+                padding: 50px 100px;
+                border-radius: 70px;
+
+                &::after {
+                    top: -25px;
+                    left: 25px;
+                    border-radius: 75px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .questionnaire {
+        padding: 75px 0 100px 0;
+
+        .deco1 {
+            top: -15%;
+            width: 25%;
+        }
+
+        .deco2 {
+            width: 30%;
+        }
+
+        .wrapper {
+            h1 {
+                margin-bottom: 60px;
+            }
+
+            .question::after {
+                top: -20px;
+                left: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .questionnaire {
+        .wrapper {
+            .question {
+                padding: 25px 50px;
+                border-radius: 70px;
+            }
         }
     }
 }
