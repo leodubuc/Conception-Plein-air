@@ -4,9 +4,10 @@
 
     .deco {
         position: absolute;
-        bottom: 0;
+        bottom: -5%;
         right: 0;
         width: 12%;
+        z-index: 2;
     }
 
     h1 {
@@ -52,6 +53,13 @@
 
 @media only screen and (max-width: 1250px) {
     .composante_service {
+        .deco {
+            position: absolute;
+            bottom: -5%;
+            right: 0;
+            width: 20%;
+            z-index: 2;
+        }
         .wrapper {
             .content {
                 flex-direction: column;
