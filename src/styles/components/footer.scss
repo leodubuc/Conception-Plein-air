@@ -1,7 +1,6 @@
 footer {
     background: url(../../assets/background/footer_bg.svg);
     background-size: cover;
-    width: 100vw;
 
     .wrapper {
         padding: 100px 0;
@@ -15,15 +14,30 @@ footer {
                 list-style: none;
                 padding: 0;
 
+                @media only screen and (max-width: 1100px) {
+                    a {
+                        &:nth-child(3) {
+                            order: -1;
+                            margin-bottom: 50px;
+                        }
+                    }  
+
+                    flex-direction: column;
+                }
+
                 li {
                     padding: 0 50px;
                     transition: 0.4s $ease-in-out-expo;
 
+                    @media only screen and (max-width: 1100px) {
+                        margin-bottom: 50px;
+                    }
+                    
                     &:hover {
                         transition: 0.4s $ease-in-out-back;
                         transform: translateY(-10px);
                     }
-
+                    
                     a {
                         color: var(--color-very-pale-green);
                     }
@@ -37,6 +51,15 @@ footer {
             align-items: flex-start;
             margin-bottom: 50px;
 
+            @media only screen and (max-width: 1680px) {
+                justify-content: space-around;
+            }
+
+            @media only screen and (max-width: 1100px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
             span {
                 color: var(--color-very-pale-green);
                 font-size: var(--font-size-bigger-content);
@@ -48,6 +71,10 @@ footer {
                 justify-content: flex-start;
                 align-items: center;
                 padding: 15px 0;
+
+                @media only screen and (max-width: 1100px) {
+                    justify-content: center;
+                }
 
                 img {
                     padding-right: 15px;
@@ -70,6 +97,14 @@ footer {
                 transform: translateX(10px);
                 transition: 0.4s $ease-in-out-back;
             }
+
+            .contact {
+                @media only screen and (max-width: 1100px) {
+                    text-align: center;
+
+                    margin-bottom: 50px;
+                }
+            }
         }
 
         .medias {
@@ -78,7 +113,7 @@ footer {
             align-items: flex-start;
             .reseaux {
                 img {
-                    padding: 15px 35px 0 0;
+                    padding: 0 20px;
                     transition: 0.4s $ease-in-out-back;
 
                     &:hover {
@@ -86,6 +121,10 @@ footer {
                         transition: 0.4s $ease-in-out-back;
                     }
                 }
+            }
+
+            @media only screen and (max-width: 1100px) {
+                margin-bottom: 50px;
             }
         }
 
@@ -99,7 +138,7 @@ footer {
                     background-color: var(--color-white);
                     border-radius: 13px;
                     border: solid 5px var(--color-very-pale-green);
-                    width: 150%;
+                    width: 100%;
                 }
             }
             .button {
@@ -121,10 +160,15 @@ footer {
                     }
                 }
             }
+
+            @media only screen and (max-width: 1100px) {
+                margin-bottom: 50px;
+            }
         }
 
         .partenaires {
             display: flex;
+            flex-wrap: nowrap;
 
             justify-content: center;
             align-items: center;
@@ -132,20 +176,14 @@ footer {
             img {
                 padding: 0 10px;
             }
-        }
-    }
-}
 
-@media only screen and (max-width: 900px) {
-    .hero-menu {
-        height: 400px;
-        margin-bottom: 40px;
-
-        .wrapper {
-            height: 400px;
-            h1 {
-                font-size: 64px;
+            @media only screen and (max-width: 1680px) {
+                flex-wrap: wrap;
             }
         }
     }
+
+
 }
+
+

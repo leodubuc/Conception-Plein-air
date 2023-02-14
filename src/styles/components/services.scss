@@ -38,6 +38,7 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    justify-content: center;
                 }
 
                 svg {
@@ -83,6 +84,36 @@
                 &:nth-child(5) {
                     .fond {
                         border-radius: 54% 46% 15% 85% / 17% 73% 27% 83%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1502px) {
+        .wrapper {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+
+                a {
+                    .fond {
+                        width: 30%;
+                        height: 25%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1156px) {
+        .wrapper {
+            .grid {
+                grid-template-columns: 1fr;
+
+                a {
+                    .fond {
+                        width: 50%;
+                        height: 10%;
                     }
                 }
             }
