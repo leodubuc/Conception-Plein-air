@@ -12,7 +12,6 @@ export default class Carousel {
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
       slidesPerView: 1,
-      spaceBetween: 20,
       autoplay: {
         delay: 4000,
       },
