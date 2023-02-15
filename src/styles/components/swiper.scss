@@ -24,5 +24,23 @@
             text-align: center;
         }
     }
+
+    @media only screen and (max-width: 1502px) {
+    }
+
+    @media only screen and (max-width: 1156px) {
+        .swiper-slide {
+            height: 80vh;
+            background: url(../../assets/background/temoignageMobile.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            p {
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
 }
 //bravo Léo  je suis fière de toi
