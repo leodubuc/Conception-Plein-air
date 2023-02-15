@@ -1,7 +1,6 @@
 .composante_approches {
     background: url(../../assets/background/approches.svg);
     background-size: cover;
-    background-position: center;
     padding: 150px 0;
     position: relative;
 
@@ -19,13 +18,15 @@
         .cards {
             margin-top: 100px;
             display: flex;
+
             gap: 40px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
 
             .card {
                 background-color: var(--color-very-pale-green);
                 padding: 50px;
                 border-radius: 75px;
+                width: 100%;
 
                 h3 {
                     margin: 0;
@@ -54,6 +55,7 @@
 
 @media only screen and (max-width: 1500px) {
     .composante_approches {
+        background-position: center;
         .wrapper {
             .cards .card {
                 ul {
@@ -72,10 +74,13 @@
 @media only screen and (max-width: 1200px) {
     .composante_approches {
         .wrapper {
-            .cards .card {
-                &::after {
-                    top: -15px;
-                    left: -20px;
+            .cards {
+                flex-wrap: wrap;
+                .card {
+                    &::after {
+                        top: -15px;
+                        left: -20px;
+                    }
                 }
             }
         }
