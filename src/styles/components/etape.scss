@@ -16,11 +16,18 @@
     }
 
     div {
-        p {
-            background: url(../assets/images/illustrations/list-style.svg)
-                no-repeat left center;
-            background-size: contain;
-            padding-left: 60px;
+        ul {
+            display: flex;
+            padding: 0;
+
+            li {
+                background: url(../assets/images/illustrations/list-style.svg)
+                    no-repeat left center;
+                padding: 10px 50px 10px 50px;
+                vertical-align: middle;
+                list-style: none;
+                line-height: 1.5rem;
+            }
         }
     }
 }
