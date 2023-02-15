@@ -1,0 +1,43 @@
+.info_membre {
+    padding: 100px 0;
+
+    .wrapper {
+        text-align: center;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: start;
+            gap: 50px;
+
+            margin: 50px 0;
+
+            p {
+                background: url(../assets/images/illustrations/list-style.svg)
+                    no-repeat left center;
+                background-size: contain;
+                padding-left: 60px;
+            }
+        }
+
+        .button_vert {
+            background-color: var(--color-primary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            filter: drop-shadow(4px 6px 0px #bbd78e);
+
+            transition: 0.4s $ease-in-out-back;
+
+            margin-bottom: 50px;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateX(4px) translateY(6px);
+                filter: none;
+                transition: 0.4s $ease-in-out-back;
+            }
+        }
+    }
+}

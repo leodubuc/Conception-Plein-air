@@ -7,21 +7,22 @@
     h1 {
         text-align: center;
     }
-}
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    height: 80vh;
-    background-image: url(../../assets/images/swiper_slide.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    p {
-        width: 35%;
-        text-align: center;
+        height: 80vh;
+        background-image: url(../../assets/images/swiper_slide.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        p {
+            width: 35%;
+            text-align: center;
+        }
     }
 }
 //bravo Léo  je suis fière de toi
