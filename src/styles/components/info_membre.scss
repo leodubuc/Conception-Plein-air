@@ -11,7 +11,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 align-items: center;
-                justify-items: start;
+                //justify-items: start;
                 gap: 50px;
 
                 @media only screen and (max-width: 800px) {
@@ -29,23 +29,22 @@
             }
         }
 
-        .button_vert {
-            a {
-                color: var(--color-black);
-                font-weight: 500;
-                background-color: #abdbaa;
-                padding: 10px 30px;
-                border-radius: 30px;
-                border: none;
-                filter: drop-shadow(4px 7px 0px var(--color-deep-green));
-                transition: 0.4s $ease-in-out-back;
+        a {
+            display: inline-block;
+            color: var(--color-black);
+            font-weight: 500;
+            background-color: #abdbaa;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: none;
+            filter: drop-shadow(4px 7px 0px var(--color-deep-green));
+            transition: 0.4s $ease-in-out-back;
 
-                &:hover {
-                    cursor: pointer;
-                    transform: translateX(4px) translateY(7px);
-                    filter: none;
-                    transition: 0.4s $ease-in-out-back;
-                }
+            &:hover {
+                cursor: pointer;
+                transform: translateX(4px) translateY(7px);
+                filter: none;
+                transition: 0.4s $ease-in-out-back;
             }
         }
     }

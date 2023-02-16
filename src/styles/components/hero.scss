@@ -5,41 +5,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 
-    iframe {
-        width: 100%;
+    video {
+        width: 100vh;
+        position: absolute;
+        top: 0;
     }
 
-    .accroches {
+    .wrapper {
         position: relative;
-        width: 100%;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
 
-        .bleu {
+    .bleu {
+        z-index: 1;
+
+        .full-width {
             position: absolute;
-
-            z-index: 1;
-
-            p {
-                font-size: 42px;
-                font-family: var(--font-h1);
-                color: var(--color-deep-blue);
-                z-index: 2;
-                margin-top: -170px;
-            }
+            top: 0;
+            left: 0;
+            //width: 100;
         }
 
-        .vert {
-            position: absolute;
-            right: 0;
+        p {
+            position: relative;
+            font-size: 36px;
+            font-family: var(--font-secondary);
+            color: var(--color-deep-blue);
+            font-weight: 600;
+            z-index: 3;
+        }
+    }
 
-            p {
-                font-size: 42px;
-                font-family: var(--font-h1);
-                color: var(--color-deep-green);
-                z-index: 2;
-                text-align: right;
-                margin-top: -200px;
-            }
+    .vert {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            //width: 100vw;
+        }
+
+        p {
+            position: relative;
+            font-size: 36px;
+            font-family: var(--font-secondary);
+            color: var(--color-deep-green);
+
+            font-weight: 600;
+            text-align: right;
+            //margin-top: -200px;
         }
     }
 }
