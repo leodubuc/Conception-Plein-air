@@ -5,38 +5,47 @@
         text-align: center;
 
         div {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            justify-items: start;
-            gap: 50px;
-
             margin: 50px 0;
 
-            p {
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-items: start;
+                gap: 50px;
+
+                @media only screen and (max-width: 800px) {
+                    grid-template-columns: 1fr;
+                }
+            }
+            li {
                 background: url(../assets/images/illustrations/list-style.svg)
                     no-repeat left center;
-                background-size: contain;
+                padding: 10px 50px 10px 50px;
                 padding-left: 60px;
+                list-style: none;
+                line-height: 1.5rem;
+                vertical-align: middle;
             }
         }
 
         .button_vert {
-            background-color: var(--color-primary);
-            padding: 10px 20px;
-            border-radius: 30px;
-            border: none;
-            filter: drop-shadow(4px 6px 0px #bbd78e);
-
-            transition: 0.4s $ease-in-out-back;
-
-            margin-bottom: 50px;
-
-            &:hover {
-                cursor: pointer;
-                transform: translateX(4px) translateY(6px);
-                filter: none;
+            a {
+                color: var(--color-black);
+                font-weight: 500;
+                background-color: #abdbaa;
+                padding: 10px 30px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 7px 0px var(--color-deep-green));
                 transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(7px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
+                }
             }
         }
     }

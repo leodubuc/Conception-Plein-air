@@ -8,6 +8,11 @@
             object-fit: contain;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
         div {
             display: flex;
             flex-direction: column;
@@ -92,6 +97,8 @@
     }
 
     @media only screen and (max-width: 1502px) {
+        padding: 10px 0;
+
         .wrapper {
             div {
                 display: none;
