@@ -1,4 +1,6 @@
 .has-js {
+    overflow-x: hidden;
+
     [data-scrolly='fromBottom'] {
         opacity: 0;
         transform: translateY(80px);

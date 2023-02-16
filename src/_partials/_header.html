@@ -12,7 +12,7 @@
 
     <body data-component="Scrolly">
 
-<section class="header">
+<section class="header" data-component="Header">
     <div class="wrapper">
         <a href="index.html" class="logo"><img src="assets/images/logo_text.png" alt="logo de l'organisme"></a>
 
@@ -36,6 +36,31 @@
             </nav>
         </div>
 
-        <img src="assets/images/menu.png" alt="menu hambuger" class="menu">
+        <button class="header__toggle js-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+          <div class="mobile">
+            <nav class="top_bar">
+                <ul>
+                    <li><a href="#" class="connexion">Se connecter</a></li>
+                    <li class="button_vert"><a href="#">Devenir membre</a></li>
+                    <li class="button_bleu"><a href="#">Faire une référence</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Nos services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Fiches pratiques</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </nav>
+            
+          </div>
     </div>
 </section>
