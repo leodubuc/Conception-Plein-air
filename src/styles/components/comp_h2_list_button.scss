@@ -1,0 +1,89 @@
+.comp_h2_list_button {
+    position: relative;
+    padding: 150px 0;
+
+    .deco {
+        position: absolute;
+        top: -5%;
+        left: 0;
+        width: 12%;
+        z-index: 2;
+    }
+
+    .wrapper {
+        h2 {
+            text-align: left;
+        }
+
+        span {
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-bigger-content);
+        }
+
+        ul {
+            padding: 0;
+            li {
+                background: url(../../assets/images/illustrations/list-style2.svg)
+                    no-repeat left center;
+                padding: 20px 0 20px 80px;
+                list-style: none;
+                vertical-align: middle;
+            }
+        }
+        .button_container {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                display: inline-block;
+
+                color: var(--color-black);
+                font-weight: 500;
+                background-color: #abdbaa;
+                padding: 10px 30px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 7px 0px var(--color-deep-green));
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(7px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .comp_h2_list_button {
+        .deco {
+            top: -5%;
+            right: 0;
+            width: 20%;
+            z-index: -1;
+        }
+        .wrapper {
+            z-index: 2;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .comp_h2_list_button {
+        padding: 75px 0;
+
+        .deco {
+            top: 0;
+            right: 0;
+            width: 20%;
+            z-index: -1;
+        }
+        .wrapper {
+            span {
+                font-size: var(--font-size-content);
+            }
+        }
+    }
+}
