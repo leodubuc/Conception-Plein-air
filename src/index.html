@@ -7,15 +7,15 @@
 
     <div class="wrapper">
         <div class="bleu">
-            <img class="full-width" src="assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
             <p>Dans la maladie, il n'y a pas que la personne atteinte qui souffre.</p>
         </div>
 
         <div class="vert">
-            <img src="assets/images/hero/green-shape.svg" alt="Forme courbée verte" />
             <p>Un organisme sans but lucratif</p>
         </div>
     </div>
+    <img src="assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert" />
+    <img class="full-width courbe_bleu" src="assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
 </section>
 
 <section class="services">
@@ -87,10 +87,10 @@
 </section>
 
 <section class="etape">
-    <h1 class="wrapper">Nous sommes là à chaque étape</h1>
+    <h1 class="wrapper" data-scrolly="fromBottom">Nous sommes là à chaque étape</h1>
     <div class="alignement">
         <div class="wrapper">
-            <ul>
+            <ul data-scrolly="fromLeft">
                 <li>Le questionnement</li>
                 <li>Le diagnostique</li>
                 <li>Le choc</li>
@@ -102,7 +102,7 @@
         <img src="assets/images/etape.png" alt="ligne pour les étapes" />
 
         <div class="wrapper">
-            <ul>
+            <ul data-scrolly="fromRight">
                 <li>Épuisement</li>
                 <li>Soins paliatifs</li>
                 <li>Le décès</li>
@@ -335,11 +335,11 @@
 
 <section class="info_membre">
     <div class="wrapper">
-        <h2>Ce qui signifie être membre</h2>
+        <h2 data-scrolly="fromBottom">Ce qui signifie être membre</h2>
 
-        <h4>Devenir membre du Temps d’une pause, c'est :</h4>
+        <h4 data-scrolly="fromBottom">Devenir membre du Temps d’une pause, c'est :</h4>
 
-        <div>
+        <div data-scrolly="fromLeft">
             <ul>
                 <li>Appuyer notre mission et nous donner du poids;</li>
                 <li>Agir ensemble pour améliorer nos activités;</li>
@@ -350,9 +350,11 @@
             </ul>
         </div>
 
-        <a href="#">Devenir membre</a>
+        <a href="#" data-scrolly="fromBottom">Devenir membre</a>
 
-        <p>* La cotisation annuelle est de 10$ et est valide du 1er avril au 31 mars de l'an suivant.</p>
+        <p data-scrolly="fromBottom">
+            * La cotisation annuelle est de 10$ et est valide du 1er avril au 31 mars de l'an suivant.
+        </p>
     </div>
 </section>
 
