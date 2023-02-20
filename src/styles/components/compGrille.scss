@@ -51,4 +51,11 @@
             border-radius: 52% 48% 60% 40% / 49% 32% 68% 51%;
         }
     }
+
+    @media only screen and (max-width: 500px) {
+        .grille {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
 }
