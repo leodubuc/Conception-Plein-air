@@ -2,9 +2,37 @@
     padding: 50px 0;
     .wrapper {
         display: flex;
+
+        div {
+            div {
+                flex-grow: 2;
+            }
+        }
+
         h2 {
             padding-bottom: 50px;
+            text-align: left;
         }
+        a {
+            display: inline-block;
+
+            color: var(--color-black);
+            font-weight: 500;
+            background-color: #abdbaa;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: none;
+            filter: drop-shadow(4px 7px 0px var(--color-deep-green));
+            transition: 0.4s $ease-in-out-back;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateX(4px) translateY(7px);
+                filter: none;
+                transition: 0.4s $ease-in-out-back;
+            }
+        }
+
         img {
             padding-left: 100px;
         }
@@ -14,6 +42,7 @@
         .wrapper {
             display: block;
         }
+
         h2 {
             padding-bottom: 50px;
             margin: auto;
@@ -22,6 +51,7 @@
             padding-bottom: 50px;
             margin: auto;
         }
+
         img {
             padding-left: 0;
             margin: auto;
@@ -32,12 +62,14 @@
 
 .composante_texte_image_2 {
     padding: 50px 0;
+
     .wrapper {
         display: flex;
         div {
             order: 2;
             h2 {
                 padding-bottom: 50px;
+                text-align: left;
             }
             ul {
                 padding-bottom: 50px;
@@ -50,6 +82,25 @@
                     list-style: none;
                     vertical-align: middle;
                     font-size: var(--font-size-content);
+                }
+            }
+            a {
+                display: inline-block;
+
+                color: var(--color-black);
+                font-weight: 500;
+                background-color: #abdbaa;
+                padding: 10px 30px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 7px 0px var(--color-deep-green));
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(7px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
                 }
             }
         }
