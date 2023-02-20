@@ -8,7 +8,7 @@
     .wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+
         gap: 10px;
 
         img {
@@ -17,9 +17,7 @@
             height: 100%;
         }
 
-        :nth-child(1) {
-            grid-row: 1 / span 2;
-        }
+        :nth-child(1),
         :nth-child(5) {
             grid-row: span 2;
         }
@@ -27,17 +25,14 @@
         @media only screen and (max-width: 1240px) {
             grid-template-columns: repeat(2, 1fr);
 
-            :nth-child(1) {
-                grid-row: 1;
-            }
+            :nth-child(1),
             :nth-child(5) {
-                grid-row: 1;
+                grid-row: initial;
             }
         }
 
         @media only screen and (max-width: 699px) {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
         }
     }
 }
