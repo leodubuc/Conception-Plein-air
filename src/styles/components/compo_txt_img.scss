@@ -41,21 +41,21 @@
     @media only screen and (max-width: 1156px) {
         .wrapper {
             display: block;
-        }
 
-        h2 {
-            padding-bottom: 50px;
-            margin: auto;
-        }
-        p {
-            padding-bottom: 50px;
-            margin: auto;
-        }
+            h2 {
+                padding-bottom: 50px;
+                margin: auto;
+            }
+            p {
+                padding-bottom: 50px;
+                margin: auto;
+            }
 
-        img {
-            padding-left: 0;
-            margin: auto;
-            width: 85%;
+            img {
+                padding: 50px 0;
+                margin: auto;
+                width: 85%;
+            }
         }
     }
 }
@@ -130,6 +130,7 @@
 
             img {
                 order: 2;
+                padding: 50px 0;
                 margin: auto;
                 width: 85%;
             }
