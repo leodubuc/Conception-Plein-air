@@ -9,6 +9,8 @@
 
     background-image: url(../../assets/background/maladies_bg.svg);
     background-size: cover;
+    margin-top: -110px;
+    position: relative;
     .jaugetext {
         display: flex;
         justify-content: space-between;
@@ -108,6 +110,7 @@
     }
 
     @media only screen and (max-width: 1156px) {
+        background-position: center;
         .wrapper {
             position: relative;
         }
