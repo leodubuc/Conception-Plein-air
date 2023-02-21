@@ -7,7 +7,7 @@
         padding: 150px 0 100px 0;
     }
 
-    background-image: url(../../assets/background/maladies_bg.svg);
+    background-image: url(../assets/background/maladies_bg.svg);
     background-size: cover;
     margin-top: -110px;
     position: relative;
@@ -119,7 +119,7 @@
             padding: 150px 0 500px 0;
         }
 
-        background-image: url(../../assets/background/maladies_bg.svg);
+        background-image: url(../assets/background/maladies_bg.svg);
         background-size: cover;
         .jaugetext {
             display: flex;
@@ -220,7 +220,7 @@
         }
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1056px) {
         .wrapper {
         }
 
@@ -437,6 +437,7 @@
             transform: scaleY(-1) rotate(270deg);
             top: 35%;
             right: -30%;
+            width: 100%;
         }
     }
 }
