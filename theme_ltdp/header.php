@@ -22,6 +22,7 @@
                 $url = $image['url'];
                 } ?>
             <a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url($url); ?>" alt="Logo de Le temps d'une pause"></a>
+        
         </a>
 
         <div>

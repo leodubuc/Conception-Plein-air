@@ -4,7 +4,7 @@
 
 <section class="hero">
     <video autoplay muted loop>
-        <source src="assets/video/Mattress Store (SpongeBob Clip).mp4" type="video/mp4" />
+        <source src="//pfe/ltdp/wp-content/themes/theme_ltdp/assets/video/Mattress Store (SpongeBob Clip).mp4" type="video/mp4" />
     </video>
 
     <div class="wrapper">
@@ -16,8 +16,8 @@
             <p>Un organisme sans but lucratif</p>
         </div>
     </div>
-    <img src="assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert" />
-    <img class="full-width courbe_bleu" src="assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
+    <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert style-svg" />
+    <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
 </section> 
 
 <section class="services">
@@ -42,7 +42,7 @@
                     <h2>Gestion des comportements</h2>
 
                     <svg class="icon">
-                        <use xlink:href="#icon-calendrier"></use>
+                        <use xlink:href="#icon-personne"></use>
                     </svg>
                 </div>
 
@@ -54,7 +54,7 @@
                     <h2>Soutien psychosocial</h2>
 
                     <svg class="icon">
-                        <use xlink:href="#icon-calendrier"></use>
+                        <use xlink:href="#icon-telephone"></use>
                     </svg>
                 </div>
 
@@ -66,7 +66,7 @@
                     <h2>Groupe de soutien</h2>
 
                     <svg class="icon">
-                        <use xlink:href="#icon-calendrier"></use>
+                        <use xlink:href="#icon-tableau"></use>
                     </svg>
                 </div>
 
@@ -78,7 +78,7 @@
                     <h2>Formations</h2>
 
                     <svg class="icon">
-                        <use xlink:href="#icon-calendrier"></use>
+                        <use xlink:href="#icon-groupe"></use>
                     </svg>
                 </div>
 
@@ -101,7 +101,7 @@
             </ul>
         </div>
 
-        <img src="assets/images/etape.png" alt="ligne pour les étapes" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/etape.png" alt="ligne pour les étapes" />
 
         <div class="wrapper">
             <ul data-scrolly="fromRight">
@@ -118,7 +118,7 @@
     <img
         data-scrolly="fromRight"
         class="deco"
-        src="assets/images/illustrations/deco/blanc.svg"
+        src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/blanc.svg"
         alt="Cercle décoratif"
     />
     <div class="wrapper">
@@ -148,7 +148,7 @@
     <img
         data-scrolly="fromLeft"
         class="deco"
-        src="assets/images/illustrations/deco/vert-beige.svg"
+        src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-beige.svg"
         alt="Cercles décoratifs"
     />
     <div class="wrapper">
@@ -168,10 +168,10 @@
             </ul>
 
             <div class="content-right" data-scrolly="fromRight">
-                <img class="brain" src="assets/images/composante-maladie/brain.png" alt="Illustration de cerveau" />
+                <img class="brain" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/brain.png" alt="Illustration de cerveau" />
                 <img
                     class="doodle"
-                    src="assets/images/composante-maladie/green-circle.png"
+                    src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/green-circle.png"
                     alt="Dessin de cercle vert avec traits"
                 />
                 <a href="#">En savoir plus</a>
@@ -181,7 +181,7 @@
 </section>
 
 <section class="composante_service">
-    <img class="deco" src="assets/images/illustrations/deco/vert-blanc.svg" alt="Cercles décoratifs" />
+    <img class="deco" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-blanc.svg" alt="Cercles décoratifs" />
     <div class="wrapper">
         <h1 data-scrolly="fromBottom">Soutien Psychosocial</h1>
         <div class="content">
@@ -213,7 +213,7 @@
 
             <img
                 data-scrolly="fromRight"
-                src="assets/images/illustrations/soutien-psycho.svg"
+                src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/soutien-psycho.svg"
                 alt="Deux personnes assises qui discutent"
             />
         </div>
@@ -222,7 +222,7 @@
 </section>
 
 <section class="questionnaire">
-    <img data-scrolly="fromRight" class="deco1" src="assets/images/illustrations/deco/bleu-blanc.svg" alt="" />
+    <img data-scrolly="fromRight" class="deco1" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-blanc.svg" alt="" />
     <div class="wrapper">
         <h1 data-scrolly="fromBottom">Besoin de nos services?</h1>
 
@@ -235,7 +235,7 @@
             </div>
         </div>
     </div>
-    <img data-scrolly="fromLeft" class="deco2" src="assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="" />
+    <img data-scrolly="fromLeft" class="deco2" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="" />
 </section>
 
 <section class="composante_swiper">
@@ -285,23 +285,23 @@
         <div class="swiper" data-component="Carousel" data-carousel="navigation" data-scrolly="fromBottom">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/images/swiper_img.png" alt="" />
+                    <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/swiper_img.png" alt="" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/images/swiper_img.png" alt="" />
+                    <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/swiper_img.png" alt="" />
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/images/swiper_img.png" alt="" />
+                    <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/swiper_img.png" alt="" />
                 </div>
             </div>
         </div>
     </div>
 
-    <img data-scrolly="fromRight" class="deco" src="assets/images/illustrations/deco/vert-blanc.svg" alt="" />
+    <img data-scrolly="fromRight" class="deco" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-blanc.svg" alt="" />
 </section>
 
 <section class="composante_approches">
-    <img data-scrolly="fromLeft" class="deco" src="assets/images/illustrations/deco/jaune-bleu.svg" alt="" />
+    <img data-scrolly="fromLeft" class="deco" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/jaune-bleu.svg" alt="" />
     <div class="wrapper">
         <h1 data-scrolly="fromBottom">Types d’approches</h1>
         <div class="cards">
@@ -389,7 +389,7 @@
             </div>
             <a data-scrolly="fromBottom" href="#">En savoir plus</a>
         </div>
-        <img data-scrolly="fromBottom" src="assets/images/composante-maladie/image1.jpg" alt="" />
+        <img data-scrolly="fromBottom" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
     </div>
 </section>
 
@@ -408,7 +408,7 @@
 
             <a data-scrolly="fromBottom" href="#">En savoir plus</a>
         </div>
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
     </div>
 </section>
 
@@ -451,37 +451,37 @@
 
 <section class="galerie">
     <div class="wrapper" data-scrolly="fromBottom">
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
-        <img src="assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
+        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/image1.jpg" alt="" />
     </div>
 </section>
 
 <section class="compcontact">
-    <img data-scrolly="fromRight" class="deco1" src="assets/images/illustrations/deco/bleu-blanc.svg" alt="" />
+    <img data-scrolly="fromRight" class="deco1" src="/pfe/ltdp/wp-content/themes/theme_ltdp//pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-blanc.svg" alt="" />
     <div class="wrapper">
         <h1 data-scrolly="fromBottom">Besoin de nos services?</h1>
 
         <div class="info_contact" data-scrolly="fromBottom">
             <div>
-                <img src="assets/icons/cell.svg" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/icons/cell.svg" alt="" />
                 <h4>514 373-9851</h4>
             </div>
             <div>
-                <img src="assets/icons/email.svg" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/icons/email.svg" alt="" />
                 <h4>admissions@tempsdunepause.org</h4>
             </div>
             <div>
-                <img src="assets/icons/mao.svg" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/icons/mao.svg" alt="" />
                 <h4><a href="">Où nous trouver?</a></h4>
             </div>
         </div>
     </div>
-    <img data-scrolly="fromLeft" class="deco2" src="assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="" />
+    <img data-scrolly="fromLeft" class="deco2" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="" />
 </section>
 
 <section class="comp_video">
@@ -505,37 +505,37 @@
         <h1>Notre Équipe</h1>
         <div class="grille">
             <div class="staff border1" data-scrolly="fromRight">
-                <img src="assets/images/staff1.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff1.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border2" data-scrolly="fromBottom">
-                <img src="assets/images/staff2.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff2.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border3" data-scrolly="fromBottom">
-                <img src="assets/images/staff3.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff3.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border1" data-scrolly="fromRight">
-                <img src="assets/images/staff4.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff4.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border2" data-scrolly="fromBottom">
-                <img src="assets/images/staff5.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff5.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border3" data-scrolly="fromBottom">
-                <img src="assets/images/staff6.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff6.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
             <div class="staff border1" data-scrolly="fromRight">
-                <img src="assets/images/staff7.png" alt="" />
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/staff7.png" alt="" />
                 <h3>Nom</h3>
                 <h4>role</h4>
             </div>
@@ -544,7 +544,7 @@
 </section>
 
 <section class="comp_h2_list_button">
-    <img data-scrolly="fromRight" class="deco" src="assets/images/illustrations/deco/vert-bleu.svg" alt="" />
+    <img data-scrolly="fromRight" class="deco" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-bleu.svg" alt="" />
     <div class="wrapper">
         <h2 data-scrolly="fromLeft">Faire du bénévolat</h2>
         <span data-scrolly="fromLeft">Types de bénévolat :</span>
@@ -569,7 +569,7 @@
 </section>
 
 <section class="comp_links">
-    <img data-scrolly="fromLeft" class="deco" src="assets/images/illustrations/deco/vert-beige.svg" alt="" />
+    <img data-scrolly="fromLeft" class="deco" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-beige.svg" alt="" />
     <div class="wrapper">
         <h2 data-scrolly="fromBottom">Plus d'information</h2>
         <div class="links">
