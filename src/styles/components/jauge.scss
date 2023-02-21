@@ -1,3 +1,50 @@
 .jauge {
+    h1{
+        padding: 150px 0 50px 0;
+    }
     background-image: url(../../assets/background/maladies_bg.svg);
+    background-size: cover;
+    .jaugetext{
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            .rectangle1{
+                width: 30px;
+                height: 200px;
+                background-color: #FDF5AE;
+            }
+            .rectangle2{
+                width: 30px;
+                height: 200px;
+                background-color: #FDEBAE;
+            }
+            .rectangle3{
+                width: 30px;
+                height: 200px;
+                background-color: #FDE2AE;
+            }
+            .rectangle4{
+                width: 30px;
+                height: 200px;
+                background-color: #FDD4AE;
+            }
+            .rectangle5{
+                width: 30px;
+                height: 200px;
+                background-color: #FDC1AE;
+            }
+            .rectangle6{
+                width: 30px;
+                height: 200px;
+                background-color: #FDAEAE;
+            }
+        }
+    }
+
+    .jaugeimg{
+        display: flex;
+        margin: auto;
+        align-self: center;
+    }
 }
