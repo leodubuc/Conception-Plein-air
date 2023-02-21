@@ -1,6 +1,9 @@
 footer {
     background: url(../../assets/background/footer_bg.svg);
     background-size: cover;
+    position: relative;
+    z-index: 100;
+    margin-top: -50px;
 
     .wrapper {
         padding: 100px 0;

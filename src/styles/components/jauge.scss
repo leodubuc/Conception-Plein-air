@@ -9,6 +9,8 @@
 
     background-image: url(../assets/background/maladies_bg.svg);
     background-size: cover;
+    margin-top: -110px;
+    position: relative;
     .jaugetext {
         display: flex;
         justify-content: space-between;
@@ -58,7 +60,7 @@
             top: 40%;
             left: 88%;
             p {
-                width: 50%;
+                width: 60%;
             }
         }
 
@@ -104,10 +106,11 @@
         padding-top: 200px;
         display: flex;
         justify-content: center;
-        margin: auto;
+        margin: 0 auto -20px auto;
     }
 
     @media only screen and (max-width: 1156px) {
+        background-position: center;
         .wrapper {
             position: relative;
         }
@@ -217,57 +220,71 @@
         }
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
         .wrapper {
         }
 
         h1 {
-            padding: 150px 0 500px 0;
+            padding: 150px 0 1600px 0;
         }
 
         background-image: url(../assets/background/maladies_bg.svg);
         background-size: cover;
         .jaugetext {
+            display: flex;
+            justify-content: space-between;
+
             .txt1 {
+                position: absolute;
+                top: 20%;
+                left: 15%;
                 p {
-                    position: initial;
-                    width: 30%;
+                    width: 50%;
                 }
             }
             .txt2 {
+                position: absolute;
+                top: 30%;
+                left: 15%;
                 p {
-                    position: initial;
-                    width: 20%;
+                    width: 50%;
                 }
             }
             .txt3 {
+                position: absolute;
+                top: 40%;
+                left: 20%;
                 p {
-                    position: initial;
-                    width: 30%;
+                    width: 50%;
                 }
             }
             .txt4 {
+                position: absolute;
+                top: 50%;
+                left: 25%;
                 p {
-                    position: initial;
-                    width: 45%;
+                    width: 60%;
                 }
             }
             .txt5 {
+                position: absolute;
+                top: 60%;
+                left: 30%;
                 p {
-                    position: initial;
-                    width: 35%;
+                    width: 50%;
                 }
             }
             .txt6 {
+                position: absolute;
+                top: 70%;
+                left: 35%;
                 p {
-                    position: initial;
-                    width: 40%;
+                    width: 50%;
                 }
             }
 
             div {
                 display: flex;
-
                 margin-right: 10px;
                 .rectangle1 {
                     width: 20px;
@@ -305,10 +322,121 @@
         }
 
         .jaugeimg {
-            padding-top: 200px;
-            display: none;
-            justify-content: center;
-            margin: auto;
+            display: flex;
+            position: absolute;
+            transform: scaleY(-1) rotate(270deg);
+            top: 35%;
+            right: -30%;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .wrapper {
+        }
+
+        h1 {
+            padding: 150px 0 1600px 0;
+        }
+
+        background-image: url(../../assets/background/maladies_bg.svg);
+        background-size: cover;
+        .jaugetext {
+            display: flex;
+            justify-content: space-between;
+
+            .txt1 {
+                position: absolute;
+                top: 20%;
+                left: 15%;
+                p {
+                    width: 50%;
+                }
+            }
+            .txt2 {
+                position: absolute;
+                top: 30%;
+                left: 15%;
+                p {
+                    width: 50%;
+                }
+            }
+            .txt3 {
+                position: absolute;
+                top: 40%;
+                left: 20%;
+                p {
+                    width: 50%;
+                }
+            }
+            .txt4 {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                p {
+                    width: 60%;
+                }
+            }
+            .txt5 {
+                position: absolute;
+                top: 60%;
+                left: 30%;
+                p {
+                    width: 70%;
+                }
+            }
+            .txt6 {
+                position: absolute;
+                top: 70%;
+                left: 35%;
+                p {
+                    width: 70%;
+                }
+            }
+
+            div {
+                display: flex;
+                margin-right: 10px;
+                .rectangle1 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdf5ae;
+                    margin-left: -50px;
+                }
+
+                .rectangle2 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdebae;
+                }
+                .rectangle3 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fde2ae;
+                }
+                .rectangle4 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdd4ae;
+                }
+                .rectangle5 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdc1ae;
+                }
+                .rectangle6 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdaeae;
+                }
+            }
+        }
+
+        .jaugeimg {
+            display: flex;
+            position: absolute;
+            transform: scaleY(-1) rotate(270deg);
+            top: 35%;
+            right: -30%;
         }
     }
 }
