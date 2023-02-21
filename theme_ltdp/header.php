@@ -37,10 +37,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Nos services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Fiches pratiques</a></li>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'menu_principal',
+                        'container' => 'ul',
+                        'container_class' => 'nav-primary__item',
+                    )); ?>
                 </ul>
             </nav>
         </div>
