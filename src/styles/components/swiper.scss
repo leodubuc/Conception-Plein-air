@@ -1,5 +1,5 @@
 .composante_swiper {
-    background: url(../../assets/background/temoignage.svg);
+    background: url(../assets/background/temoignage.svg);
     background-size: cover;
     padding: 250px 0 100px 0;
     margin-top: -140px;
@@ -14,7 +14,7 @@
         align-items: center;
 
         height: 80vh;
-        background-image: url(../../assets/images/swiper_slide.png);
+        background-image: url(../assets/images/swiper_slide.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -31,7 +31,7 @@
     @media only screen and (max-width: 1156px) {
         .swiper-slide {
             height: 80vh;
-            background: url(../../assets/background/temoignageMobile.svg);
+            background: url(../assets/background/temoignageMobile.svg);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

@@ -16,15 +16,10 @@
 
 <section class="header" data-component="Header">
     <div class="wrapper">
-        <?php
-            $image = get_field('logo', 'options');
-                if( $image ){
-                $url = $image['url'];
-                } ?>
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo esc_url($url); ?>" alt="Logo de Le temps d'une pause"></a>
-        
+        <a href="<?php bloginfo('url'); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="">
         </a>
-
+    
         <div>
             <nav class="top_bar">
                 <ul>
@@ -38,7 +33,7 @@
             <nav>
                 <ul>
                     <?php wp_nav_menu(array(
-                        'theme_location' => 'menu_principal',
+                        'theme_location' => 'menu_principale',
                         'container' => 'ul',
                         'container_class' => 'nav-primary__item',
                     )); ?>

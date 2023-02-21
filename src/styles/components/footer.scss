@@ -1,5 +1,5 @@
 footer {
-    background: url(../../assets/background/footer_bg.svg);
+    background: url(../assets/background/footer_bg.svg);
     background-size: cover;
     position: relative;
     z-index: 100;
@@ -173,7 +173,7 @@ footer {
             display: flex;
             flex-wrap: nowrap;
 
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
             img {
