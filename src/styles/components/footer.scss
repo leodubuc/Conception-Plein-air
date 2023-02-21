@@ -20,7 +20,7 @@ footer {
                             order: -1;
                             margin-bottom: 50px;
                         }
-                    }  
+                    }
 
                     flex-direction: column;
                 }
@@ -32,12 +32,12 @@ footer {
                     @media only screen and (max-width: 1100px) {
                         margin-bottom: 50px;
                     }
-                    
+
                     &:hover {
                         transition: 0.4s $ease-in-out-back;
                         transform: translateY(-10px);
                     }
-                    
+
                     a {
                         color: var(--color-very-pale-green);
                     }
@@ -170,7 +170,7 @@ footer {
             display: flex;
             flex-wrap: nowrap;
 
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
             img {
@@ -182,8 +182,4 @@ footer {
             }
         }
     }
-
-
 }
-
-
