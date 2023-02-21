@@ -1,50 +1,314 @@
 .jauge {
-    h1{
-        padding: 150px 0 50px 0;
+    .wrapper {
+        position: relative;
     }
+
+    h1 {
+        padding: 150px 0 100px 0;
+    }
+
     background-image: url(../../assets/background/maladies_bg.svg);
     background-size: cover;
-    .jaugetext{
+    .jaugetext {
         display: flex;
         justify-content: space-between;
-        div{
+
+        .txt1 {
+            position: absolute;
+            top: 70%;
+            left: 0;
+            p {
+                width: 40%;
+            }
+        }
+        .txt2 {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            p {
+                width: 30%;
+            }
+        }
+        .txt3 {
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            p {
+                width: 40%;
+            }
+        }
+        .txt4 {
+            position: absolute;
+            top: 30%;
+            left: 53%;
+            p {
+                width: 55%;
+            }
+        }
+        .txt5 {
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            p {
+                width: 45%;
+            }
+        }
+        .txt6 {
+            position: absolute;
+            top: 40%;
+            left: 88%;
+            p {
+                width: 50%;
+            }
+        }
+
+        div {
             display: flex;
-            .rectangle1{
-                width: 30px;
+            margin-right: 10px;
+            .rectangle1 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDF5AE;
+                background-color: #fdf5ae;
+                margin-left: -50px;
             }
-            .rectangle2{
-                width: 30px;
+
+            .rectangle2 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDEBAE;
+                background-color: #fdebae;
             }
-            .rectangle3{
-                width: 30px;
+            .rectangle3 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDE2AE;
+                background-color: #fde2ae;
             }
-            .rectangle4{
-                width: 30px;
+            .rectangle4 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDD4AE;
+                background-color: #fdd4ae;
             }
-            .rectangle5{
-                width: 30px;
+            .rectangle5 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDC1AE;
+                background-color: #fdc1ae;
             }
-            .rectangle6{
-                width: 30px;
+            .rectangle6 {
+                width: 20px;
                 height: 200px;
-                background-color: #FDAEAE;
+                background-color: #fdaeae;
             }
         }
     }
 
-    .jaugeimg{
+    .jaugeimg {
+        padding-top: 200px;
         display: flex;
+        justify-content: center;
         margin: auto;
-        align-self: center;
+    }
+
+    @media only screen and (max-width: 1156px) {
+        .wrapper {
+            position: relative;
+        }
+
+        h1 {
+            padding: 150px 0 500px 0;
+        }
+
+        background-image: url(../../assets/background/maladies_bg.svg);
+        background-size: cover;
+        .jaugetext {
+            display: flex;
+            justify-content: space-between;
+
+            .txt1 {
+                position: absolute;
+                top: 70%;
+                left: 5%;
+                p {
+                    width: 30%;
+                }
+            }
+            .txt2 {
+                position: absolute;
+                top: 60%;
+                left: 20%;
+                p {
+                    width: 20%;
+                }
+            }
+            .txt3 {
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                p {
+                    width: 30%;
+                }
+            }
+            .txt4 {
+                position: absolute;
+                top: 40%;
+                left: 53%;
+                p {
+                    width: 45%;
+                }
+            }
+            .txt5 {
+                position: absolute;
+                top: 40%;
+                left: 70%;
+                p {
+                    width: 35%;
+                }
+            }
+            .txt6 {
+                position: absolute;
+                top: 50%;
+                left: 88%;
+                p {
+                    width: 40%;
+                }
+            }
+
+            div {
+                display: flex;
+                margin-right: 10px;
+                .rectangle1 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdf5ae;
+                    margin-left: -50px;
+                }
+
+                .rectangle2 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdebae;
+                }
+                .rectangle3 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fde2ae;
+                }
+                .rectangle4 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdd4ae;
+                }
+                .rectangle5 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdc1ae;
+                }
+                .rectangle6 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdaeae;
+                }
+            }
+        }
+
+        .jaugeimg {
+            padding-top: 200px;
+            display: none;
+            justify-content: center;
+            margin: auto;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .wrapper {
+        }
+
+        h1 {
+            padding: 150px 0 500px 0;
+        }
+
+        background-image: url(../../assets/background/maladies_bg.svg);
+        background-size: cover;
+        .jaugetext {
+            .txt1 {
+                p {
+                    position: initial;
+                    width: 30%;
+                }
+            }
+            .txt2 {
+                p {
+                    position: initial;
+                    width: 20%;
+                }
+            }
+            .txt3 {
+                p {
+                    position: initial;
+                    width: 30%;
+                }
+            }
+            .txt4 {
+                p {
+                    position: initial;
+                    width: 45%;
+                }
+            }
+            .txt5 {
+                p {
+                    position: initial;
+                    width: 35%;
+                }
+            }
+            .txt6 {
+                p {
+                    position: initial;
+                    width: 40%;
+                }
+            }
+
+            div {
+                display: flex;
+
+                margin-right: 10px;
+                .rectangle1 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdf5ae;
+                    margin-left: -50px;
+                }
+
+                .rectangle2 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdebae;
+                }
+                .rectangle3 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fde2ae;
+                }
+                .rectangle4 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdd4ae;
+                }
+                .rectangle5 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdc1ae;
+                }
+                .rectangle6 {
+                    width: 20px;
+                    height: 200px;
+                    background-color: #fdaeae;
+                }
+            }
+        }
+
+        .jaugeimg {
+            padding-top: 200px;
+            display: none;
+            justify-content: center;
+            margin: auto;
+        }
     }
 }
