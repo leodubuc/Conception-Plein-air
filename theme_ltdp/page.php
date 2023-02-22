@@ -5,10 +5,22 @@
 
         <?php if( get_row_layout() == 'bloc_titre_paragraphe_liste_image_bouton' ): ?>
             <?php include 'partials/tpl-intro-service.php';?>
+            <?php #fini ?>
 
         <?php elseif ( get_row_layout() == 'bloc_contact' ):  ?>
             <?php include 'partials/tpl-bloc-contact.php';?>
 
+        <?php elseif ( get_row_layout() == 'call_to_action_simple' ):  ?> 
+            <?php include 'partials/tpl-cta-simple.php';?>
+            <?php #fini ?>
+
+        <?php elseif ( get_row_layout() == 'call_to_action_list_middle' ):  ?> 
+            <?php include 'partials/tpl-cta-list-middle.php';?>
+            <?php #fini ?>    
+
+        <?php elseif ( get_row_layout() == 'call_to_action_list_left' ):  ?> 
+            <?php include 'partials/tpl-cta-list-left.php';?>
+            <?php #fini ?>    
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
