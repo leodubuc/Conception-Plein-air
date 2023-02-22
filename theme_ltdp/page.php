@@ -20,7 +20,19 @@
 
         <?php elseif ( get_row_layout() == 'call_to_action_list_left' ):  ?> 
             <?php include 'partials/tpl-cta-list-left.php';?>
-            <?php #fini ?>    
+            <?php #fini ?> 
+
+        <?php elseif ( get_row_layout() == 'bloc_temoignages_carrousel' ):  ?> 
+            <?php include 'partials/tpl-carrousel.php';?>
+
+        <?php elseif ( get_row_layout() == 'bloc_cartes_info_liste' ):  ?> 
+            <?php include 'partials/tpl-cards-info-list.php';?>
+            <?php #fini ?> 
+
+        <?php elseif ( get_row_layout() == 'bloc_cartes_info_liste' ):  ?> 
+            <?php include 'partials/tpl-cards-info-list.php';?>
+            <?php #fini ?> 
+
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
