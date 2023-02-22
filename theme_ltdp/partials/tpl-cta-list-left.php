@@ -1,5 +1,5 @@
 <section class="comp_h2_list_button">
-            <?php if( get_sub_field('intro_service_deco') ): ?>
+            <?php if( get_sub_field('call_to_action_left_deco') ): ?>
                 <img data-scrolly="fromRight" class="deco" src="<?php the_sub_field('call_to_action_left_deco'); ?>" />
             <?php endif; ?>
             <div class="wrapper">
