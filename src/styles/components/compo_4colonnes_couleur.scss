@@ -1,5 +1,5 @@
 .composante_4colonnes_fondcouleur {
-    margin: 70px 0;
+    padding: 150px 0;
     .wrapper {
         h1 {
             text-align: center;
@@ -17,7 +17,7 @@
 
 .cards-4colonnes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
 
     .card {
@@ -29,8 +29,7 @@
     }
 
     @media only screen and (max-width: 1380px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 15px;
 
         .card {
