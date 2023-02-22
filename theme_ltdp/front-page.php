@@ -22,68 +22,47 @@
 
 <section class="services">
     <div class="wrapper">
-        <h1 data-scrolly="fromBottom">Nos services</h1>
+
+    <?php if(have_rows('static_services_grid')) : ?>   
+    <?php while (have_rows('static_services_grid')) : the_row() ?> 
+
+        <?php $titre_service = get_sub_field('static_services_grid_titre') ?>
+        <h1 data-scrolly="fromBottom"><?php echo ($titre_service); ?></h1>
 
         <div class="grid">
-            <a data-scrolly="fromBottom" href="#">
-                <div>
-                    <h2>Centre d'activité de jour</h2>
+            <?php if(have_rows('static_services_grid_cards')) : ?>   
+            <?php while (have_rows('static_services_grid_cards')) : the_row() ?>
 
-                    <svg class="icon">
-                        <use xlink:href="#icon-calendrier"></use>
-                    </svg>
+            <a data-scrolly="fromBottom" href="<?php echo get_sub_field('static_services_grid_card_link')?>">
+                <div>
+                    <?php $service = get_sub_field('static_services_grid_card_name') ?>
+                    <h2><?php echo ($service); ?></h2>
+
+                    <?php $icon = get_sub_field('static_services_grid_card_icon'); ?>
+                    <?php if ($icon) : ?>
+                        <img class="icon" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                    <?php endif ?>
                 </div>
 
                 <div class="fond"></div>
             </a>
+            <?php endwhile; ?>
+            <?php endif; ?>  
 
-            <a data-scrolly="fromBottom" href="#">
-                <div>
-                    <h2>Gestion des comportements</h2>
 
-                    <svg class="icon">
-                        <use xlink:href="#icon-personne"></use>
-                    </svg>
-                </div>
+            <?php 
+                $link = get_field('btn_cta_link');
+                if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">Plus d'information</a>
+            <?php endif; ?>
 
-                <div class="fond"></div>
-            </a>
-
-            <a data-scrolly="fromBottom" href="#">
-                <div>
-                    <h2>Soutien psychosocial</h2>
-
-                    <svg class="icon">
-                        <use xlink:href="#icon-telephone"></use>
-                    </svg>
-                </div>
-
-                <div class="fond"></div>
-            </a>
-
-            <a data-scrolly="fromBottom" href="#">
-                <div>
-                    <h2>Groupe de soutien</h2>
-
-                    <svg class="icon">
-                        <use xlink:href="#icon-tableau"></use>
-                    </svg>
-                </div>
-
-                <div class="fond"></div>
-            </a>
-
-            <a data-scrolly="fromBottom" href="#">
-                <div>
-                    <h2>Formations</h2>
-
-                    <svg class="icon">
-                        <use xlink:href="#icon-groupe"></use>
-                    </svg>
-                </div>
-
-                <div class="fond"></div>
-            </a>
+            
+        <?php endwhile; ?>
+        <?php endif; ?>
         </div>
     </div>
 </section>
