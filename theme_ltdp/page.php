@@ -37,6 +37,22 @@
             <?php include 'partials/tpl-info-swiper-img.php';?>
             <?php #fini ?>
 
+        <?php elseif ( get_row_layout() == 'bloc_info_left_img_right' ):  ?> 
+            <?php include 'partials/tpl-info-left-img-right.php';?>
+            
+
+        <?php elseif ( get_row_layout() == 'bloc_gallery' ):  ?> 
+            <?php include 'partials/tpl-gallery.php';?>
+            <?php #fini ?>
+
+        <?php elseif ( get_row_layout() == 'bloc_video' ):  ?> 
+            <?php include 'partials/tpl-bloc-video.php';?>
+            <?php #fini ?>
+
+        <?php elseif ( get_row_layout() == 'bloc_links' ):  ?> 
+            <?php include 'partials/tpl-bloc-links.php';?>
+            <?php #fini ?>
+
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
