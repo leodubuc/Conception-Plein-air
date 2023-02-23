@@ -71,16 +71,26 @@
     <h1 class="wrapper" data-scrolly="fromBottom">Nous sommes là à chaque étape</h1>
     <div class="alignement">
         <div class="wrapper">
-            <ul data-scrolly="fromLeft">
-                <li>Le questionnement</li>
-                <li>Le diagnostique</li>
-                <li>Le choc</li>
-                <li>Le déni</li>
-                <li>Avancé de la maladie</li>
-            </ul>
+        <?php if(have_rows('static_steps')) : ?>   
+        <?php while (have_rows('static_steps')) : the_row() ?> 
+            <?php $rows = get_sub_field('static_steps_first'); ?>
+                <?php if( $rows ) {
+                    echo '<ul data-scrolly="fromLeft">';
+                    foreach( $rows as $row ) {
+                        echo '<li>';
+                            echo( $row['static_steps_first_step'] );
+                        echo '</li>';
+                    }
+                    echo '</ul>';
+            } ?>
         </div>
 
-        <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/etape.png" alt="ligne pour les étapes" />
+        <?php endwhile; ?>
+        <?php endif; ?>
+
+        <?php if( get_sub_field('static_steps_image') ): ?>
+                <img src="<?php the_sub_field('static_steps_image'); ?>" />
+        <?php endif; ?>
 
         <div class="wrapper">
             <ul data-scrolly="fromRight">
@@ -124,38 +134,47 @@
 </section>
 
 <section class="composante_maladies">
-    <img
-        data-scrolly="fromLeft"
-        class="deco"
-        src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-beige.svg"
-        alt="Cercles décoratifs"
-    />
-    <div class="wrapper">
-        <h1 data-scrolly="fromBottom">
-            Quelles sont les
-            <br />
-            maladies neurodégénératives ?
-        </h1>
-        <div class="content">
-            <ul>
-                <li data-scrolly="fromLeft">La maladie d'Alzheimer.</li>
-                <li data-scrolly="fromLeft">La maladie de Parkinson.</li>
-                <li data-scrolly="fromLeft">Les maladies cérébro-vasculaires.</li>
-                <li data-scrolly="fromLeft">Les atteintes fronto-temporales.</li>
-                <li data-scrolly="fromLeft">La maladie à Corps de Lewy.</li>
-                <li data-scrolly="fromLeft">La maladie de Creutzfeldt-Jakob.</li>
-            </ul>
+    <?php if( get_sub_field('static_maladies_deco') ): ?>
+        <img data-scrolly="fromLeft" class="deco" src="<?php the_sub_field('static_maladies_deco'); ?>" />
+    <?php endif; ?>
 
-            <div class="content-right" data-scrolly="fromRight">
-                <img class="brain" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/brain.png" alt="Illustration de cerveau" />
-                <img
-                    class="doodle"
-                    src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/green-circle.png"
-                    alt="Dessin de cercle vert avec traits"
-                />
-                <a href="#">En savoir plus</a>
+    
+    <div class="wrapper">
+        <?php if( have_rows('static_maladie') ): ?>
+        <?php while( have_rows('static_maladie') ) : the_row(); ?>
+        <h1 data-scrolly="fromBottom"><?php the_sub_field('static_maladie_titre'); ?></h1>
+
+        <?php if( have_rows('static_maladie_list') ): ?>
+        <?php while( have_rows('static_maladie_list') ) : the_row(); ?>
+
+            <div class="content">
+            <?php $rows = get_sub_field('static_liste_maladie'); ?>
+                <?php if( $rows ) {
+                    echo '<ul>';
+                    foreach( $rows as $row ) {
+                        echo '<li>';
+                            echo( $row['static_maladie_element'] );
+                        echo '</li>';
+                    }
+                    echo '</ul>';
+            } ?>
+
+        <?php endwhile; ?>
+        <?php endif; ?>    
+
+    <?php endwhile; ?>
+    <?php endif; ?>   
+
+                <div class="content-right" data-scrolly="fromRight">
+                    <img class="brain" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/brain.png" alt="Illustration de cerveau" />
+                    <img
+                        class="doodle"
+                        src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/composante-maladie/green-circle.png"
+                        alt="Dessin de cercle vert avec traits"
+                    />
+                    <a href="#">En savoir plus</a>
+                </div>
             </div>
-        </div>
     </div>
 </section>
 
