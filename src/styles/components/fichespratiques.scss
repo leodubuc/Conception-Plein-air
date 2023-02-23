@@ -6,6 +6,16 @@
         padding-bottom: 80px;
 
         position: relative;
+
+        @media only screen and (max-width: 1080px) {
+            width: 90vw;
+        }
+        @media only screen and (max-width: 550px) {
+            width: 100vw;
+        }
+        @media only screen and (max-width: 375px) {
+            width: 95vw;
+        }
     }
 
     .content {
@@ -14,6 +24,14 @@
         border-radius: 75px;
         outline: 8px solid var(--color-deep-green);
         outline-offset: 14px;
+
+        @media only screen and (max-width: 920px) {
+            padding: 30px;
+        }
+        @media only screen and (max-width: 470px) {
+            padding: 25px;
+            border-radius: 40px;
+        }
 
         h2 {
             text-transform: uppercase;
@@ -53,6 +71,13 @@
                     background: url(../assets/images/illustrations/list-style.svg)
                         no-repeat left top;
                     padding: 0 0 25px 80px;
+
+                    @media only screen and (max-width: 920px) {
+                        padding: 0 0 18px 67px;
+                    }
+                    @media only screen and (max-width: 375px) {
+                        padding: 0 0 28px 60px;
+                    }
                 }
             }
         }
@@ -74,6 +99,10 @@
         border-radius: 10px;
         display: inline-block;
 
+        @media only screen and (max-width: 375px) {
+            padding: 15px 50px 40px 140px;
+        }
+
         h2 {
             margin: 0;
         }
@@ -90,6 +119,18 @@
             @media only screen and (max-width: 1080px) {
                 right: 163px;
                 top: -104px;
+                padding: 30px 50px 30px 145px;
+            }
+            @media only screen and (max-width: 625px) {
+                right: 145px;
+                top: -94px;
+            }
+            @media only screen and (max-width: 500px) {
+                right: 125px;
+            }
+            @media only screen and (max-width: 470px) {
+                right: 65px;
+                top: -80px;
             }
         }
     }
@@ -105,6 +146,18 @@
             @media only screen and (max-width: 1080px) {
                 left: 163px;
                 top: -104px;
+                padding: 30px 50px 30px 145px;
+            }
+            @media only screen and (max-width: 625px) {
+                left: 145px;
+                top: -94px;
+            }
+            @media only screen and (max-width: 500px) {
+                left: 125px;
+            }
+            @media only screen and (max-width: 470px) {
+                left: 65px;
+                top: -80px;
             }
         }
     }

@@ -1,8 +1,7 @@
 
         <section class="composante_service">
-            <?php if( get_sub_field('intro_service_deco') ): ?>
-                <img class="deco" src="<?php the_sub_field('intro_service_deco'); ?>" />
-            <?php endif; ?>
+        <img data-scrolly="fromLeft" class="deco" src="https://mhebert.dectim.net/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-blanc.svg" />
+
             <div class="wrapper">
                 <h1 data-scrolly="fromBottom"><?php the_sub_field('intro_service_titre'); ?></h1>
                 <div class="content">

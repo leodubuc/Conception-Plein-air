@@ -24,6 +24,7 @@
 
         <?php elseif ( get_row_layout() == 'bloc_temoignages_carrousel' ):  ?> 
             <?php include 'partials/tpl-carrousel.php';?>
+            <?php #fini ?> 
 
         <?php elseif ( get_row_layout() == 'bloc_cartes_info_liste' ):  ?> 
             <?php include 'partials/tpl-cards-info-list.php';?>
@@ -37,9 +38,11 @@
             <?php include 'partials/tpl-info-swiper-img.php';?>
             <?php #fini ?>
 
-        <?php elseif ( get_row_layout() == 'bloc_info_left_img_right' ):  ?> 
-            <?php include 'partials/tpl-info-left-img-right.php';?>
+        <?php elseif ( get_row_layout() == 'bloc_info_text_img' ):  ?> 
+            <?php include 'partials/tpl-info-text-img.php';?>
             
+        <?php elseif ( get_row_layout() == 'bloc_info_list_img' ):  ?> 
+            <?php include 'partials/tpl-info-list-img.php';?>    
 
         <?php elseif ( get_row_layout() == 'bloc_gallery' ):  ?> 
             <?php include 'partials/tpl-gallery.php';?>
