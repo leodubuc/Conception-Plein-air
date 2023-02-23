@@ -1,7 +1,5 @@
 <section class="comp_links">
-            <?php if( get_sub_field('bloc_links_deco') ): ?>
-                <img data-scrolly="fromLeft" class="deco" src="<?php the_sub_field('bloc_links_deco'); ?>" />
-            <?php endif; ?>
+            <img data-scrolly="fromRight" class="deco" src="https://mhebert.dectim.net/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/jaune-bleu.svg" />
             <div class="wrapper">
                 <h2 data-scrolly="fromBottom"><?php the_sub_field('bloc_links_titre'); ?></h2>
                 <div class="links">

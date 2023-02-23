@@ -24,7 +24,8 @@
 
         <?php elseif ( get_row_layout() == 'bloc_temoignages_carrousel' ):  ?> 
             <?php include 'partials/tpl-carrousel.php';?>
-
+            <?php #fini ?> 
+            
         <?php elseif ( get_row_layout() == 'bloc_cartes_info_liste' ):  ?> 
             <?php include 'partials/tpl-cards-info-list.php';?>
             <?php #fini ?> 

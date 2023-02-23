@@ -182,12 +182,26 @@
 
             div {
                 display: flex;
+                align-items: center;
                 padding-left: 10%;
+
+                svg {
+                    color: var(--color-deep-blue);
+                }
                 h4 {
                     padding-left: 25px;
                     font-weight: 500;
                     @media only screen and (max-width: 745px) {
                         line-break: anywhere;
+                    }
+                    a {
+                        transition: 0.4s $ease-in-out-back;
+
+                        &:hover {
+                            color: var(--color-deep-blue);
+                            transform: translateX(10px);
+                            transition: 0.4s $ease-in-out-back;
+                        }
                     }
                 }
             }
