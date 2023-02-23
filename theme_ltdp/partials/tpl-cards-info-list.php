@@ -1,7 +1,5 @@
 <section class="composante_approches">
-<?php if( get_sub_field('cards_liste_deco') ): ?>
-                <img data-scrolly="fromLeft" class="deco" src="<?php the_sub_field('cards_liste_deco'); ?>" />
-            <?php endif; ?>
+    <img data-scrolly="fromLeft" class="deco" src="https://mhebert.dectim.net/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/jaune-bleu.svg" />
             <div class="wrapper">
                 <h1 data-scrolly="fromBottom"><?php the_sub_field('cards_liste_titre'); ?></h1>
                 <div class="cards">

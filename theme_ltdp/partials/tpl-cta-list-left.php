@@ -1,7 +1,5 @@
 <section class="comp_h2_list_button">
-            <?php if( get_sub_field('call_to_action_left_deco') ): ?>
-                <img data-scrolly="fromRight" class="deco" src="<?php the_sub_field('call_to_action_left_deco'); ?>" />
-            <?php endif; ?>
+                <img data-scrolly="fromRight" class="deco" src="https://mhebert.dectim.net/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/vert-bleu.svg" />
             <div class="wrapper">
                 <h2 data-scrolly="fromLeft"><?php the_sub_field('call_to_action_left_titre'); ?></h2>
                 <span data-scrolly="fromLeft"><?php the_sub_field('call_to_action_left_sous_titre'); ?></span>
