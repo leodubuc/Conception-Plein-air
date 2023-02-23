@@ -61,7 +61,7 @@
     }
 }
 
-.composante_texte_image_1 + .composante_texte_image_1:nth-child(odd) {
+.composante_texte_image_1 + .composante_texte_image_1:nth-child(even) {
     .content {
         order: 2;
 
@@ -124,7 +124,7 @@
     }
 }
 
-.composante_texte_image_2 + .composante_texte_image_2:nth-child(odd) {
+.composante_texte_image_2 + .composante_texte_image_2:nth-child(even) {
     .content {
         order: 2;
 
