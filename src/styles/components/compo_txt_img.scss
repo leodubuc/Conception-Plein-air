@@ -64,6 +64,10 @@
 .composante_texte_image_1 + .composante_texte_image_1:nth-child(odd) {
     .content {
         order: 2;
+
+        @media only screen and (max-width: 1080px) {
+            order: initial;
+        }
     }
 }
 
@@ -123,5 +127,9 @@
 .composante_texte_image_2 + .composante_texte_image_2:nth-child(odd) {
     .content {
         order: 2;
+
+        @media only screen and (max-width: 1080px) {
+            order: initial;
+        }
     }
 }
