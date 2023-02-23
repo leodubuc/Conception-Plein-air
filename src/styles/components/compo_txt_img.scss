@@ -2,61 +2,71 @@
     padding: 80px 0;
     .wrapper {
         display: flex;
+        gap: 100px;
 
-        div {
-            div {
-                flex-grow: 2;
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h2 {
+                margin: 0;
+                padding-bottom: 50px;
+                text-align: left;
             }
-        }
 
-        h2 {
-            padding-bottom: 50px;
-            text-align: left;
-        }
-        a {
-            display: inline-block;
+            a {
+                display: inline-block;
 
-            color: var(--color-black);
-            font-weight: 500;
-            background-color: #abdbaa;
-            padding: 10px 30px;
-            border-radius: 30px;
-            border: none;
-            filter: drop-shadow(4px 7px 0px var(--color-deep-green));
-            transition: 0.4s $ease-in-out-back;
+                @media only screen and (min-width: 1080px) {
+                    align-self: start;
+                }
 
-            &:hover {
-                cursor: pointer;
-                transform: translateX(4px) translateY(7px);
-                filter: none;
+                color: var(--color-black);
+                font-weight: 500;
+                background-color: #abdbaa;
+                padding: 10px 30px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 7px 0px var(--color-deep-green));
                 transition: 0.4s $ease-in-out-back;
-            }
-        }
 
-        img {
-            padding-left: 100px;
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(7px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
+                }
+            }
         }
     }
 
-    @media only screen and (max-width: 1500px) {
+    @media only screen and (max-width: 1400px) {
         .wrapper {
-            display: block;
+            flex-direction: column;
+            gap: 50px;
+            width: 85vw;
+        }
+    }
+    @media only screen and (max-width: 1080px) {
+        .content {
+            align-items: center;
 
-            h2 {
-                padding-bottom: 50px;
-                margin: auto;
-            }
+            h2,
             p {
-                padding-bottom: 50px;
-                margin: auto;
+                text-align: center;
             }
 
-            img {
-                padding: 50px 0;
-                margin: auto;
-                width: 85%;
+            a {
+                align-self: center;
             }
         }
+    }
+}
+
+.composante_texte_image_1 + .composante_texte_image_1:nth-child(odd) {
+    .content {
+        order: 2;
     }
 }
 
