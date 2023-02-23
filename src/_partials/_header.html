@@ -8,15 +8,18 @@
         <link rel="stylesheet" href="styles/main.css" />
 
         <script src="scripts/main.js" defer></script>
+
+        <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
     </head>
 
     <body data-component="Scrolly">
 
-<section class="header" data-component="Header">
-    <div class="wrapper">
+    <div class="content">
+        <header class="header" data-component="Header">
+            <div class="wrapper">
         <a href="index.html" class="logo"><img src="assets/images/logo_text.png" alt="logo de l'organisme"></a>
 
-        <div>
+        <div class="nav_content">
             <nav class="top_bar">
                 <ul>
                     <li><a href="#">EN</a></li>
@@ -36,31 +39,34 @@
             </nav>
         </div>
 
-        <button class="header__toggle js-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-          <div class="mobile">
-            <nav class="top_bar">
-                <ul>
-                    <li><a href="#" class="connexion">Se connecter</a></li>
-                    <li class="button_vert"><a href="#">Devenir membre</a></li>
-                    <li class="button_bleu"><a href="#">Faire une référence</a></li>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Nos services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Fiches pratiques</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
-            </nav>
-            
-          </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        </header>
     </div>
-</section>
+    
+
+
+<div class="container">
+
+    <div class="menu_overlay">
+        <i class="fas fa-times"></i>
+            <ul class="list">
+                <li><a href="#" class="connexion">Se connecter</a></li>
+                <li class="button_vert"><a href="#">Devenir membre</a></li>
+                <li class="button_bleu"><a href="#">Faire une référence</a></li>
+            </ul>
+
+        <nav>
+            <ul class="list"> 
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Fiches pratiques</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    
+</div>
