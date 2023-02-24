@@ -1,48 +1,163 @@
 @media only screen and (min-width: 1500px) {
-    .menu {
+    .container {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    .menu {
+    .container {
         display: flex;
-        position: absolute;
-        right: 20px;
-        top: 20px;
+
+        .wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: white;
+
+            z-index: 10;
+
+            clip-path: circle(25px at calc(100% - 45px) 45px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        #active:checked ~ .wrapper {
+            clip-path: circle(75%);
+        }
+
+        .menu-btn {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            z-index: 12;
+            text-align: center;
+            line-height: 50px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            color: #25a18e;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #active:checked ~ .menu-btn {
+            background: #fff;
+            color: inherit;
+        }
+
+        #active:checked ~ .menu-btn i::before {
+            content: '\f00d';
+        }
+
+        .wrapper .liste_gauche {
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+
+            list-style: none;
+            text-align: center;
+
+            padding: 0;
+        }
+
+        .wrapper .liste_droite {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+
+            list-style: none;
+            text-align: center;
+
+            padding: 0;
+
+            .button_bleu {
+                background-color: #1976a6;
+                padding: 10px 20px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 6px 0px #1757a1);
+                font-weight: 500;
+
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(6px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
+                }
+
+                a {
+                    color: var(--color-very-pale-green);
+                }
+            }
+
+            .button_vert {
+                background-color: var(--color-primary);
+                padding: 10px 20px;
+                border-radius: 30px;
+                border: none;
+                filter: drop-shadow(4px 6px 0px #bbd78e);
+
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(4px) translateY(6px);
+                    filter: none;
+                    transition: 0.4s $ease-in-out-back;
+                }
+
+                a {
+                    color: var(--color-black);
+                }
+            }
+
+            .connexion {
+                color: #1a568c;
+                text-decoration: underline;
+            }
+        }
+
+        .wrapper ul li {
+            margin: 15px;
+        }
+
+        .wrapper ul li a {
+            color: var(--color-black);
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+
+            position: relative;
+        }
+
+        .wrapper ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+
+            transition: transform 0.3s ease;
+
+            padding: 20px;
+
+            z-index: -1;
+        }
+
+        .wrapper ul li a:hover:after {
+            transform: scaleY(1);
+        }
+
+        .wrapper ul li a:hover {
+            color: var(--color-primary);
+        }
+
+        input {
+            display: none;
+        }
     }
-}
-
-.container {
-    position: relative;
-}
-
-.menu_overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    color: #fff;
-    z-index: 100;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.list {
-    height: 40%;
-    width: 40%;
-    position: relative;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.list li {
-    height: 100px;
-    width: 150px;
-    padding: 20px;
 }
