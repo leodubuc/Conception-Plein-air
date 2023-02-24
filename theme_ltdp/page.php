@@ -41,6 +41,7 @@
         <?php elseif ( get_row_layout() == 'bloc_info_text_img' ):  ?> 
             <?php include 'partials/tpl-info-text-img.php';?>
             
+
         <?php elseif ( get_row_layout() == 'bloc_info_list_img' ):  ?> 
             <?php include 'partials/tpl-info-list-img.php';?>    
 
@@ -54,6 +55,10 @@
 
         <?php elseif ( get_row_layout() == 'bloc_links' ):  ?> 
             <?php include 'partials/tpl-bloc-links.php';?>
+            <?php #fini ?>
+
+        <?php elseif ( get_row_layout() == 'bloc_team' ):  ?> 
+            <?php include 'partials/tpl-bloc-team.php';?>
             <?php #fini ?>
 
         <?php endif; ?>
