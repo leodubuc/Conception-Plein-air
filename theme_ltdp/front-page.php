@@ -121,27 +121,32 @@
         src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/blanc.svg"
         alt="Cercle décoratif"
     />
-    <div class="wrapper">
-        <h1 data-scrolly="fromBottom">Le temps d’une pause en quelques chiffres</h1>
-        <div class="numbers" data-scrolly="fromBottom">
-            <div class="proches">
-                <span>405</span>
-                <p>Proches aidants depuis 2003</p>
+    <?php if(have_rows('stastic_statistiques')) : ?>   
+        <?php while (have_rows('stastic_statistiques')) : the_row() ?> 
+            <div class="wrapper">
+                <h1 data-scrolly="fromBottom"><?php the_sub_field('static_stats_titre'); ?></h1>
+                <div class="numbers" data-scrolly="fromBottom">
+
+                    <?php if(have_rows('static_stats_numbers')) : ?>   
+                        <?php while (have_rows('static_stats_numbers')) : the_row() ?> 
+                            <?php get_sub_field('static_stats_stat'); ?>    
+                            
+                                <?php if(have_rows('static_stats_stat')) : ?>   
+                                    <?php while (have_rows('static_stats_stat')) : the_row() ?> 
+                                    <div>
+                                        <span><?php echo get_sub_field('static_stats_numbers'); ?></span> 
+
+                                        <p><?php echo get_sub_field('static_stats_subject'); ?> </p>
+                                    </div>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
             </div>
-            <div class="malades">
-                <span>345</span>
-                <p>Personnes malades accueillies</p>
-            </div>
-            <div class="heures">
-                <span>130 000</span>
-                <p>Heures de répit données</p>
-            </div>
-            <div class="service">
-                <span>55%</span>
-                <p>Le service le plus utilisé!</p>
-            </div>
-        </div>
-    </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </section>
 
 <section class="composante_maladies">
