@@ -7,15 +7,23 @@
         <source src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/video/Mattress Store (SpongeBob Clip).mp4" type="video/mp4" />
     </video>
 
-    <div class="wrapper">
-        <div class="bleu">
-            <p>Dans la maladie, il n'y a pas que la personne atteinte qui souffre.</p>
-        </div>
+    <?php if(have_rows('static_hero')) : ?>   
+        <?php while (have_rows('static_hero')) : the_row() ?> 
 
-        <div class="vert">
-            <p>Un organisme sans but lucratif</p>
-        </div>
-    </div>
+            <div class="wrapper">
+                <div class="bleu">
+                    <?php $texte_bleu_hero = get_sub_field('static_hero_p_blue') ?>
+                    <p data-scrolly="fromLeft"><?php echo ($texte_bleu_hero); ?></p>
+                </div>
+
+                <div class="vert">
+                    <?php $texte_vert_hero = get_sub_field('static_hero_p_green') ?>
+                    <p data-scrolly="fromRight"><?php echo ($texte_vert_hero); ?></p>
+                </div>
+            </div>
+
+        <?php endwhile; ?>
+    <?php endif; ?>  
     <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert style-svg" />
     <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
 </section> 
