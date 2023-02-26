@@ -28,6 +28,7 @@
     <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
 </section> 
 
+
 <section class="services">
     <div class="wrapper">
 
@@ -75,40 +76,42 @@
     </div>
 </section>
 
+
 <section class="etape">
-    <h1 class="wrapper" data-scrolly="fromBottom">Nous sommes là à chaque étape</h1>
-    <div class="alignement">
-        <div class="wrapper">
-        <?php if(have_rows('static_steps')) : ?>   
+    <?php if(have_rows('static_steps')) : ?>   
         <?php while (have_rows('static_steps')) : the_row() ?> 
-            <?php $rows = get_sub_field('static_steps_first'); ?>
-                <?php if( $rows ) {
-                    echo '<ul data-scrolly="fromLeft">';
-                    foreach( $rows as $row ) {
-                        echo '<li>';
-                            echo( $row['static_steps_first_step'] );
-                        echo '</li>';
-                    }
-                    echo '</ul>';
-            } ?>
-        </div>
-
+        <h1 class="wrapper" data-scrolly="fromBottom"><?php echo get_sub_field('static_steps_titre'); ?></h1>
+            <div class="alignement">
+                <div class="wrapper">
+                        <?php $rows = get_sub_field('static_steps_first'); ?>
+                            <?php if( $rows ) {
+                                echo '<ul data-scrolly="fromLeft">';
+                                foreach( $rows as $row ) {
+                                    echo '<li>';
+                                        echo( $row['static_steps_first_step'] );
+                                    echo '</li>';
+                                }
+                                echo '</ul>';
+                        } ?>   
+                </div>        
+        
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/etape.png" alt="ligne pour les étapes" />
+                
+                <div class="wrapper">
+                        <?php $rows = get_sub_field('static_steps_last'); ?>
+                            <?php if( $rows ) {
+                                echo '<ul data-scrolly="fromRight">';
+                                foreach( $rows as $row ) {
+                                    echo '<li>';
+                                        echo( $row['static_steps_last_step'] );
+                                    echo '</li>';
+                                }
+                                echo '</ul>';
+                        } ?>
+                </div>
+            </div>
         <?php endwhile; ?>
-        <?php endif; ?>
-
-        <?php if( get_sub_field('static_steps_image') ): ?>
-                <img src="<?php the_sub_field('static_steps_image'); ?>" />
-        <?php endif; ?>
-
-        <div class="wrapper">
-            <ul data-scrolly="fromRight">
-                <li>Épuisement</li>
-                <li>Soins paliatifs</li>
-                <li>Le décès</li>
-                <li>Le deuil</li>
-            </ul>
-        </div>
-    </div>
+    <?php endif; ?>
 </section>
 
 <section class="composante_chiffres">
