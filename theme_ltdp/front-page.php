@@ -7,18 +7,27 @@
         <source src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/video/Mattress Store (SpongeBob Clip).mp4" type="video/mp4" />
     </video>
 
-    <div class="wrapper">
-        <div class="bleu">
-            <p>Dans la maladie, il n'y a pas que la personne atteinte qui souffre.</p>
-        </div>
+    <?php if(have_rows('static_hero')) : ?>   
+        <?php while (have_rows('static_hero')) : the_row() ?> 
 
-        <div class="vert">
-            <p>Un organisme sans but lucratif</p>
-        </div>
-    </div>
+            <div class="wrapper">
+                <div class="bleu">
+                    <?php $texte_bleu_hero = get_sub_field('static_hero_p_blue') ?>
+                    <p data-scrolly="fromLeft"><?php echo ($texte_bleu_hero); ?></p>
+                </div>
+
+                <div class="vert">
+                    <?php $texte_vert_hero = get_sub_field('static_hero_p_green') ?>
+                    <p data-scrolly="fromRight"><?php echo ($texte_vert_hero); ?></p>
+                </div>
+            </div>
+
+        <?php endwhile; ?>
+    <?php endif; ?>  
     <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert style-svg" />
     <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
 </section> 
+
 
 <section class="services">
     <div class="wrapper">
@@ -67,40 +76,42 @@
     </div>
 </section>
 
+
 <section class="etape">
-    <h1 class="wrapper" data-scrolly="fromBottom">Nous sommes là à chaque étape</h1>
-    <div class="alignement">
-        <div class="wrapper">
-        <?php if(have_rows('static_steps')) : ?>   
+    <?php if(have_rows('static_steps')) : ?>   
         <?php while (have_rows('static_steps')) : the_row() ?> 
-            <?php $rows = get_sub_field('static_steps_first'); ?>
-                <?php if( $rows ) {
-                    echo '<ul data-scrolly="fromLeft">';
-                    foreach( $rows as $row ) {
-                        echo '<li>';
-                            echo( $row['static_steps_first_step'] );
-                        echo '</li>';
-                    }
-                    echo '</ul>';
-            } ?>
-        </div>
-
+        <h1 class="wrapper" data-scrolly="fromBottom"><?php echo get_sub_field('static_steps_titre'); ?></h1>
+            <div class="alignement">
+                <div class="wrapper">
+                        <?php $rows = get_sub_field('static_steps_first'); ?>
+                            <?php if( $rows ) {
+                                echo '<ul data-scrolly="fromLeft">';
+                                foreach( $rows as $row ) {
+                                    echo '<li>';
+                                        echo( $row['static_steps_first_step'] );
+                                    echo '</li>';
+                                }
+                                echo '</ul>';
+                        } ?>   
+                </div>        
+        
+                <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/etape.png" alt="ligne pour les étapes" />
+                
+                <div class="wrapper">
+                        <?php $rows = get_sub_field('static_steps_last'); ?>
+                            <?php if( $rows ) {
+                                echo '<ul data-scrolly="fromRight">';
+                                foreach( $rows as $row ) {
+                                    echo '<li>';
+                                        echo( $row['static_steps_last_step'] );
+                                    echo '</li>';
+                                }
+                                echo '</ul>';
+                        } ?>
+                </div>
+            </div>
         <?php endwhile; ?>
-        <?php endif; ?>
-
-        <?php if( get_sub_field('static_steps_image') ): ?>
-                <img src="<?php the_sub_field('static_steps_image'); ?>" />
-        <?php endif; ?>
-
-        <div class="wrapper">
-            <ul data-scrolly="fromRight">
-                <li>Épuisement</li>
-                <li>Soins paliatifs</li>
-                <li>Le décès</li>
-                <li>Le deuil</li>
-            </ul>
-        </div>
-    </div>
+    <?php endif; ?>
 </section>
 
 <section class="composante_chiffres">
@@ -110,27 +121,32 @@
         src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/blanc.svg"
         alt="Cercle décoratif"
     />
-    <div class="wrapper">
-        <h1 data-scrolly="fromBottom">Le temps d’une pause en quelques chiffres</h1>
-        <div class="numbers" data-scrolly="fromBottom">
-            <div class="proches">
-                <span>405</span>
-                <p>Proches aidants depuis 2003</p>
+    <?php if(have_rows('stastic_statistiques')) : ?>   
+        <?php while (have_rows('stastic_statistiques')) : the_row() ?> 
+            <div class="wrapper">
+                <h1 data-scrolly="fromBottom"><?php the_sub_field('static_stats_titre'); ?></h1>
+                <div class="numbers" data-scrolly="fromBottom">
+
+                    <?php if(have_rows('static_stats_numbers')) : ?>   
+                        <?php while (have_rows('static_stats_numbers')) : the_row() ?> 
+                            <?php get_sub_field('static_stats_stat'); ?>    
+                            
+                                <?php if(have_rows('static_stats_stat')) : ?>   
+                                    <?php while (have_rows('static_stats_stat')) : the_row() ?> 
+                                    <div>
+                                        <span><?php echo get_sub_field('static_stats_numbers'); ?></span> 
+
+                                        <p><?php echo get_sub_field('static_stats_subject'); ?> </p>
+                                    </div>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
             </div>
-            <div class="malades">
-                <span>345</span>
-                <p>Personnes malades accueillies</p>
-            </div>
-            <div class="heures">
-                <span>130 000</span>
-                <p>Heures de répit données</p>
-            </div>
-            <div class="service">
-                <span>55%</span>
-                <p>Le service le plus utilisé!</p>
-            </div>
-        </div>
-    </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </section>
 
 <section class="composante_maladies">
