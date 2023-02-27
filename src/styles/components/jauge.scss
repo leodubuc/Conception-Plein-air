@@ -11,56 +11,61 @@
     background-size: cover;
     margin-top: -110px;
     position: relative;
+
+    .infojauge {
+        position: relative;
+    }
+
     .jaugetext {
         display: flex;
         justify-content: space-between;
 
-        .txt1 {
+        .txt:nth-child(1) {
             position: absolute;
-            top: 70%;
+            top: 50%;
             left: 0;
             p {
                 width: 40%;
             }
         }
-        .txt2 {
+        .txt:nth-child(2) {
             position: absolute;
-            top: 50%;
+            top: 25%;
             left: 15%;
             p {
                 width: 30%;
             }
         }
-        .txt3 {
+        .txt:nth-child(3) {
             position: absolute;
-            top: 40%;
-            left: 35%;
+            top: 10%;
+            left: 32%;
             p {
                 width: 40%;
             }
         }
-        .txt4 {
+        .txt:nth-child(4) {
             position: absolute;
-            top: 30%;
+            top: 8%;
             left: 53%;
             p {
                 width: 55%;
             }
         }
-        .txt5 {
+        .txt:nth-child(5) {
             position: absolute;
-            top: 30%;
-            left: 70%;
+            top: 6%;
+            left: 73%;
             p {
-                width: 45%;
+                width: 50%;
             }
         }
-        .txt6 {
+        .txt:nth-child(6) {
             position: absolute;
-            top: 40%;
-            left: 88%;
+            top: 32%;
+            left: 91%;
             p {
-                width: 60%;
+                width: 100%;
             }
         }
 
@@ -107,6 +112,7 @@
         display: flex;
         justify-content: center;
         margin: 0 auto -20px auto;
+        width: 100%;
     }
 
     @media only screen and (max-width: 1156px) {
@@ -125,7 +131,7 @@
             display: flex;
             justify-content: space-between;
 
-            .txt1 {
+            .txt:nth-child(1) {
                 position: absolute;
                 top: 70%;
                 left: 5%;
@@ -133,7 +139,7 @@
                     width: 30%;
                 }
             }
-            .txt2 {
+            .txt:nth-child(2) {
                 position: absolute;
                 top: 60%;
                 left: 20%;
@@ -141,7 +147,7 @@
                     width: 20%;
                 }
             }
-            .txt3 {
+            .txt:nth-child(3) {
                 position: absolute;
                 top: 50%;
                 left: 35%;
@@ -149,7 +155,7 @@
                     width: 30%;
                 }
             }
-            .txt4 {
+            .txt:nth-child(4) {
                 position: absolute;
                 top: 40%;
                 left: 53%;
@@ -157,7 +163,7 @@
                     width: 45%;
                 }
             }
-            .txt5 {
+            .txt:nth-child(5) {
                 position: absolute;
                 top: 40%;
                 left: 70%;
@@ -165,7 +171,7 @@
                     width: 35%;
                 }
             }
-            .txt6 {
+            .txt:nth-child(6) {
                 position: absolute;
                 top: 50%;
                 left: 88%;
@@ -221,9 +227,6 @@
     }
 
     @media only screen and (max-width: 1056px) {
-        .wrapper {
-        }
-
         h1 {
             padding: 150px 0 1600px 0;
         }
@@ -234,7 +237,7 @@
             display: flex;
             justify-content: space-between;
 
-            .txt1 {
+            &:nth-child(1) {
                 position: absolute;
                 top: 20%;
                 left: 15%;
@@ -242,7 +245,7 @@
                     width: 50%;
                 }
             }
-            .txt2 {
+            &:nth-child(2) {
                 position: absolute;
                 top: 30%;
                 left: 15%;
@@ -250,7 +253,7 @@
                     width: 50%;
                 }
             }
-            .txt3 {
+            &:nth-child(3) {
                 position: absolute;
                 top: 40%;
                 left: 20%;
@@ -258,7 +261,7 @@
                     width: 50%;
                 }
             }
-            .txt4 {
+            &:nth-child(4) {
                 position: absolute;
                 top: 50%;
                 left: 25%;
@@ -266,7 +269,7 @@
                     width: 60%;
                 }
             }
-            .txt5 {
+            &:nth-child(5) {
                 position: absolute;
                 top: 60%;
                 left: 30%;
@@ -274,7 +277,7 @@
                     width: 50%;
                 }
             }
-            .txt6 {
+            &:nth-child(6) {
                 position: absolute;
                 top: 70%;
                 left: 35%;
@@ -331,9 +334,6 @@
     }
 
     @media only screen and (max-width: 500px) {
-        .wrapper {
-        }
-
         h1 {
             padding: 150px 0 1600px 0;
         }
@@ -344,7 +344,7 @@
             display: flex;
             justify-content: space-between;
 
-            .txt1 {
+            &:nth-child(1) {
                 position: absolute;
                 top: 20%;
                 left: 15%;
@@ -352,7 +352,7 @@
                     width: 50%;
                 }
             }
-            .txt2 {
+            &:nth-child(2) {
                 position: absolute;
                 top: 30%;
                 left: 15%;
@@ -360,7 +360,7 @@
                     width: 50%;
                 }
             }
-            .txt3 {
+            &:nth-child(3) {
                 position: absolute;
                 top: 40%;
                 left: 20%;
@@ -368,7 +368,7 @@
                     width: 50%;
                 }
             }
-            .txt4 {
+            &:nth-child(4) {
                 position: absolute;
                 top: 50%;
                 left: 25%;
@@ -376,7 +376,7 @@
                     width: 60%;
                 }
             }
-            .txt5 {
+            &:nth-child(5) {
                 position: absolute;
                 top: 60%;
                 left: 30%;
@@ -384,7 +384,7 @@
                     width: 70%;
                 }
             }
-            .txt6 {
+            &:nth-child(6) {
                 position: absolute;
                 top: 70%;
                 left: 35%;
