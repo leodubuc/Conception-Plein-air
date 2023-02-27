@@ -30,42 +30,42 @@
         }
         .txt:nth-child(2) {
             position: absolute;
-            top: 42%;
-            left: 17%;
+            top: 25%;
+            left: 15%;
             p {
                 width: 30%;
             }
         }
         .txt:nth-child(3) {
             position: absolute;
-            top: 34%;
+            top: 10%;
             left: 32%;
             p {
                 width: 40%;
             }
         }
-        div:nth-child(4) {
+        .txt:nth-child(4) {
             position: absolute;
-            top: 30%;
+            top: 8%;
             left: 53%;
             p {
                 width: 55%;
             }
         }
-        div:nth-child(5) {
+        .txt:nth-child(5) {
             position: absolute;
-            top: 30%;
-            left: 70%;
+            top: 6%;
+            left: 73%;
             p {
-                width: 45%;
+                width: 50%;
             }
         }
-        div:nth-child(6) {
+        .txt:nth-child(6) {
             position: absolute;
-            top: 40%;
-            left: 88%;
+            top: 32%;
+            left: 91%;
             p {
-                width: 60%;
+                width: 100%;
             }
         }
 
@@ -131,7 +131,7 @@
             display: flex;
             justify-content: space-between;
 
-            &:nth-child(1) {
+            .txt:nth-child(1) {
                 position: absolute;
                 top: 70%;
                 left: 5%;
@@ -139,7 +139,7 @@
                     width: 30%;
                 }
             }
-            &:nth-child(2) {
+            .txt:nth-child(2) {
                 position: absolute;
                 top: 60%;
                 left: 20%;
@@ -147,7 +147,7 @@
                     width: 20%;
                 }
             }
-            &:nth-child(3) {
+            .txt:nth-child(3) {
                 position: absolute;
                 top: 50%;
                 left: 35%;
@@ -155,7 +155,7 @@
                     width: 30%;
                 }
             }
-            &:nth-child(4) {
+            .txt:nth-child(4) {
                 position: absolute;
                 top: 40%;
                 left: 53%;
@@ -163,7 +163,7 @@
                     width: 45%;
                 }
             }
-            &:nth-child(5) {
+            .txt:nth-child(5) {
                 position: absolute;
                 top: 40%;
                 left: 70%;
@@ -171,7 +171,7 @@
                     width: 35%;
                 }
             }
-            &:nth-child(6) {
+            .txt:nth-child(6) {
                 position: absolute;
                 top: 50%;
                 left: 88%;
@@ -227,9 +227,6 @@
     }
 
     @media only screen and (max-width: 1056px) {
-        .wrapper {
-        }
-
         h1 {
             padding: 150px 0 1600px 0;
         }
@@ -337,9 +334,6 @@
     }
 
     @media only screen and (max-width: 500px) {
-        .wrapper {
-        }
-
         h1 {
             padding: 150px 0 1600px 0;
         }
