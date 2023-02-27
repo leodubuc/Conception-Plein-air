@@ -16,8 +16,9 @@
 }
 
 .cards-4colonnes {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /*display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));*/
+    display: flex;
     gap: 20px;
 
     .card {
