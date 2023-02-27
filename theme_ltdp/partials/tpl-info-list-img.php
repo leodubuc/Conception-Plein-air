@@ -1,5 +1,6 @@
 <section class="composante_texte_image_2">
     <div class="wrapper">
+        <div class="content">
             <div>
                 <h2 data-scrolly="fromLeft"><?php the_sub_field('bloc_info_list_img_titre'); ?></h2>
                 
@@ -26,10 +27,9 @@
                     <?php endif; ?>
             </div>
 
-            <?php 
-            $image = get_sub_field('bloc_info_list_img_image');
-            if( $image ): ?>
-                <img data-scrolly="fromBottom" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php if( get_sub_field('bloc_info_list_img_image') ): ?>
+                <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_info_list_img_image'); ?>" />
             <?php endif; ?>
+        </div>
     </div>
 </section>

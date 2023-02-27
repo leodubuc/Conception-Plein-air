@@ -17,7 +17,7 @@
             background: white;
             z-index: 10;
 
-            clip-path: circle(25px at calc(100% - 45px) 45px);
+            clip-path: circle(25px at calc(100% - 45px) 95px);
 
             transition: all 0.3s ease-in-out;
         }
@@ -29,7 +29,7 @@
         .menu-btn {
             position: fixed;
             right: 20px;
-            top: 20px;
+            top: 70px;
             z-index: 12;
             text-align: center;
             line-height: 50px;
