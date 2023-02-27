@@ -14,58 +14,58 @@
 
     <body data-component="Scrolly">
 
-<section class="header" data-component="Header">
-    <div class="wrapper">
-        <a href="<?php bloginfo('url'); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="">
-        </a>
-    
-        <div>
-            <nav class="top_bar">
-                <ul>
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#" class="connexion">Se connecter</a></li>
-                    <li class="button_vert"><a href="#">Devenir membre</a></li>
-                    <li class="button_bleu"><a href="#">Faire une référence</a></li>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul>
-                    <?php wp_nav_menu(array(
-                        'theme_location' => 'menu_principale',
-                        'container' => 'ul',
-                        'container_class' => 'nav-primary__item',
-                    )); ?>
-                </ul>
-            </nav>
-        </div>
-
-        <button class="header__toggle js-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-          <div class="mobile">
-            <nav class="top_bar">
-                <ul>
-                    <li><a href="#" class="connexion">Se connecter</a></li>
-                    <li class="button_vert"><a href="#">Devenir membre</a></li>
-                    <li class="button_bleu"><a href="#">Faire une référence</a></li>
-                </ul>
-            </nav>
-
-            <nav>
-                <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Nos services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Fiches pratiques</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
-            </nav>
+    <div class="content">
+        <header class="header" data-component="Header">
+            <div class="wrapper">
+                <a href="<?php bloginfo('url'); ?>">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="">
+                </a>
             
-          </div>
+                <div class="nav_content">
+                    <nav class="top_bar">
+                        <ul>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#" class="connexion">Se connecter</a></li>
+                            <li class="button_vert"><a href="#">Devenir membre</a></li>
+                            <li class="button_bleu"><a href="#">Faire une référence</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav>
+                        <ul>
+                            <?php wp_nav_menu(array(
+                                'theme_location' => 'menu_principale',
+                                'container' => 'ul',
+                                'container_class' => 'nav-primary__item',
+                            )); ?>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
     </div>
-</section>
+
+<div class="container">
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+        <a class="logo" href="<?php bloginfo('url'); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="">
+        </a>
+        
+        
+        <ul class="liste_droite">
+            <li><a href="#" class="connexion">Se connecter</a></li>
+            <li class="button_vert"><a href="#">Devenir membre</a></li>
+            <li class="button_bleu"><a href="#">Faire une référence</a></li>
+        </ul>
+        
+        <ul class="liste_gauche"> 
+            <?php wp_nav_menu(array(
+                'theme_location' => 'menu_principale',
+                'container' => 'ul',
+                'container_class' => 'nav-primary__item',
+            )); ?>
+        </ul>
+    </div>
+</div>
