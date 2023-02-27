@@ -34,18 +34,55 @@
             <?php $titre_contact = get_sub_field('footer_contact_titre') ?>
             <span><?php echo ($titre_contact); ?></span>
                            
-                <div>
-                    <div class="list-contact">
-                        <?php if(have_rows('footer_contact_list')) : ?>   
-                            <?php while (have_rows('footer_contact_list')) : the_row() ?>   
-                            <?php $image = get_sub_field('footer_contact_list_icon'); ?>
-                                    <?php if ($image) : ?>
-                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt' ]; ?>">
-                                    <?php endif ?>
-                                <a href="<?php echo get_sub_field('footer_contact_list_link')?>" target="_blank"></a>
-                            <?php endwhile; ?>
-                        <?php endif; ?> 
+                <div>  
+                    <div class="list-contact phone">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-cell"></use>
+                                </svg>
+                                        
+                                <?php 
+                                $link = get_sub_field('footer_contact_phone');
+                                if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : '_self';
+                                ?>
+                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                <?php endif; ?>           
+                            </div> 
+                            
+                            <div class="list-contact mail">
+                            <svg class="icon">
+                                    <use xlink:href="#icon-email"></use>
+                                </svg>
+                                        
+                                <?php 
+                                $link = get_sub_field('footer_contact_email');
+                                if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : '_self';
+                                ?>
+                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="list-contact map">
+                            <svg class="icon">
+                                    <use xlink:href="#icon-mao"></use>
+                                </svg>
+                                        
+                                <?php 
+                                $link = get_sub_field('footer_contact_adress');
+                                if( $link ): 
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : '_blank';
+                                ?>
+                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                <?php endif; ?>
                     </div>
+                            
                 </div>
             </div>
         <?php endwhile; ?>
