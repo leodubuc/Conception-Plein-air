@@ -5,11 +5,10 @@
 
                     <?php if( have_rows('bloc_team_members') ): ?>
                         <?php while( have_rows('bloc_team_members') ) : the_row(); ?>
-                        <div class="staff border1" data-scrolly="fromRight">
-                            <?php 
-                            $image = get_sub_field('bloc_team_member_image');
-                            if( $image ): ?>
-                                <img data-scrolly="fromBottom" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                        <div class="staff border1" data-scrolly="fromRight"></div>
+
+                            <?php if( get_sub_field('bloc_team_member_image') ): ?>
+                                <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_team_member_image'); ?>" />
                             <?php endif; ?>
 
                             <?php $sub_name_value = get_sub_field('bloc_team_member_name'); ?>
