@@ -61,6 +61,10 @@
             <?php include 'partials/tpl-bloc-team.php';?>
             <?php #fini ?>
 
+        <?php elseif ( get_row_layout() == 'bloc_fiche_pratique' ):  ?> 
+            <?php include 'partials/tpl-fiches-pratiques.php';?>
+            <?php #fini ?>
+
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
