@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/styles/main.css">
 
         <script src="<?php bloginfo('template_url') ?>/scripts/main.js" defer></script>
+        <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
     </head>
 
     <body data-component="Scrolly">

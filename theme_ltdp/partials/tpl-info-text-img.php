@@ -16,10 +16,8 @@
                 <?php endif; ?>
         </div>
 
-        <?php 
-        $image = get_sub_field('bloc_info_text_img_image');
-        if( $image ): ?>
-                <img data-scrolly="fromBottom" src="<?php echo esc_url($image['sizes']['thumbnail']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php if( get_sub_field('bloc_info_text_img_image') ): ?>
+                <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_info_text_img_image'); ?>" />
         <?php endif; ?>
         
     </div>
