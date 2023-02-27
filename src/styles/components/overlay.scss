@@ -15,10 +15,10 @@
             height: 100%;
             width: 100%;
             background: white;
-
             z-index: 10;
 
             clip-path: circle(25px at calc(100% - 45px) 45px);
+
             transition: all 0.3s ease-in-out;
         }
 
@@ -39,6 +39,8 @@
             color: #25a18e;
             cursor: pointer;
             transition: all 0.3s ease;
+
+            box-shadow: 2px 2px 5px #c3c3c3;
         }
 
         #active:checked ~ .menu-btn {
@@ -60,6 +62,16 @@
             text-align: center;
 
             padding: 0;
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            @media only screen and (max-width: 800px) {
+                top: 75%;
+                left: 50%;
+            }
         }
 
         .wrapper .liste_droite {
@@ -72,6 +84,11 @@
             text-align: center;
 
             padding: 0;
+
+            @media only screen and (max-width: 800px) {
+                top: 25%;
+                left: 50%;
+            }
 
             .button_bleu {
                 background-color: #1976a6;
@@ -158,6 +175,11 @@
 
         input {
             display: none;
+        }
+
+        .logo {
+            width: 50%;
+            height: 50%;
         }
     }
 }
