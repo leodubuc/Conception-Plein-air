@@ -30,7 +30,7 @@
                                         <?php while( have_rows('fiches_pratiques_right') ) : the_row(); ?> 
                                             <li> 
                                                 <?php 
-                                                $link = get_sub_field('fiche_pratique_download_right');
+                                                $link = get_sub_field('fiches_pratiques_download_right');
                                                 if( $link ): 
                                                     $link_url = $link['url'];
                                                     $link_title = $link['title'];

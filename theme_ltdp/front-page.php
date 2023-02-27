@@ -183,7 +183,7 @@
                             alt="Dessin de cercle vert avec traits"
                         />
                         <?php 
-                        $link = get_sub_field('bloc_contact_email');
+                        $link = get_sub_field('static_maladie_button');
                         if( $link ): 
                         $link_url = $link['url'];
                         $link_title = $link['title'];
