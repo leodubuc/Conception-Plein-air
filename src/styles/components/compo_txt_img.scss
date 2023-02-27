@@ -85,7 +85,6 @@
 
         .content {
             display: flex;
-            flex-direction: column;
 
             h2 {
                 margin: 0;
@@ -137,6 +136,8 @@
         img {
             width: 100%;
             object-fit: cover;
+
+            margin-left: 20px;
         }
     }
 
