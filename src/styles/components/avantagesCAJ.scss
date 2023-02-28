@@ -7,10 +7,6 @@
 
         @media only screen and (max-width: 1500px) {
             flex-direction: column;
-
-            .card {
-                width: 100%;
-            }
         }
 
         .card {
@@ -23,6 +19,9 @@
                 width: 65%;
                 margin: 0 auto;
             }
+            @media only screen and (max-width: 1013px) {
+                width: 100%;
+            }
 
             background-color: #dff2e4;
             border-radius: 50px;
@@ -32,11 +31,27 @@
                 align-items: center;
                 gap: 45px;
 
+                @media only screen and (max-width: 1160px) {
+                    flex-direction: column;
+                    gap: 0;
+                    padding: 20px 0;
+                }
+
                 h3 {
                     color: var(--color-deep-green);
                     text-transform: uppercase;
                     text-align: left;
                     font-size: 2.5em;
+
+                    @media only screen and (max-width: 1160px) {
+                        margin: 0;
+                    }
+                }
+
+                @media only screen and (max-width: 700px) {
+                    img {
+                        width: 60%;
+                    }
                 }
             }
 
@@ -46,6 +61,10 @@
                 padding: 8px 35px;
                 outline: 5px solid var(--color-deep-green);
                 outline-offset: 6px;
+
+                @media only screen and (max-width: 700px) {
+                    padding: 8px;
+                }
 
                 ul {
                     margin: 0;
