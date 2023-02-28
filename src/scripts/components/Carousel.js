@@ -13,7 +13,7 @@ export default class Carousel {
     this.defaultOptions = {
       slidesPerView: 1,
       autoplay: {
-        delay: 4000,
+        delay: 3000,
       },
       loop: true,
       pagination: {
