@@ -27,7 +27,37 @@
             p {
                 width: 40%;
             }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 45%;
+                left: 15%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 45%;
+                left: 15%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                top: 45%;
+                left: 3%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
+
         .txt:nth-child(2) {
             position: absolute;
             top: 25%;
@@ -35,7 +65,28 @@
             p {
                 width: 30%;
             }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 29%;
+                left: 25%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                top: 27%;
+                left: 18%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
+
         .txt:nth-child(3) {
             position: absolute;
             top: 10%;
@@ -43,7 +94,27 @@
             p {
                 width: 40%;
             }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 12%;
+                left: 40%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                left: 36%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
+
         .txt:nth-child(4) {
             position: absolute;
             top: 8%;
@@ -51,7 +122,23 @@
             p {
                 width: 55%;
             }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 8%;
+                left: 56%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
+
         .txt:nth-child(5) {
             position: absolute;
             top: 6%;
@@ -59,13 +146,53 @@
             p {
                 width: 50%;
             }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+
+                top: 10%;
+                left: 73%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                top: 5%;
+                left: 74%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
+
         .txt:nth-child(6) {
             position: absolute;
             top: 32%;
             left: 91%;
             p {
                 width: 100%;
+            }
+
+            @media only screen and (max-width: 1600px) {
+                p {
+                    font-size: 1.2rem;
+                }
+                top: 42%;
+                left: 84%;
+            }
+
+            @media only screen and (max-width: 1350px) {
+                top: 20%;
+                left: 90%;
+            }
+
+            @media only screen and (max-width: 1245px) {
+                p {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -113,6 +240,14 @@
         justify-content: center;
         margin: 0 auto -20px auto;
         width: 100%;
+
+        @media only screen and (max-width: 1600px) {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 1350px) {
+            width: 100%;
+        }
     }
 
     @media only screen and (max-width: 1156px) {
@@ -237,7 +372,7 @@
             display: flex;
             justify-content: space-between;
 
-            &:nth-child(1) {
+            .txt:nth-child(1) {
                 position: absolute;
                 top: 20%;
                 left: 15%;
@@ -245,7 +380,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(2) {
+            .txt:nth-child(2) {
                 position: absolute;
                 top: 30%;
                 left: 15%;
@@ -253,7 +388,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(3) {
+            .txt:nth-child(3) {
                 position: absolute;
                 top: 40%;
                 left: 20%;
@@ -261,7 +396,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(4) {
+            .txt:nth-child(4) {
                 position: absolute;
                 top: 50%;
                 left: 25%;
@@ -269,7 +404,7 @@
                     width: 60%;
                 }
             }
-            &:nth-child(5) {
+            .txt:nth-child(5) {
                 position: absolute;
                 top: 60%;
                 left: 30%;
@@ -277,7 +412,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(6) {
+            .txt:nth-child(6) {
                 position: absolute;
                 top: 70%;
                 left: 35%;
@@ -344,7 +479,7 @@
             display: flex;
             justify-content: space-between;
 
-            &:nth-child(1) {
+            .txt:nth-child(1) {
                 position: absolute;
                 top: 20%;
                 left: 15%;
