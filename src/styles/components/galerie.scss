@@ -1,5 +1,7 @@
 .galerie {
     margin: 180px 0;
+    background: url(../assets/background/galerie_bg.svg) no-repeat;
+    background-size: cover;
 
     @media only screen and (max-width: 699px) {
         margin: 80px 0;
