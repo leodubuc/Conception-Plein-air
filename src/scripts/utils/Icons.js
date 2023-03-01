@@ -1,7 +1,10 @@
 export default class Icons {
   static load(path) {
     window.iconsPath = window.iconsPath || '';
-    path = path || iconsPath + 'assets/icons.svg';
+    path =
+      path ||
+      iconsPath +
+        'https://mhebert.dectim.net/pfe/ltdp/wp-content/themes/theme_ltdp/assets/icons.svg';
     fetch(path)
       .then((res) => {
         if (res.ok) {

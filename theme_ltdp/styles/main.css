@@ -1224,8 +1224,6 @@ button.swiper-pagination-bullet {
   justify-content: center;
 }
 .services .wrapper .grid a svg {
-  height: 25%;
-  width: 25%;
   color: #fff;
 }
 .services .wrapper .grid a .fond {
@@ -1918,6 +1916,9 @@ footer .wrapper .partenaires img {
   .composante_service .wrapper .content .liste ul li {
     padding: 20px 0 20px 80px;
   }
+  .composante_service .wrapper .content img {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .composante_service {
@@ -1928,6 +1929,9 @@ footer .wrapper .partenaires img {
   }
   .composante_service .wrapper .content .liste ul span {
     font-size: 14px;
+  }
+  .composante_service .wrapper .content img {
+    width: 75%;
   }
 }
 .etape {
@@ -2178,17 +2182,17 @@ footer .wrapper .partenaires img {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.composante_texte_image_1 .wrapper .content {
+.composante_texte_image_1 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.composante_texte_image_1 .wrapper .content h2 {
+.composante_texte_image_1 .content h2 {
   margin: 0;
   padding-bottom: 50px;
   text-align: left;
 }
-.composante_texte_image_1 .wrapper .content a {
+.composante_texte_image_1 .content a {
   display: inline-block;
   color: var(--color-black);
   font-weight: 500;
@@ -2200,25 +2204,25 @@ footer .wrapper .partenaires img {
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @media only screen and (min-width: 1080px) {
-  .composante_texte_image_1 .wrapper .content a {
+  .composante_texte_image_1 .content a {
     align-self: start;
   }
 }
-.composante_texte_image_1 .wrapper .content a:hover {
+.composante_texte_image_1 .content a:hover {
   cursor: pointer;
   transform: translateX(4px) translateY(7px);
   filter: none;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 @media only screen and (max-width: 1080px) {
-  .composante_texte_image_1 .wrapper .content {
+  .composante_texte_image_1 .content {
     align-items: center;
   }
-  .composante_texte_image_1 .wrapper .content h2,
-  .composante_texte_image_1 .wrapper .content p {
+  .composante_texte_image_1 .content h2,
+  .composante_texte_image_1 .content p {
     text-align: center;
   }
-  .composante_texte_image_1 .wrapper .content a {
+  .composante_texte_image_1 .content a {
     align-self: center;
   }
 }
@@ -2340,35 +2344,33 @@ footer .wrapper .partenaires img {
 }
 .comp_video {
   position: relative;
-  background: url(../assets/background/nosateliers.svg);
+  background: url(../assets/background/nosateliers.svg) no-repeat;
   background-size: cover;
-  margin: -150px 0 0 0;
+  padding: 150px 0 150px 0;
 }
 .comp_video .wrapper h1 {
-  padding: 200px 0 100px 0;
+  margin-bottom: 50px;
 }
 .comp_video .wrapper iframe {
   display: flex;
   margin: auto;
   size: 90%;
-  padding-bottom: 100px;
 }
 @media only screen and (max-width: 1400px) {
   .comp_video {
     margin: -80px 0 0 0;
   }
+  .comp_video .wrapper h1 {
+    margin-bottom: 30px;
+  }
   .comp_video .wrapper iframe {
     margin: auto;
     width: 80%;
-    padding-bottom: 100px;
   }
 }
 @media only screen and (max-width: 500px) {
   .comp_video {
-    margin: -80px 0 0 0;
-  }
-  .comp_video .wrapper h1 {
-    padding: 100px 0 100px 0;
+    padding: 75px 0 75px 0;
   }
 }
 .comp_grille {
@@ -2744,6 +2746,35 @@ footer .wrapper .partenaires img {
 .jauge .jaugetext .txt:nth-child(1) p {
   width: 40%;
 }
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(1) {
+    top: 45%;
+    left: 15%;
+  }
+  .jauge .jaugetext .txt:nth-child(1) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(1) {
+    top: 45%;
+    left: 15%;
+  }
+  .jauge .jaugetext .txt:nth-child(1) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(1) {
+    top: 45%;
+    left: 3%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(1) p {
+    font-size: 1rem;
+  }
+}
 .jauge .jaugetext .txt:nth-child(2) {
   position: absolute;
   top: 25%;
@@ -2751,6 +2782,26 @@ footer .wrapper .partenaires img {
 }
 .jauge .jaugetext .txt:nth-child(2) p {
   width: 30%;
+}
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(2) {
+    top: 29%;
+    left: 25%;
+  }
+  .jauge .jaugetext .txt:nth-child(2) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(2) {
+    top: 27%;
+    left: 18%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(2) p {
+    font-size: 1rem;
+  }
 }
 .jauge .jaugetext .txt:nth-child(3) {
   position: absolute;
@@ -2760,6 +2811,25 @@ footer .wrapper .partenaires img {
 .jauge .jaugetext .txt:nth-child(3) p {
   width: 40%;
 }
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(3) {
+    top: 12%;
+    left: 40%;
+  }
+  .jauge .jaugetext .txt:nth-child(3) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(3) {
+    left: 36%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(3) p {
+    font-size: 1rem;
+  }
+}
 .jauge .jaugetext .txt:nth-child(4) {
   position: absolute;
   top: 8%;
@@ -2767,6 +2837,20 @@ footer .wrapper .partenaires img {
 }
 .jauge .jaugetext .txt:nth-child(4) p {
   width: 55%;
+}
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(4) {
+    top: 8%;
+    left: 56%;
+  }
+  .jauge .jaugetext .txt:nth-child(4) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(4) p {
+    font-size: 1rem;
+  }
 }
 .jauge .jaugetext .txt:nth-child(5) {
   position: absolute;
@@ -2776,6 +2860,26 @@ footer .wrapper .partenaires img {
 .jauge .jaugetext .txt:nth-child(5) p {
   width: 50%;
 }
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(5) {
+    top: 10%;
+    left: 73%;
+  }
+  .jauge .jaugetext .txt:nth-child(5) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(5) {
+    top: 5%;
+    left: 74%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(5) p {
+    font-size: 1rem;
+  }
+}
 .jauge .jaugetext .txt:nth-child(6) {
   position: absolute;
   top: 32%;
@@ -2783,6 +2887,26 @@ footer .wrapper .partenaires img {
 }
 .jauge .jaugetext .txt:nth-child(6) p {
   width: 100%;
+}
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugetext .txt:nth-child(6) {
+    top: 42%;
+    left: 84%;
+  }
+  .jauge .jaugetext .txt:nth-child(6) p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugetext .txt:nth-child(6) {
+    top: 20%;
+    left: 90%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .jauge .jaugetext .txt:nth-child(6) p {
+    font-size: 1rem;
+  }
 }
 .jauge .jaugetext div {
   display: flex;
@@ -2825,6 +2949,16 @@ footer .wrapper .partenaires img {
   justify-content: center;
   margin: 0 auto -20px auto;
   width: 100%;
+}
+@media only screen and (max-width: 1600px) {
+  .jauge .jaugeimg {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .jauge .jaugeimg {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1156px) {
   .jauge {
@@ -2944,52 +3078,52 @@ footer .wrapper .partenaires img {
     display: flex;
     justify-content: space-between;
   }
-  .jauge .jaugetext:nth-child(1) {
+  .jauge .jaugetext .txt:nth-child(1) {
     position: absolute;
     top: 20%;
     left: 15%;
   }
-  .jauge .jaugetext:nth-child(1) p {
+  .jauge .jaugetext .txt:nth-child(1) p {
     width: 50%;
   }
-  .jauge .jaugetext:nth-child(2) {
+  .jauge .jaugetext .txt:nth-child(2) {
     position: absolute;
     top: 30%;
     left: 15%;
   }
-  .jauge .jaugetext:nth-child(2) p {
+  .jauge .jaugetext .txt:nth-child(2) p {
     width: 50%;
   }
-  .jauge .jaugetext:nth-child(3) {
+  .jauge .jaugetext .txt:nth-child(3) {
     position: absolute;
     top: 40%;
     left: 20%;
   }
-  .jauge .jaugetext:nth-child(3) p {
+  .jauge .jaugetext .txt:nth-child(3) p {
     width: 50%;
   }
-  .jauge .jaugetext:nth-child(4) {
+  .jauge .jaugetext .txt:nth-child(4) {
     position: absolute;
     top: 50%;
     left: 25%;
   }
-  .jauge .jaugetext:nth-child(4) p {
+  .jauge .jaugetext .txt:nth-child(4) p {
     width: 60%;
   }
-  .jauge .jaugetext:nth-child(5) {
+  .jauge .jaugetext .txt:nth-child(5) {
     position: absolute;
     top: 60%;
     left: 30%;
   }
-  .jauge .jaugetext:nth-child(5) p {
+  .jauge .jaugetext .txt:nth-child(5) p {
     width: 50%;
   }
-  .jauge .jaugetext:nth-child(6) {
+  .jauge .jaugetext .txt:nth-child(6) {
     position: absolute;
     top: 70%;
     left: 35%;
   }
-  .jauge .jaugetext:nth-child(6) p {
+  .jauge .jaugetext .txt:nth-child(6) p {
     width: 50%;
   }
   .jauge .jaugetext div {
@@ -3247,8 +3381,8 @@ footer .wrapper .partenaires img {
     width: 100%;
     background: #fff;
     z-index: 10;
-    -webkit-clip-path: circle(25px at calc(100% - 45px) 45px);
-    clip-path: circle(25px at calc(100% - 45px) 45px);
+    -webkit-clip-path: circle(25px at calc(100% - 45px) 95px);
+    clip-path: circle(25px at calc(100% - 45px) 95px);
     transition: all 0.3s ease-in-out;
   }
   .container #active:checked ~ .wrapper {
@@ -3258,7 +3392,7 @@ footer .wrapper .partenaires img {
   .container .menu-btn {
     position: fixed;
     right: 20px;
-    top: 20px;
+    top: 70px;
     z-index: 12;
     text-align: center;
     line-height: 50px;
@@ -3404,6 +3538,117 @@ footer .wrapper .partenaires img {
     height: 50%;
   }
 }
+.contact {
+  padding: 100px 0;
+}
+.contact .wrapper h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact .wrapper div {
+  display: flex;
+}
+.contact .wrapper div .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact .wrapper div .info div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.contact .wrapper div .info div:hover {
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateX(10px);
+}
+.contact .wrapper div .info a {
+  max-width: 40%;
+}
+@media only screen and (max-width: 1160px) {
+  .contact .wrapper div .info a {
+    max-width: 75%;
+  }
+}
+.contact .wrapper div div {
+  width: 100%;
+}
+@media only screen and (max-width: 1160px) {
+  .contact .wrapper div div {
+    width: 50%;
+  }
+}
+.erreur {
+  text-align: center;
+  height: 100vh;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 850px) {
+  .erreur {
+    padding: 50px 0;
+  }
+}
+.erreur .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 850px) {
+  .erreur .wrapper {
+    flex-direction: column;
+  }
+}
+.erreur .wrapper .content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erreur .wrapper .content-left h1 {
+  font-size: 150px;
+  color: var(--color-deep-blue);
+}
+@media only screen and (max-width: 850px) {
+  .erreur .wrapper .content-left h1 {
+    font-size: 100px;
+  }
+}
+.erreur .wrapper .content-left a {
+  margin-top: 50px;
+  display: inline;
+  color: var(--color-white);
+  font-weight: 500;
+  background-color: var(--color-deep-blue);
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  filter: drop-shadow(4px 7px 0px #1757a1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.erreur .wrapper .content-left a:hover {
+  cursor: pointer;
+  transform: translateX(4px) translateY(7px);
+  filter: none;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media only screen and (max-width: 850px) {
+  .erreur .wrapper .content-left a {
+    margin-top: 25px;
+  }
+}
+.erreur .wrapper img {
+  margin-left: 100px;
+  max-width: 30%;
+}
+@media only screen and (max-width: 850px) {
+  .erreur .wrapper img {
+    margin: 50px 0 0 0;
+    max-width: 50%;
+  }
+}
 .composante_4colonnes_fondcouleur {
   padding: 150px 0;
 }
@@ -3464,6 +3709,8 @@ footer .wrapper .partenaires img {
 }
 .galerie {
   margin: 180px 0;
+  background: url(../assets/background/galerie_bg.svg) no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 699px) {
   .galerie {
@@ -3542,6 +3789,7 @@ footer .wrapper .partenaires img {
 }
 .fichespratiques .content h2 {
   text-transform: uppercase;
+  text-align: left;
   color: var(--color-deep-green);
   display: inline-block;
   align-self: flex-start;
@@ -3680,6 +3928,87 @@ footer .wrapper .partenaires img {
     left: 65px;
     top: -80px;
   }
+}
+.avantagesCAJ {
+  padding: 80px 0;
+}
+.avantagesCAJ .cards {
+  display: flex;
+  gap: 40px;
+}
+@media only screen and (max-width: 1500px) {
+  .avantagesCAJ .cards {
+    flex-direction: column;
+  }
+}
+.avantagesCAJ .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #dff2e4;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 1500px) {
+  .avantagesCAJ .cards .card {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1013px) {
+  .avantagesCAJ .cards .card {
+    width: 100%;
+  }
+}
+.avantagesCAJ .cards .card .title {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+@media only screen and (max-width: 1160px) {
+  .avantagesCAJ .cards .card .title {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+  }
+}
+.avantagesCAJ .cards .card .title h3 {
+  color: var(--color-deep-green);
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2.5em;
+}
+@media only screen and (max-width: 1160px) {
+  .avantagesCAJ .cards .card .title h3 {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .avantagesCAJ .cards .card .title img {
+    width: 60%;
+  }
+}
+.avantagesCAJ .cards .card .content {
+  background: #fcffe8;
+  border-radius: 50px;
+  padding: 8px 35px;
+  outline: 5px solid var(--color-deep-green);
+  outline-offset: 6px;
+}
+@media only screen and (max-width: 700px) {
+  .avantagesCAJ .cards .card .content {
+    padding: 8px;
+  }
+}
+.avantagesCAJ .cards .card .content ul {
+  margin: 0;
+}
+.avantagesCAJ .cards .card .content ul li {
+  margin: 25px 0;
+  line-height: 149.5%;
+}
+.avantagesCAJ .cards .card + .card .title h3 {
+  order: 2;
 }
 .u-hidden-visually {
   border: 0 !important;

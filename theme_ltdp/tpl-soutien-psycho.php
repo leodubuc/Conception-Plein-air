@@ -53,19 +53,15 @@
                 <div class="jaugetext">
                     <?php $rows = get_sub_field('static_risks_levels'); ?>
                         
-                            <?php if( $rows ) {
-                                
-                                foreach( $rows as $row ) {
-                                    echo '<div data-scrolly="fromBottom">';
-                                        echo '<div>';
-                                        echo '</div>';
-                                        echo '<p>';
-                                            echo( $row['static_risks_explanation'] );
-                                        echo '</p>';
-                                    echo '</div>';
-                                }  
+                            <?php if( $rows ) : ?>                              
+                                <?php while (have_rows("$rows")) : the_row() ?> 
+                                    <div data-scrolly="fromBottom" class="txt">
+                                        <div class="rectangle"></div>
+                                        <p><?php the_sub_field('static_risks_explanation'); ?></p>
+                                    </div>
+                                <?php endwhile; ?> 
                                
-                            } ?>
+                            <?php endif; ?> 
                     </div>
             </div>
             <img class="jaugeimg" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/raisons-epuisement/jauge.png" alt="Illustration de jauge colorée" />
