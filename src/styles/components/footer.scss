@@ -108,6 +108,15 @@ footer {
                     margin-bottom: 50px;
                 }
             }
+
+            .phone,
+            .mail,
+            .map {
+                .icon {
+                    color: var(--color-primary);
+                    margin-right: 15px;
+                }
+            }
         }
 
         .medias {
@@ -155,6 +164,7 @@ footer {
                     border: none;
                     filter: drop-shadow(4px 6px 0px #25a18e);
                     transition: 0.4s $ease-in-out-back;
+                    display: inline-block;
 
                     &:hover {
                         cursor: pointer;

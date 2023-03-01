@@ -14,7 +14,7 @@
                     </a>
 
                     <?php wp_nav_menu(array(
-                            'theme_location' => 'menu_gauche',
+                            'theme_location' => 'menu_droite',
                             'container' => 'ul',
                             'container_class' => 'nav-primary__item',
                         )); ?>
