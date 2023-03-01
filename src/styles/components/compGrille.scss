@@ -2,6 +2,10 @@
     padding: 80px 0;
 
     .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         h1 {
             text-align: center;
             padding: 100px 0 50px 0;
@@ -38,19 +42,22 @@
                     margin: 0;
                     padding: 45px 0 10px 0;
                 }
-                .border:nth-child(1n) {
+
+                &:nth-child(3n + 1) {
                     img {
                         border-radius: 55% 45% 70% 30% / 30% 51% 49% 70%;
                     }
                 }
-                .border:nth-child(2n) {
+
+                &:nth-child(3n + 2) {
                     img {
                         border-radius: 41% 59% 36% 64% / 49% 62% 38% 51%;
                     }
                 }
-                .border:nth-child(3n) {
+
+                &:nth-child(3n + 3) {
                     img {
-                        border-radius: 52% 48% 60% 40% / 49% 32% 68% 51%;
+                        border-radius: 55% 45% 70% 30% / 30% 51% 49% 70%;
                     }
                 }
             }
@@ -65,6 +72,8 @@
             border: none;
             filter: drop-shadow(4px 7px 0px var(--color-deep-green));
             transition: 0.4s $ease-in-out-back;
+            display: inline-block;
+            margin-top: 20px;
 
             &:hover {
                 cursor: pointer;
