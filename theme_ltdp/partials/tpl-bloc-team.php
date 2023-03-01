@@ -5,7 +5,7 @@
 
                     <?php if( have_rows('bloc_team_members') ): ?>
                         <?php while( have_rows('bloc_team_members') ) : the_row(); ?>
-                        <div class="staff border1" data-scrolly="fromRight"></div>
+                        <div class="staff border" data-scrolly="fromRight"></div>
 
                             <?php if( get_sub_field('bloc_team_member_image') ): ?>
                                 <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_team_member_image'); ?>" />
@@ -20,5 +20,15 @@
                         <?php endwhile; ?>
                     <?php endif; ?>           
                 </div>
+                <?php 
+                    $link = get_sub_field('bloc_team_button');
+                    if( $link ): 
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                        ?>
+                        <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                    <?php endif; ?>
+                
             </div>
         </section>

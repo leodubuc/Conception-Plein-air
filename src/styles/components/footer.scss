@@ -155,10 +155,11 @@ footer {
             }
             .button {
                 a {
+                    display: inline-block;
                     color: var(--color-black);
                     font-weight: 700;
                     background-color: #65d6ba;
-                    padding: 10px 20px;
+                    padding: 10px 30px;
                     border-radius: 30px;
                     border: none;
                     filter: drop-shadow(4px 6px 0px #25a18e);
