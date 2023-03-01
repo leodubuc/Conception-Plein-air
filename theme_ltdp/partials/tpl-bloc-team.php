@@ -2,9 +2,9 @@
             <div class="wrapper">
                 <h1><?php the_sub_field('bloc_team_titre'); ?></h1>
                 <div class="grille">
-
                     <?php if( have_rows('bloc_team_members') ): ?>
                         <?php while( have_rows('bloc_team_members') ) : the_row(); ?>
+
                         <div class="staff border" data-scrolly="fromRight"></div>
 
                             <?php if( get_sub_field('bloc_team_member_image') ): ?>
