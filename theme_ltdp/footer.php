@@ -113,13 +113,9 @@
 
     <div class="infolettre">
         <span>Infolettre</span>
-        <form action="">
-            <div class="container">
-            <input type="text" name="email" placeholder="Votre email" required>
-        </div>
 
         <div class="button">
-            <input type="submit" value="Soumettre">
+            <a href="https://tempsdunepause.us14.list-manage.com/subscribe?u=e8e08cab72280f8d74f7dc4bb&id=2b7871dae2" target="_blank">S'inscrire</a>
         </div>
         </form>
         
