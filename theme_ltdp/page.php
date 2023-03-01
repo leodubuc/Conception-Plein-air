@@ -65,6 +65,9 @@
             <?php include 'partials/tpl-fiches-pratiques.php';?>
             <?php #fini ?>
 
+        <?php elseif ( get_row_layout() == 'bloc_info_columns' ):  ?> 
+            <?php include 'partials/tpl-bloc-deux-colonnes.php';?>
+            <?php #fini ?>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
