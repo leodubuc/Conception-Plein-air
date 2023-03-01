@@ -38,17 +38,17 @@
                     margin: 0;
                     padding: 45px 0 10px 0;
                 }
-                &:nth-child(1) {
+                .border:nth-child(1n) {
                     img {
                         border-radius: 55% 45% 70% 30% / 30% 51% 49% 70%;
                     }
                 }
-                &:nth-child(2) {
+                .border:nth-child(2n) {
                     img {
                         border-radius: 41% 59% 36% 64% / 49% 62% 38% 51%;
                     }
                 }
-                &:nth-child(3) {
+                .border:nth-child(3n) {
                     img {
                         border-radius: 52% 48% 60% 40% / 49% 32% 68% 51%;
                     }

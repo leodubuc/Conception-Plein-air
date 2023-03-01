@@ -17,6 +17,7 @@ function pw_creer_menu() {
 		'menu_principale' => __( 'Menu principale', 'text_domain'),
 		'menu_gauche' => __( 'Menu gauche', 'text_domain'),
 		'menu_droite' => __( 'Menu droite', 'text_domain'),
+        'top_bar' => __( 'Top bar', 'text_domain'),
 	) );
 }
 add_action('init', 'pw_creer_menu');

@@ -25,10 +25,11 @@
                 <div class="nav_content">
                     <nav class="top_bar">
                         <ul>
-                            <li><a href="#">EN</a></li>
-                            <li><a href="#" class="connexion">Se connecter</a></li>
-                            <li class="button_vert"><a href="#">Devenir membre</a></li>
-                            <li class="button_bleu"><a href="#">Faire une référence</a></li>
+                            <?php wp_nav_menu(array(
+                                'theme_location' => 'top_bar',
+                                'container' => 'ul',
+                                'container_class' => 'nav-primary__item',
+                            )); ?>
                         </ul>
                     </nav>
 

@@ -5,7 +5,7 @@
                     <?php if( have_rows('bloc_team_members') ): ?>
                         <?php while( have_rows('bloc_team_members') ) : the_row(); ?>
 
-                        <div class="staff border" data-scrolly="fromRight"></div>
+                        <div class="staff border" data-scrolly="fromRight">
 
                             <?php if( get_sub_field('bloc_team_member_image') ): ?>
                                 <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_team_member_image'); ?>" />
