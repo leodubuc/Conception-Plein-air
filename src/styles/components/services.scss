@@ -54,6 +54,16 @@
                     align-items: center;
                     flex-direction: column;
                     justify-content: center;
+
+                    img {
+                        fill: currentColor;
+                        display: inline-block;
+                        flex: 0 0 auto;
+                        height: 100px;
+                        width: 100px;
+                        vertical-align: middle;
+                        stroke: rgba(0, 0, 0, 0);
+                    }
                 }
 
                 svg {
