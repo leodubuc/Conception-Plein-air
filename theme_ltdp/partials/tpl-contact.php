@@ -1,7 +1,7 @@
 <?php /* Template Name: Contact */ ?>
 
 <?php get_header(); ?>
-<section class="contact">
+<section class="contact_page">
     <div class="wrapper">
         <h1 data-scrolly="fromBottom"><?php the_field('static_contact_titre'); ?></h1>
 
