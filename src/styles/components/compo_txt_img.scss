@@ -81,8 +81,9 @@
 
     .wrapper {
         gap: 100px;
-        display: flex;
+
         .content {
+            display: flex;
             h2 {
                 margin: 0;
                 padding-bottom: 100px;

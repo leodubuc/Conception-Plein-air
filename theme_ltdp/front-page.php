@@ -56,7 +56,7 @@
 
                                 <?php $image = get_sub_field('static_services_grid_card_icon'); ?>
                                 <?php if ($image) : ?>
-                                    <img class="icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
                                 <?php endif ?>
                                 </div>
 
