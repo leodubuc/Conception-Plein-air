@@ -1,5 +1,4 @@
 <?php /* Template Name: Accueil */ ?>
-<?php /* Test pour débug ema */ ?>
 
 <?php get_header(); ?>
 
@@ -26,52 +25,9 @@
                         </div>
                     </div>
 
-        <?php endwhile; ?>
-    <?php endif; ?>  
-    <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert style-svg" />
-    <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
-</section> 
-
-
-<section class="services">
-    <div class="wrapper">
-
-    <?php if(have_rows('static_services_grid')) : ?>   
-    <?php while (have_rows('static_services_grid')) : the_row() ?> 
-
-        <?php $titre_service = get_sub_field('static_services_grid_titre') ?>
-        <h1 data-scrolly="fromBottom"><?php echo ($titre_service); ?></h1>
-
-        <div class="grid">
-            <?php if(have_rows('static_services_grid_cards')) : ?>   
-                <?php while (have_rows('static_services_grid_cards')) : the_row() ?>
-                    <?php 
-                        $link = get_sub_field('static_services_grid_card_link');
-                        if( $link ): 
-                            $link_url = $link['url'];
-                            $link_title = $link['title'];
-                            $link_target = $link['target'] ? $link['target'] : '_self';
-                            ?>
-                            <a data-scrolly="fromBottom" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-                        
-                                <div>
-                                <?php $service = get_sub_field('static_services_grid_card_name') ?>
-                                <h2><?php echo ($service); ?></h2>
-
-                                <?php $image = get_sub_field('static_services_grid_card_icon'); ?>
-                                <?php if ($image) : ?>
-                                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                                <?php endif ?>
-                                </div>
-
-                                <div class="fond"></div>
-                        
-                            </a>
-                    <?php endif; ?>
-                
-            
                 <?php endwhile; ?>
             <?php endif; ?>  
+            
             <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/green-shape.svg" alt="Forme courbée verte" class="courbe_vert style-svg" />
             <img class="full-width courbe_bleu" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/hero/blue-shape.svg" alt="Forme courbée bleue" />
         </section> 
@@ -97,29 +53,27 @@
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                     ?>
                                     <a data-scrolly="fromBottom" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
-                                
                                         <div>
-                                        <?php $service = get_sub_field('static_services_grid_card_name') ?>
-                                        <h2><?php echo ($service); ?></h2>
+                                            <?php $service = get_sub_field('static_services_grid_card_name') ?>
+                                            <h2><?php echo ($service); ?></h2>
 
-                                        <?php $image = get_sub_field('static_services_grid_card_icon'); ?>
-                                        <?php if ($image) : ?>
-                                            <img class="icon" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-                                        <?php endif ?>
+                                            <?php $image = get_sub_field('static_services_grid_card_icon'); ?>
+                                            <?php if ($image) : ?>
+                                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                            <?php endif ?>
                                         </div>
 
                                         <div class="fond"></div>
                                     </a>
-                            <?php endif; ?>
-                        
-                    
+                                <?php endif; ?>
+
                         <?php endwhile; ?>
-                    <?php endif; ?>  
+                    <?php endif; ?>     
+                    </div>     
                 </div>
             <?php endwhile; ?>
-            <?php endif; ?>    
-            </div>
-        </section>
+            <?php endif; ?>              
+        </section> 
 
 
         <section class="etape">
