@@ -203,16 +203,7 @@
         <section class="questionnaire">
             <img data-scrolly="fromRight" class="deco1" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-blanc.svg" alt="" />
             <div class="wrapper">
-                <h1 data-scrolly="fromBottom">Besoin de nos services?</h1>
-
-                <div class="question" data-scrolly="fromBottom">
-                    <p>Moi ou la personne que je soutiens réside à l’Est du boulevard Saint-Laurent.</p>
-
-                    <div class="answers">
-                        <p>Oui</p>
-                        <p>Non</p>
-                    </div>
-                </div>
+                <?php echo the_content(); ?>
             </div>
             <img data-scrolly="fromLeft" class="deco2" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="" />
         </section>
