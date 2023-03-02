@@ -2402,6 +2402,12 @@ footer .wrapper .partenaires img {
   filter: none;
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.telechargerprog {
+  background-color: var(--color-mid-pale-blue);
+}
+.telechargerprog A {
+  margin-bottom: 50px;
+}
 .comp_video {
   position: relative;
   background: url(../assets/background/nosateliers.svg) no-repeat;

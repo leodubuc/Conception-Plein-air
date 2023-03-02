@@ -12,6 +12,10 @@
                 <?php include 'partials/tpl-cta-simple.php';?>
                 <?php #fini ?>
 
+            <?php elseif ( get_row_layout() == 'bloc_download_prog' ):  ?> 
+                <?php include 'partials/tpl-bloc-download.php';?>
+                <?php #fini ?>
+
             <?php elseif ( get_row_layout() == 'call_to_action_list_middle' ):  ?> 
                 <?php include 'partials/tpl-cta-list-middle.php';?>
                 <?php #fini ?>    
