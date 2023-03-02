@@ -47,21 +47,28 @@
 
         <section class="jauge">
         <div class="wrapper">
-            <?php if(have_rows('static_risks')) : ?>   
-                <?php while (have_rows('static_risks')) : the_row() ?> 
-                
-                    <h1 data-scrolly="fromRight"><?php the_sub_field('static_risks_titre'); ?></h1>
-                    <div class="infojauge">
-                        <div class="jaugetext">
-                            
-                    </div>
-                    <img class="jaugeimg" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/raisons-epuisement/jauge.png" alt="Illustration de jauge colorée" />
-                <?php endwhile; ?>
-            <?php endif; ?>  
-        </div>
-        </section>
+        <?php if(have_rows('static_risks')) : ?>   
+        <?php while (have_rows('static_risks')) : the_row() ?> 
+            <h1 data-scrolly="fromRight"><?php the_sub_field('static_risks_titre'); ?></h1>
+            <div class="infojauge">
+                <div class="jaugetext">
+                    <?php if(have_rows('static_risks_levels')) : ?>   
+                        <?php while (have_rows('static_risks_levels')) : the_row() ?> 
+                    <div data-scrolly="fromBottom" class="txt">
+                                <div class="rectangle"></div>
+                                <p><?php the_sub_field('static_risks_explanation'); ?></p>
 
-        <?php include '/page-builder.php';?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>              
+                </div>
+
+            <img class="jaugeimg" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/raisons-epuisement/jauge.png" alt="Illustration de jauge colorée" />
+                    
+            <?php endwhile; ?>
+                    <?php endif; ?>  
+            </div>
+        </section>
 
     <?php endwhile; ?>
 <?php endif; ?>  

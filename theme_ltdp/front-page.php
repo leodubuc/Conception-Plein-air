@@ -1,4 +1,5 @@
 <?php /* Template Name: Accueil */ ?>
+<?php /* Test pour débug ema */ ?>
 
 <?php get_header(); ?>
 

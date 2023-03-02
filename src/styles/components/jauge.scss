@@ -28,6 +28,13 @@
                 width: 40%;
             }
 
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fdf5ae;
+                margin-left: -50px;
+            }
+
             @media only screen and (max-width: 1600px) {
                 p {
                     font-size: 1.2rem;
@@ -66,6 +73,12 @@
                 width: 30%;
             }
 
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fdebae;
+            }
+
             @media only screen and (max-width: 1600px) {
                 p {
                     font-size: 1.2rem;
@@ -93,6 +106,12 @@
             left: 32%;
             p {
                 width: 40%;
+            }
+
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fde2ae;
             }
 
             @media only screen and (max-width: 1600px) {
@@ -123,6 +142,12 @@
                 width: 55%;
             }
 
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fdd4ae;
+            }
+
             @media only screen and (max-width: 1600px) {
                 p {
                     font-size: 1.2rem;
@@ -145,6 +170,12 @@
             left: 73%;
             p {
                 width: 50%;
+            }
+
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fdc1ae;
             }
 
             @media only screen and (max-width: 1600px) {
@@ -174,6 +205,12 @@
             left: 91%;
             p {
                 width: 100%;
+            }
+
+            .rectangle {
+                width: 20px;
+                height: 200px;
+                background-color: #fdaeae;
             }
 
             @media only screen and (max-width: 1600px) {
@@ -487,7 +524,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(2) {
+            .txt:nth-child(2) {
                 position: absolute;
                 top: 30%;
                 left: 15%;
@@ -495,7 +532,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(3) {
+            .txt:nth-child(3) {
                 position: absolute;
                 top: 40%;
                 left: 20%;
@@ -503,7 +540,7 @@
                     width: 50%;
                 }
             }
-            &:nth-child(4) {
+            .txt:nth-child(4) {
                 position: absolute;
                 top: 50%;
                 left: 25%;
@@ -511,7 +548,7 @@
                     width: 60%;
                 }
             }
-            &:nth-child(5) {
+            .txt:nth-child(5) {
                 position: absolute;
                 top: 60%;
                 left: 30%;
@@ -519,7 +556,7 @@
                     width: 70%;
                 }
             }
-            &:nth-child(6) {
+            .txt:nth-child(6) {
                 position: absolute;
                 top: 70%;
                 left: 35%;
