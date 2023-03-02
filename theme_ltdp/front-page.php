@@ -7,7 +7,7 @@
 
         <section class="hero">
             <video autoplay muted loop>
-                <source src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/video/Mattress Store (SpongeBob Clip).mp4" type="video/mp4" />
+                <source src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/video/boucle.mp4" type="video/mp4" />
             </video>
 
             <?php if(have_rows('static_hero')) : ?>   
