@@ -9,8 +9,7 @@
 
                     <div data-scrolly="fromLeft" class="card personneaidante">
                         <div class="title">
-                        <?php $title_left = get_sub_field('bloc_info_columns_left_card_titre'); ?>
-                            <h3><?php echo ($title_left); ?></h3>
+                            <h3><?php echo get_sub_field('bloc_info_columns_left_card_titre'); ?></h3>
                             <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/pour_personne_aidante.png" alt="Icon de coeur sur la main" />
                         </div>
 
@@ -39,16 +38,15 @@
                         </div>
 
                         <div class="content">
-                            <?php $rows = get_sub_field('bloc_info_columns_right_card_list'); ?>
-                            <?php if( $rows ) {
-                                echo '<ul>';
-                                foreach( $rows as $row ) {
-                                    echo '<li >';
-                                        echo( $row['bloc_info_columns_right_card_list_element'] );
-                                    echo '</li>';
-                                }
-                                echo '</ul>';
-                            } ?>
+                            <ul>
+                                <?php if( have_rows('bloc_info_columns_right_card_list') ): ?>
+                                    <?php while( have_rows('bloc_info_columns_right_card_list') ) : the_row(); ?>
+
+                                        <li><?php the_sub_field('bloc_info_columns_right_card_list_element'); ?></li>
+                                        
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </ul>
                         </div>    
                     </div>
                 <?php endwhile; ?>
