@@ -23,6 +23,18 @@
             margin-bottom: 130px;
         }
 
+        .gform_body {
+            font-size: 2rem;
+
+            #field_1_3 {
+                font-size: 2rem;
+            }
+        }
+
+        .gform_footer {
+            display: block;
+        }
+
         .question {
             background: var(--color-white);
             border-radius: 130px;
