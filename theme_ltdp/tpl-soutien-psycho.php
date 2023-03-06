@@ -2,6 +2,8 @@
 
 <?php get_header(); ?>
 
+<?php include 'page-builder.php';?>
+
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
         <section class="raisondep">
@@ -70,8 +72,7 @@
             </div>
         </section>
 
-    <?php endwhile; ?>
-<?php endif; ?>  
+        <?php endwhile; ?>
+        <?php endif; ?>  
 
-        
 <?php get_footer(); ?>

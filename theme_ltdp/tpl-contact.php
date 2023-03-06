@@ -75,9 +75,9 @@
                 </div>
             </div>
         </section>
-
-        <?php include 'page-builder.php';?>
         
     <?php endwhile; ?> 
 <?php endif; ?>
+
+<?php include 'page-builder.php';?>
 <?php get_footer(); ?>

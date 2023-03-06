@@ -3,7 +3,6 @@ footer {
     background-size: cover;
     position: relative;
     z-index: 8;
-    margin-top: -50px;
 
     .wrapper {
         padding: 100px 0;
@@ -196,4 +195,8 @@ footer {
             }
         }
     }
+}
+
+.jauge + footer {
+    margin-top: -60px;
 }

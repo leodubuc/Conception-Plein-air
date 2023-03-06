@@ -7,7 +7,6 @@
     <div class="wrapper">
         <?php the_content(); ?>
     </div>
-    
 
     <?php include 'page-builder.php';?>
 
