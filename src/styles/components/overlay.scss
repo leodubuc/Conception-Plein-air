@@ -86,7 +86,7 @@
             padding: 0;
 
             @media only screen and (max-width: 800px) {
-                top: 25%;
+                top: 35%;
                 left: 50%;
             }
 
@@ -178,8 +178,12 @@
         }
 
         .logo {
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            display: flex;
+
+            position: absolute;
+            left: 30%;
+            top: 2%;
         }
     }
 }

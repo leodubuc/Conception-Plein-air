@@ -37,11 +37,6 @@
                 padding: 50px 25px;
                 transition: 0.4s $ease-in-out-back;
 
-                &:hover {
-                    transform: translateY(-30px);
-                    transition: 0.4s $ease-in-out-back;
-                }
-
                 span {
                     font-size: 60px;
                     font-family: var(--font-seconday);
