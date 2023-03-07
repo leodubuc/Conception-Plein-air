@@ -1,5 +1,5 @@
 .galerie {
-    margin: 180px 0;
+    padding: var(--spacing-lg);
     background-size: cover;
 
     @media only screen and (max-width: 699px) {

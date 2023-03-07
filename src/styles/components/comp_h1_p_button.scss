@@ -1,5 +1,6 @@
 .composante_h1_p_button {
-    padding: 80px 0;
+    padding: var(--spacing-lg);
+
     .wrapper {
         display: flex;
         flex-direction: column;
