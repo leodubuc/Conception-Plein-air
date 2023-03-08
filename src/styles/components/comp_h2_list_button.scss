@@ -7,7 +7,7 @@
         top: -5%;
         right: 0;
         width: 12%;
-        z-index: 2;
+        z-index: -1;
     }
 
     .wrapper {
@@ -28,6 +28,10 @@
                 padding: 0 0 20px 80px;
                 list-style: none;
                 vertical-align: middle;
+
+                p {
+                    margin: 10px;
+                }
             }
         }
         .button_container {
@@ -56,10 +60,21 @@
     }
 }
 
+.comp_h2_list_button + .comp_h2_list_button {
+    .deco {
+        transform: rotateY(180deg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12%;
+        z-index: -1;
+    }
+}
+
 @media only screen and (max-width: 1250px) {
     .comp_h2_list_button {
         .deco {
-            top: -5%;
+            bottom: -5%;
             right: 0;
             width: 20%;
             z-index: -1;
@@ -72,15 +87,28 @@
 
 @media only screen and (max-width: 500px) {
     .comp_h2_list_button {
-        padding: 75px 0;
+        padding: var(--spacing-md);
 
         .deco {
-            top: 0;
+            bottom: 0;
             right: 0;
             width: 20%;
             z-index: -1;
         }
         .wrapper {
+            ul {
+                li {
+                    background: url(../assets/images/illustrations/list-style2.svg)
+                        no-repeat left top;
+                    padding: 5px 0 5px 50px;
+                    background-size: 10%;
+
+                    p {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+
             span {
                 font-size: var(--font-size-content);
             }

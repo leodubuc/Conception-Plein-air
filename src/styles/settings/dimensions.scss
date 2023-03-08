@@ -11,8 +11,8 @@ $breakpoint-xl: 1920px;
 
 :root {
     --spacing-xs: 5px;
-    --spacing-sm: 15px;
-    --spacing-md: 50px;
+    --spacing-sm: 15px 0;
+    --spacing-md: 50px 0;
     --spacing-lg: 75px 0;
     --spacing-bg: 200px 0;
 }
