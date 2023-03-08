@@ -68,7 +68,7 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                     </div>
-                    <div>
+                    <div class="iframe">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5294583970817!2d-73.60410598514635!3d45.55979043508209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ecb21fdc06d%3A0x3d1eb87219f23114!2sCHSLD%20Joseph-Fran%C3%A7ois-Perrault%20(anciennement%20CHSLD%20des%20Quatre-Temps)!5e0!3m2!1sfr!2sca!4v1677532328389!5m2!1sfr!2sca"
                             width="100%"
