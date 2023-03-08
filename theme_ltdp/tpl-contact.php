@@ -13,6 +13,7 @@
                     <div class="info">
                     <?php if( have_rows('static_contact_info') ): ?>
                         <?php while( have_rows('static_contact_info') ) : the_row(); ?>
+                        <div>
                             <h3>Téléphone</h3>
                             <div>
                                 <?php 
@@ -25,7 +26,9 @@
                                         <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                                     <?php endif; ?>
                             </div>
-
+                        </div>
+                            
+                        <div>
                             <h3>Courriel</h3>
                             <div>
                                 <?php 
@@ -38,25 +41,29 @@
                                         <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                                     <?php endif; ?>
                             </div>
-
+                        </div>
+                            
+                        <div>
                             <h3>Bureaux</h3>
                             <?php if( have_rows('static_contact_adress') ): ?>
                                 <?php while( have_rows('static_contact_adress') ) : the_row(); ?> 
                                     <div> 
-                                                        <?php 
-                                                        $link = get_sub_field('static_contact_adresses');
-                                                        if( $link ): 
-                                                            $link_url = $link['url'];
-                                                            $link_title = $link['title'];
-                                                            $link_target = $link['target'] ? $link['target'] : '_blank';
-                                                            ?>
-                                                            <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                                        <?php endif; ?>
+                                        <?php 
+                                        $link = get_sub_field('static_contact_adresses');
+                                        if( $link ): 
+                                            $link_url = $link['url'];
+                                            $link_title = $link['title'];
+                                            $link_target = $link['target'] ? $link['target'] : '_blank';
+                                            ?>
+                                            <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                        <?php endif; ?>
 
-                                                        <p><strong><?php the_sub_field('static_contact_days'); ?></strong></p>
+                                        <p><strong><?php the_sub_field('static_contact_days'); ?></strong></p>
                                     </div>
                                 <?php endwhile; ?>
                             <?php endif; ?> 
+                        </div>
+                            
 
                         <?php endwhile; ?>
                     <?php endif; ?>
