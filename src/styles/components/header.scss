@@ -1,5 +1,5 @@
 .header {
-    padding: 20px 0;
+    padding: 10px 0;
 
     .wrapper {
         display: flex;
@@ -24,10 +24,10 @@
 .nav_content {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 18px 0;
 
     .top_bar {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
 
         li {
             &:nth-child(2) {
