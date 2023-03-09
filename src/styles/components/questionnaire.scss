@@ -140,7 +140,11 @@
     margin: auto;
     max-width: 400px;
 }
-
+.gform_body {
+    @media only screen and (max-width: 500px) {
+        padding: 100px 60px;
+    }
+}
 .gform_wrapper.gravity-theme input[type='color'],
 .gform_wrapper.gravity-theme input[type='date'],
 .gform_wrapper.gravity-theme input[type='datetime-local'],
