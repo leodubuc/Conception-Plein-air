@@ -2,7 +2,10 @@
             <div class="wrapper">
                 <h2 data-scrolly="fromBottom"><?php the_sub_field('call_to_action_titre'); ?></h2>
 
-                <h4 data-scrolly="fromBottom"><?php the_sub_field('call_to_action_sous_titre'); ?></h4>
+                <?php if( get_sub_field('call_to_action_sous_titre') ): ?>
+                    <h4 data-scrolly="fromBottom"><?php the_sub_field('call_to_action_sous_titre'); ?></h4>
+                <?php endif; ?> 
+                
 
                 <div data-scrolly="fromLeft">
                 <?php $rows = get_sub_field('call_to_action_liste'); ?>
@@ -27,8 +30,9 @@
                         <a data-scrolly="fromBottom" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                     <?php endif; ?>
 
-                <p data-scrolly="fromBottom">
-                    <?php the_sub_field('call_to_action_commentaire'); ?>
-                </p>
+                <?php if( get_sub_field('call_to_action_commentaire') ): ?>
+                    <p data-scrolly="fromBottom"><?php the_sub_field('call_to_action_commentaire'); ?></p>
+                <?php endif; ?> 
+                
             </div>
         </section>
