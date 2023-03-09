@@ -49,7 +49,7 @@
 
 @media only screen and (max-width: 1000px) {
     .composante_texte_et_swiper {
-        padding: 75px 0 75px 0;
+        padding: var(--spacing-md);
 
         .deco {
             position: absolute;

@@ -118,12 +118,16 @@
 
 @media only screen and (max-width: 500px) {
     .composante_service {
-        padding: 100px 0;
+        padding: var(--spacing-md);
         .wrapper {
+            h1 {
+                margin: 0;
+            }
             .content {
                 .liste {
                     ul li {
-                        padding: 10px 0 10px 70px;
+                        padding: 10px 0 10px 60px;
+                        background-size: 10%;
                     }
 
                     ul span {
@@ -132,7 +136,8 @@
                 }
 
                 img {
-                    width: 75%;
+                    width: 50%;
+                    order: 2;
                 }
             }
         }

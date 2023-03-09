@@ -14,7 +14,9 @@
                             }
                             echo '</ul>';
                         } ?>
-                <p><?php the_sub_field('call_to_action_left_commentaire'); ?></p>
+                        <?php if( get_sub_field('call_to_action_left_commentaire') ): ?>
+                            <p><?php the_sub_field('call_to_action_left_commentaire'); ?></p>
+                        <?php endif; ?>    
                     <?php 
                     $link = get_sub_field('call_to_action_left_bouton');
                     if( $link ): 

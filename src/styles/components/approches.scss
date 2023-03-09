@@ -8,6 +8,7 @@
         position: absolute;
         top: -10%;
         left: 0;
+        z-index: 1;
     }
 
     .wrapper {
@@ -98,7 +99,7 @@
 
 @media only screen and (max-width: 450px) {
     .composante_approches {
-        padding: 100px 0;
+        padding: var(--spacing-lg);
         .wrapper {
             h1 {
                 margin-bottom: 10px;

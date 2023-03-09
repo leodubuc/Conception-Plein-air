@@ -25,6 +25,10 @@
             line-height: 130%;
             vertical-align: middle;
             text-align: left;
+
+            p {
+                margin: 0;
+            }
         }
 
         a {
@@ -46,7 +50,7 @@
             }
         }
 
-        p {
+        .commentaire {
             margin: 45px 0 0 0;
         }
     }
