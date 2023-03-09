@@ -1,5 +1,5 @@
 .composante_h1_p_button {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     .wrapper {
         display: flex;
@@ -34,6 +34,7 @@
     }
 
     @media only screen and (max-width: 500px) {
+        padding: var(--spacing-sm);
     }
 }
 
