@@ -13,6 +13,7 @@
     .wrapper {
         h2 {
             text-align: left;
+            margin-top: 0;
         }
 
         span {
@@ -22,6 +23,7 @@
 
         ul {
             padding: 0;
+            margin-bottom: 0;
             li {
                 background: url(../assets/images/illustrations/list-style2.svg)
                     no-repeat left top;
@@ -100,7 +102,7 @@
                 li {
                     background: url(../assets/images/illustrations/list-style2.svg)
                         no-repeat left top;
-                    padding: 0 0 20px 50px;
+                    padding: 0 0 0 50px;
                     background-size: 10%;
 
                     p {
