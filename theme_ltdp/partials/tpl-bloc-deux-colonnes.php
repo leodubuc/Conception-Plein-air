@@ -10,7 +10,7 @@
                     <div data-scrolly="fromLeft" class="card personneaidante">
                         <div class="title">
                             <h3><?php echo get_sub_field('bloc_info_columns_left_card_titre'); ?></h3>
-                            <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/pour_personne_aidante.png" alt="Icon de coeur sur la main" />
+                            <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/pour_personne_aidante.svg" alt="Icon de coeur sur la main" />
                         </div>
 
                         <div class="content">
@@ -34,7 +34,7 @@
                     <div data-scrolly="fromRight" class="card personneatteinte">
                         <div class="title">
                             <h3><?php echo get_sub_field('bloc_info_columns_right_card_titre'); ?></h3>
-                            <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/pour_personne_atteinte.png" alt="Icon de tête avec coeur à l'intérieur" />
+                            <img src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/pour_personne_atteinte.svg" alt="Icon de tête avec coeur à l'intérieur" />
                         </div>
 
                         <div class="content">
