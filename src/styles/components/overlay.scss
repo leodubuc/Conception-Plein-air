@@ -110,6 +110,10 @@
                 a {
                     color: var(--color-very-pale-green);
                 }
+
+                @media only screen and (max-width: 800px) {
+                    padding: 10px 15px;
+                }
             }
 
             .button_vert {

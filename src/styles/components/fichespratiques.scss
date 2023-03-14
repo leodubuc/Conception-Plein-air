@@ -16,6 +16,11 @@
         @media only screen and (max-width: 375px) {
             width: 95vw;
         }
+
+        @supports (-webkit-border-radius: 75px) {
+            border-radius: 75px;
+            -webkit-border-radius: 75px;
+        }
     }
 
     .content {
@@ -32,6 +37,11 @@
         @media only screen and (max-width: 470px) {
             padding: 25px;
             border-radius: 40px;
+        }
+
+        @supports (-webkit-border-radius: 75px) {
+            border-radius: 75px;
+            -webkit-border-radius: 75px;
         }
 
         h2 {
