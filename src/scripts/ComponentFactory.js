@@ -1,6 +1,7 @@
 import Carousel from './components/Carousel';
 import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
+import NoScroll from './components/NoScroll';
 
 export default class ComponentFactory {
   constructor() {
@@ -9,6 +10,7 @@ export default class ComponentFactory {
       Carousel,
       Modal,
       Scrolly,
+      NoScroll,
     };
     this.init();
   }

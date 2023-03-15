@@ -47,8 +47,8 @@
         </header>
     </div>
 
-<div class="container">
-    <input type="checkbox" id="active">
+<div class="menu">
+    <input type="checkbox" id="active" class="open">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper">
         <a class="logo" href="<?php bloginfo('url'); ?>">

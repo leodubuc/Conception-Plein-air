@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+body.menu-open {
+    overflow: hidden;
+}
+
 _::-moz-range-track,
 body:last-child .selector {
     img {

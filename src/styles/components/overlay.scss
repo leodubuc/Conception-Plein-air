@@ -1,11 +1,11 @@
 @media only screen and (min-width: 1500px) {
-    .container {
+    .menu {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    .container {
+    .menu {
         display: flex;
 
         .wrapper {
@@ -135,6 +135,10 @@
 
                     a {
                         color: var(--color-black);
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        padding: 10px 15px;
                     }
                 }
 
