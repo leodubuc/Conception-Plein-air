@@ -14,7 +14,7 @@
                     <?php if( have_rows('static_contact_info') ): ?>
                         <?php while( have_rows('static_contact_info') ) : the_row(); ?>
                         <div>
-                            <h3>Téléphone</h3>
+                            <h3><?php _e('Téléphone', 'ltdp'); ?></h3>
                             <div>
                                 <?php 
                                     $link = get_sub_field('static_contact_phone');
@@ -29,7 +29,7 @@
                         </div>
                             
                         <div>
-                            <h3>Courriel</h3>
+                            <h3><?php _e('Courriel', 'ltdp'); ?></h3>
                             <div>
                                 <?php 
                                     $link = get_sub_field('static_contact_email');
@@ -44,7 +44,7 @@
                         </div>
                             
                         <div>
-                            <h3>Bureaux</h3>
+                            <h3><?php _e('Bureaux', 'ltdp'); ?></h3>
                             <?php if( have_rows('static_contact_adress') ): ?>
                                 <?php while( have_rows('static_contact_adress') ) : the_row(); ?> 
                                     <div> 
