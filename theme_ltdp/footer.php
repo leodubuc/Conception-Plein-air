@@ -10,7 +10,7 @@
                         )); ?>
 
                     <a href="<?php bloginfo('url'); ?>">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Logo de l'organisme">
                     </a>
 
                     <?php wp_nav_menu(array(
@@ -112,10 +112,10 @@
               
 
     <div class="infolettre">
-        <span>Infolettre</span>
+        <span><?php _e('Infolettre', 'ltdp'); ?></span>
 
-        <div class="button">
-            <a href="https://tempsdunepause.us14.list-manage.com/subscribe?u=e8e08cab72280f8d74f7dc4bb&id=2b7871dae2" target="_blank">S'inscrire</a>
+        <div class="button"> 
+            <a href="https://tempsdunepause.us14.list-manage.com/subscribe?u=e8e08cab72280f8d74f7dc4bb&id=2b7871dae2" target="_blank"><?php _e('Inscription', 'ltdp'); ?></a>
         </div>
         </form>
         

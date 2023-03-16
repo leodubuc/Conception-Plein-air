@@ -19,7 +19,7 @@
         <header class="header" data-component="Header">
             <div class="wrapper">
                 <a href="<?php bloginfo('url'); ?>">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="Logo de l'organisme">
                 </a>
             
                 <div class="nav_content">
@@ -47,12 +47,12 @@
         </header>
     </div>
 
-<div class="container">
-    <input type="checkbox" id="active">
+<div class="menu">
+    <input type="checkbox" id="active" class="open">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper">
         <a class="logo" href="<?php bloginfo('url'); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Logo de l'organisme">
         </a>
         
         

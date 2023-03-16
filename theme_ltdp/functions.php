@@ -34,3 +34,12 @@ if ( function_exists('acf_add_options_page') ) {
         'redirect'     => false
     ));
 }
+
+/**
+ * Add textdomain support to the theme
+ */
+add_action('after_setup_theme', 'load_textdomain_func');
+function load_textdomain_func()
+{
+    load_theme_textdomain('ltdp', get_template_directory() . '/languages');
+}
