@@ -71,6 +71,14 @@
                     <?php endif; ?>  
             </div>
         </section>
+        
+        <section class="questionnaire">
+            <img data-scrolly="fromRight" class="deco1" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-blanc.svg" alt="Cercles décoratifs bleus" />
+            <div data-scrolly="fromLeft" class="wrapper">
+                <?php echo the_content(); ?>
+            </div>
+            <img data-scrolly="fromLeft" class="deco2" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="Cercles décoratifs bleus" />
+        </section>
 
         <?php endwhile; ?>
         <?php endif; ?>  
