@@ -50,6 +50,12 @@
                 border-radius: 110px;
                 z-index: -1;
             }
+
+            .gfield_radio {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
         }
 
         .button_form {
@@ -192,6 +198,13 @@
             }
         }
     }
+}
+
+.gform_wrapper.gravity-theme .gfield_checkbox label,
+.gform_wrapper.gravity-theme .gfield_radio label {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1400px) {
