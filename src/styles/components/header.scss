@@ -18,6 +18,23 @@
                 width: 75%;
             }
         }
+
+        .menu_desktop {
+            display: flex;
+
+            @media only screen and (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .menu_mobile {
+            display: none;
+
+            @media only screen and (max-width: 500px) {
+                display: flex;
+                width: 75%;
+            }
+        }
     }
 }
 
