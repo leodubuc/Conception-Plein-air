@@ -19,7 +19,8 @@
         <header class="header" data-component="Header">
             <div class="wrapper">
                 <a href="<?php bloginfo('url'); ?>">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="Logo de l'organisme">
+                    <img class="menu_desktop" src="<?php bloginfo('template_url'); ?>/assets/images/logo_text.png" alt="Logo de l'organisme">
+                    <img class="menu_mobile" src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Logo de l'organisme">
                 </a>
             
                 <div class="nav_content">
