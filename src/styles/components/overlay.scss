@@ -7,6 +7,12 @@
 @media only screen and (max-width: 1500px) {
     .menu {
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media only screen and (max-width: 800px) {
+            gap: 10px;
+        }
 
         .wrapper {
             position: fixed;
@@ -17,7 +23,7 @@
             background: white;
             z-index: 10;
 
-            clip-path: circle(25px at calc(100% - 45px) 45px);
+            clip-path: circle(25px at calc(100% - 45px) 60px);
 
             transition: all 0.3s ease-in-out;
         }
@@ -29,7 +35,7 @@
         .menu-btn {
             position: fixed;
             right: 20px;
-            top: 20px;
+            top: 35px;
             z-index: 12;
             text-align: center;
             line-height: 50px;
@@ -97,7 +103,6 @@
                     border-radius: 30px;
                     border: none;
                     filter: drop-shadow(4px 6px 0px #1757a1);
-                    font-weight: 500;
 
                     transition: 0.4s $ease-in-out-back;
 
@@ -110,6 +115,7 @@
 
                     a {
                         color: var(--color-very-pale-green);
+                        font-weight: 500;
                     }
 
                     @media only screen and (max-width: 800px) {
@@ -135,10 +141,11 @@
 
                     a {
                         color: var(--color-black);
+                        font-weight: 500;
                     }
 
                     @media only screen and (max-width: 800px) {
-                        padding: 10px 15px;
+                        padding: 10px 10px;
                     }
                 }
 
@@ -149,10 +156,6 @@
                     }
                 }
             }
-        }
-
-        .wrapper ul li {
-            margin: 15px;
         }
 
         .wrapper ul li a {
