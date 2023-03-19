@@ -58,7 +58,7 @@
             overflow: hidden;
 
             object-fit: cover;
-            bottom: -170px;
+            bottom: -95px;
         }
         @media only screen and (max-width: 900px) {
             height: 100%;
@@ -67,36 +67,9 @@
             object-fit: cover;
             bottom: -170px;
         }
-        @media only screen and (max-width: 800px) {
-            height: 100%;
-            overflow: hidden;
 
-            object-fit: cover;
-            bottom: -75px;
-        }
-        @media only screen and (max-width: 700px) {
-            height: 100%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -75px;
-        }
-        @media only screen and (max-width: 600px) {
-            height: 100%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -200px;
-        }
-        @media only screen and (max-width: 500px) {
-            height: 100%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -75px;
-        }
-        @media only screen and (max-width: 400px) {
-            height: 100%;
+        @media only screen and (max-width: 550px) {
+            height: 80%;
             overflow: hidden;
 
             object-fit: cover;
