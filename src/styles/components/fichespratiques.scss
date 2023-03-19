@@ -11,32 +11,10 @@
             width: 90vw;
         }
         @media only screen and (max-width: 550px) {
-            width: 100vw;
+            width: 90vw;
         }
         @media only screen and (max-width: 375px) {
-            width: 95vw;
-        }
-
-        @supports (-webkit-border-radius: 75px) {
-            border-radius: 75px;
-            -webkit-border-radius: 75px;
-        }
-    }
-
-    .content {
-        padding: 30px 60px;
-        background-color: var(--color-very-pale-green);
-        border-radius: 75px;
-        outline: 8px solid var(--color-deep-green);
-        outline-offset: 14px;
-        margin-bottom: 100px;
-
-        @media only screen and (max-width: 920px) {
-            padding: 30px;
-        }
-        @media only screen and (max-width: 470px) {
-            padding: 25px;
-            border-radius: 40px;
+            width: 90vw;
         }
 
         @supports (-webkit-border-radius: 75px) {
@@ -44,84 +22,91 @@
             -webkit-border-radius: 75px;
         }
 
-        h2 {
-            text-transform: uppercase;
-            text-align: left;
-            color: var(--color-deep-green);
-            display: inline-block;
-            align-self: flex-start;
-            font-size: 3.5em;
-            margin: 30px 0;
+        .content {
+            padding: 30px 60px;
+            background-color: var(--color-very-pale-green);
+            border-radius: 75px;
+            outline: 8px solid var(--color-deep-green);
+            outline-offset: 14px;
+            margin-bottom: 100px;
 
-            @media only screen and (max-width: 1500px) {
+            @media only screen and (max-width: 920px) {
+                padding: 30px;
+            }
+            @media only screen and (max-width: 470px) {
+                padding: 25px;
+                border-radius: 50px;
+            }
+
+            @supports (-webkit-border-radius: 50px) {
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                text-align: left;
+                color: var(--color-black);
+                display: inline-block;
+                align-self: flex-start;
                 font-size: 3em;
-            }
-            @media only screen and (max-width: 1280px) {
-                font-size: 2.5em;
-            }
-            @media only screen and (max-width: 1080px) {
-                font-size: 2em;
-            }
-        }
+                margin: 30px 0;
 
-        .liste {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-
-            @media only screen and (max-width: 1500px) {
-                display: block;
-                gap: 0;
+                @media only screen and (max-width: 1500px) {
+                    font-size: 3em;
+                }
+                @media only screen and (max-width: 1280px) {
+                    font-size: 2.5em;
+                }
+                @media only screen and (max-width: 1080px) {
+                    font-size: 2em;
+                }
             }
 
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
+            .liste {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
 
-                li {
-                    background: url(../assets/images/illustrations/list-style.svg)
-                        no-repeat left top;
-                    padding: 0 0 25px 80px;
+                @media only screen and (max-width: 1500px) {
+                    display: block;
+                    gap: 0;
+                }
 
-                    @media only screen and (max-width: 920px) {
-                        padding: 0 0 18px 67px;
-                    }
-                    @media only screen and (max-width: 375px) {
-                        padding: 0 0 28px 60px;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        background: url(../assets/images/illustrations/list-style.svg)
+                            no-repeat left center;
+                        padding: 15px 0 15px 80px;
+
+                        @media only screen and (max-width: 920px) {
+                            padding: 15px 0 15px 65px;
+                        }
+
+                        @media only screen and (max-width: 500px) {
+                            padding: 15px 0 15px 50px;
+                            background-size: 12%;
+                        }
                     }
                 }
             }
         }
-    }
 
-    .fiche_chiffreR,
-    .fiche_chiffreL {
-        margin: 80px 0;
-    }
-
-    .chiffre {
-        position: absolute;
-        top: 0;
-
-        z-index: -1;
-
-        color: var(--color-white);
-        background-color: var(--color-deep-green);
-        border-radius: 10px;
-        display: inline-block;
-
-        @media only screen and (max-width: 375px) {
-            padding: 15px 50px 40px 140px;
-        }
-
-        h2 {
-            margin: 0;
-        }
-    }
-
-    .fiche_chiffreR {
         .chiffre {
+            position: absolute;
+            top: 0;
+
+            z-index: -1;
+
+            color: var(--color-white);
+            background-color: var(--color-deep-green);
+            border-radius: 10px;
+            display: inline-block;
+
             right: -160px;
             padding: 30px 50px 30px 300px;
 
@@ -144,135 +129,6 @@
                 right: 65px;
                 top: -80px;
             }
-        }
-    }
-
-    .fiche_chiffreL {
-        .chiffre {
-            left: -160px;
-            padding: 30px 300px 30px 50px;
-
-            @media only screen and (max-width: 1500px) {
-                left: -70px;
-            }
-            @media only screen and (max-width: 1080px) {
-                left: 163px;
-                top: -104px;
-                padding: 30px 50px 30px 145px;
-            }
-            @media only screen and (max-width: 625px) {
-                left: 145px;
-                top: -94px;
-            }
-            @media only screen and (max-width: 500px) {
-                left: 125px;
-            }
-            @media only screen and (max-width: 470px) {
-                left: 65px;
-                top: -80px;
-            }
-        }
-    }
-}
-.fichespratiques-test {
-    margin: 80px 0;
-
-    .wrapper {
-        width: 70vw;
-        padding-bottom: 80px;
-
-        position: relative;
-
-        @media only screen and (max-width: 1080px) {
-            width: 90vw;
-        }
-        @media only screen and (max-width: 550px) {
-            width: 100vw;
-        }
-        @media only screen and (max-width: 375px) {
-            width: 95vw;
-        }
-    }
-
-    .content {
-        padding: 30px 60px;
-        background-color: var(--color-very-pale-green);
-        border-radius: 75px;
-        outline: 8px solid var(--color-deep-blue);
-        outline-offset: 14px;
-
-        @media only screen and (max-width: 920px) {
-            padding: 30px;
-        }
-        @media only screen and (max-width: 470px) {
-            padding: 25px;
-            border-radius: 40px;
-        }
-
-        h2 {
-            text-transform: uppercase;
-            text-align: left;
-            color: var(--color-deep-green);
-            display: inline-block;
-            align-self: flex-start;
-            font-size: 3.5em;
-            margin: 30px 0;
-
-            @media only screen and (max-width: 1500px) {
-                font-size: 3em;
-            }
-            @media only screen and (max-width: 1280px) {
-                font-size: 2.5em;
-            }
-            @media only screen and (max-width: 1080px) {
-                font-size: 2em;
-            }
-        }
-
-        .liste {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-
-            @media only screen and (max-width: 1500px) {
-                display: block;
-                gap: 0;
-            }
-
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-
-                li {
-                    background: url(../assets/images/illustrations/list-style.svg)
-                        no-repeat left top;
-                    padding: 0 0 25px 80px;
-
-                    @media only screen and (max-width: 920px) {
-                        padding: 0 0 18px 67px;
-                    }
-                    @media only screen and (max-width: 375px) {
-                        padding: 0 0 28px 60px;
-                    }
-                }
-            }
-        }
-    }
-
-    .fiche_pratique {
-        margin: 80px 0;
-
-        .chiffre {
-            position: absolute;
-            top: 0;
-
-            z-index: -1;
-
-            color: var(--color-white);
-            background-color: var(--color-deep-green);
-            border-radius: 10px;
-            display: inline-block;
 
             @media only screen and (max-width: 375px) {
                 padding: 15px 50px 40px 140px;
@@ -283,78 +139,60 @@
             }
         }
     }
-}
 
-.fichespratiques-test {
-    margin: 80px 0;
+    .wrapper:nth-of-type(odd) + .wrapper {
+        .chiffre {
+            left: -160px;
+            padding: 30px 300px 30px 50px;
+            right: 160px;
 
-    ­ &:nth-child(odd) .chiffre {
-        right: -160px;
-        padding: 30px 50px 30px 300px;
+            h2 {
+                text-align: left;
+            }
 
-        @media only screen and (max-width: 1500px) {
-            right: -70px;
-        }
-        @media only screen and (max-width: 1080px) {
-            right: 163px;
-            top: -104px;
-            padding: 30px 50px 30px 145px;
-        }
-        @media only screen and (max-width: 625px) {
-            right: 145px;
-            top: -94px;
-        }
-        @media only screen and (max-width: 500px) {
-            right: 125px;
-        }
-        @media only screen and (max-width: 470px) {
-            right: 65px;
-            top: -80px;
-        }
-    }
+            @media only screen and (max-width: 1500px) {
+                left: -70px;
+            }
+            @media only screen and (max-width: 1080px) {
+                width: 27%;
+                left: 163px;
+                top: -104px;
+                padding: 30px 145px 30px 50px;
+            }
 
-    &:nth-child(even) .chiffre {
-        left: -160px;
-        padding: 30px 300px 30px 50px;
+            @media only screen and (max-width: 1080px) {
+                width: 27%;
+                left: 163px;
+                top: -104px;
+                padding: 30px 145px 30px 50px;
+            }
 
-        @media only screen and (max-width: 1500px) {
-            left: -70px;
-        }
-        @media only screen and (max-width: 1080px) {
-            left: 163px;
-            top: -104px;
-            padding: 30px 50px 30px 145px;
-        }
-        @media only screen and (max-width: 625px) {
-            left: 145px;
-            top: -94px;
-        }
-        @media only screen and (max-width: 500px) {
-            left: 125px;
-        }
-        @media only screen and (max-width: 470px) {
-            left: 65px;
-            top: -80px;
-        }
-    }
+            @media only screen and (max-width: 1000px) {
+                width: 30%;
+            }
 
-    .chiffre {
-        position: absolute;
-        top: 0;
+            @media only screen and (max-width: 900px) {
+                width: 35%;
+            }
 
-        z-index: -1;
+            @media only screen and (max-width: 800px) {
+                width: 38%;
+            }
+            @media only screen and (max-width: 800px) {
+                width: 42%;
+                left: 130px;
+            }
 
-        color: var(--color-white);
-        background-color: var(--color-deep-green);
-        border-radius: 10px;
-        display: inline-block;
-
-        @media only screen and (max-width: 375px) {
-            padding: 15px 50px 40px 140px;
-        }
-
-        h2 {
-            margin: 0;
+            @media only screen and (max-width: 700px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 500px) {
+                left: 110px;
+            }
+            @media only screen and (max-width: 470px) {
+                left: 65px;
+                top: -80px;
+            }
         }
     }
 }
