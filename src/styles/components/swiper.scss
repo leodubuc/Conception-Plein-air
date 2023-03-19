@@ -30,6 +30,35 @@
     @media only screen and (max-width: 1156px) {
         .swiper-slide {
             height: 80vh;
+            background: url(../assets/background/temoignage1156.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            p {
+                width: 40%;
+                text-align: center;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .swiper-slide {
+            height: 80vh;
+            background: url(../assets/background/temoignage900.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            p {
+                width: 40%;
+                text-align: center;
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .swiper-slide {
+            height: 80vh;
             background: url(../assets/background/temoignageMobile.svg);
             background-repeat: no-repeat;
             background-size: contain;
@@ -41,5 +70,6 @@
             }
         }
     }
+
 }
 //bravo Léo  je suis fière de toi
