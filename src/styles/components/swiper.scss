@@ -70,6 +70,13 @@
             }
         }
     }
+}
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    --swiper-pagination-color: var(--color-deep-blue);
+    --swiper-pagination-bullet-inactive-color: var(--color-deep-blue);
 }
 //bravo Léo  je suis fière de toi
