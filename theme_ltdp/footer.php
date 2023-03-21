@@ -76,10 +76,9 @@
                                 $link = get_sub_field('footer_contact_adress');
                                 if( $link ): 
                                 $link_url = $link['url'];
-                                $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_blank';
                                 ?>
-                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Où nous trouver?', 'ltdp'); ?></a>
                                 <?php endif; ?>
                     </div>
                             
@@ -93,8 +92,7 @@
         <?php if(have_rows('footer_socials', 'options')) : ?>   
             <?php while (have_rows('footer_socials', 'options')) : the_row() ?> 
 
-            <?php $titre_social = get_sub_field('footer_socials_titre') ?>
-            <span><?php echo ($titre_social); ?></span>
+            <span><?php _e('Réseaux sociaux', 'ltdp'); ?></span>
 
             <div class="reseaux">  
 
@@ -115,7 +113,14 @@
         <span><?php _e('Infolettre', 'ltdp'); ?></span>
 
         <div class="button"> 
-            <a href="https://tempsdunepause.us14.list-manage.com/subscribe?u=e8e08cab72280f8d74f7dc4bb&id=2b7871dae2" target="_blank"><?php _e('Inscription', 'ltdp'); ?></a>
+            <?php 
+                $link = get_sub_field('footer_infolettre');
+                if( $link ): 
+                $link_url = $link['url'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Inscription', 'ltdp'); ?></a>
+                <?php endif; ?>
         </div>
         </form>
         
