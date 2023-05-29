@@ -1,5 +1,4 @@
 .composante_texte_image_1 {
-    padding: var(--spacing-lg);
     .wrapper {
         display: flex;
         gap: 100px;
@@ -78,7 +77,6 @@
 }
 
 .composante_texte_image_1:nth-of-type(even) + .composante_texte_image_1 {
-    background-color: #dceab2;
     .wrapper {
         .content {
             order: 2;

@@ -1,160 +1,32 @@
 .hero {
-    height: 85vh;
-    background-color: beige;
+    height: 100vh;
+    background-image: url(../../assets/images/hero/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-
-    video {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-    }
+    justify-content: center;
 
     .wrapper {
-        position: relative;
-        z-index: 2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 50px;
-
         margin-bottom: 25px;
 
-        @media only screen and (max-width: 1600px) {
-            margin-bottom: 10px;
-        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-        @media only screen and (max-width: 1500px) {
-            margin-bottom: -10px;
-        }
+            margin-bottom: 100px;
 
-        @media only screen and (max-width: 1360px) {
-            margin-bottom: 20px;
-        }
-
-        @media only screen and (max-width: 1110px) {
-            grid-template-columns: 1fr;
-            justify-items: start;
-            gap: 0;
-            margin-bottom: 0;
-        }
-    }
-
-    .courbe_bleu {
-        position: absolute;
-        bottom: -70px;
-        left: 0;
-
-        @media only screen and (max-width: 1440px) {
-            bottom: -50px;
-        }
-
-        @media only screen and (max-width: 1110px) {
-            height: 80%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -160px;
-        }
-        @media only screen and (max-width: 900px) {
-            height: 70%;
-            overflow: hidden;
-            -o-object-fit: cover;
-            object-fit: cover;
-            bottom: -119px;
-        }
-
-        @media only screen and (max-width: 550px) {
-            height: 60%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -100px;
-        }
-        @media only screen and (max-width: 340px) {
-            height: 60%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -80px;
-        }
-        @media only screen and (max-width: 240px) {
-            height: 70%;
-            overflow: hidden;
-
-            object-fit: cover;
-            bottom: -80px;
-        }
-    }
-
-    .courbe_vert {
-        position: absolute;
-        bottom: -50px;
-        left: 0;
-
-        @media only screen and (max-width: 1110px) {
-            display: none;
-        }
-    }
-
-    .bleu {
-        z-index: 1;
-
-        p {
-            position: relative;
-            font-size: 36px;
-            font-family: var(--font-secondary);
-            color: var(--color-deep-blue);
-            font-weight: 600;
-            z-index: 3;
-
-            @media only screen and (max-width: 1360px) {
-                font-size: 24px;
-            }
-
-            @media only screen and (max-width: 1110px) {
-                width: 75%;
-
-                margin: 0;
-            }
-
-            @media only screen and (max-width: 550px) {
-                font-size: 20px;
+            p {
+                color: var(--color-white);
             }
         }
-    }
 
-    .vert {
-        img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            //width: 100vw;
-        }
-
-        p {
-            position: relative;
-            font-size: 36px;
-            font-family: var(--font-secondary);
-            color: var(--color-deep-green);
-
-            font-weight: 600;
-            text-align: right;
-            //margin-top: -200px;
-
-            @media only screen and (max-width: 1360px) {
-                font-size: 24px;
-            }
-
-            @media only screen and (max-width: 550px) {
-                font-size: 20px;
-
-                bottom: -20%;
-            }
+        .plus {
+            color: var(--color-white);
+            border: 1px solid #ffffff;
+            padding: 12px;
         }
     }
 }

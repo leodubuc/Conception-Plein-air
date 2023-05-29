@@ -1,5 +1,5 @@
 //FONTS
-@import url('https://fonts.googleapis.com/css2?family=B612:wght@700&family=Fredoka:wght@400;500&family=Hind+Madurai:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400;600&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -40,7 +40,9 @@
 @import 'components/questionnaire.scss';
 @import 'components/footer.scss';
 @import 'components/service-intro.scss';
-@import 'components/etape.scss';
+
+@import 'components/comp_3colones.scss';
+
 @import 'components/texte-et-swiper.scss';
 @import 'components/approches.scss';
 @import 'components/info_membre.scss';

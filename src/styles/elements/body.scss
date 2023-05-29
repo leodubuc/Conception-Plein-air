@@ -23,3 +23,7 @@ body:last-child .selector {
         width: auto;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

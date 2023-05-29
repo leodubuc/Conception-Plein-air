@@ -16,21 +16,22 @@ h6 {
 
 h1 {
     font-size: var(--font-size-h1);
-    font-family: var(--font-h1);
+    font-family: var(--font-secondary);
     margin: 0;
+    color: var(--color-white);
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 h3 {
     font-size: var(--font-size-h3);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 h4 {
     font-size: var(--font-size-h4);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
