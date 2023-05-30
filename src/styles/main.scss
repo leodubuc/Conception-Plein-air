@@ -41,8 +41,6 @@
 @import 'components/footer.scss';
 @import 'components/service-intro.scss';
 
-@import 'components/comp_3colones.scss';
-
 @import 'components/texte-et-swiper.scss';
 @import 'components/approches.scss';
 @import 'components/info_membre.scss';
@@ -63,6 +61,11 @@
 @import 'components/galerie.scss';
 @import 'components/fichespratiques.scss';
 @import 'components/avantagesCAJ.scss';
+
+//Conception Plein Air
+@import 'components/comp_3colones.scss';
+@import 'components/comp_realisation.scss';
+@import 'components/compo_propos.scss';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

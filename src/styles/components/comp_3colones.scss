@@ -1,10 +1,14 @@
 .composante_3colones {
-    padding: 100px;
+    padding: 100px 0;
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;
+
+        @media only screen and (max-width: 950px) {
+            grid-template-columns: 1fr;
+        }
 
         div {
             text-align: center;

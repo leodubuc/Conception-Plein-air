@@ -1,0 +1,38 @@
+.compo_propos {
+    padding: 100px 0;
+
+    article {
+        position: relative;
+
+        .blur {
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+
+            position: absolute;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 200px 0;
+
+            z-index: 3;
+            position: inherit;
+
+            color: white;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+
+            width: 60%;
+        }
+    }
+}
