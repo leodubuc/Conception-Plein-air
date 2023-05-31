@@ -1,14 +1,16 @@
 .hero {
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: inherit;
+    z-index: 10;
+
+    background-color: #eee;
 
     .wrapper {
-        gap: 50px;
-        margin-bottom: 25px;
+        padding: 100px 0;
 
         div {
             display: flex;
@@ -17,15 +19,26 @@
 
             margin-bottom: 100px;
 
+            h1 {
+                text-align: left;
+            }
+
             p {
                 color: var(--color-white);
             }
+
+            .plus {
+                color: var(--color-white);
+                border: 1px solid #ffffff;
+                padding: 12px;
+
+                margin-top: 50px;
+            }
         }
 
-        .plus {
-            color: var(--color-white);
-            border: 1px solid #ffffff;
-            padding: 12px;
+        a {
+            display: flex;
+            justify-content: center;
         }
     }
 }

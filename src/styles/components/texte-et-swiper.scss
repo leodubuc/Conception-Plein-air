@@ -17,14 +17,6 @@
             }
         }
     }
-
-    .deco {
-        position: absolute;
-        bottom: -20%;
-        right: 0;
-        width: 15%;
-        z-index: 2;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -36,27 +28,11 @@
                 }
             }
         }
-
-        .deco {
-            position: absolute;
-            bottom: -10%;
-            right: 0;
-            width: 15%;
-            z-index: 2;
-        }
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .composante_texte_et_swiper {
         padding: var(--spacing-md);
-
-        .deco {
-            position: absolute;
-            bottom: -10%;
-            right: 0;
-            width: 20%;
-            z-index: 2;
-        }
     }
 }

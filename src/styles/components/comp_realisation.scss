@@ -8,6 +8,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
 
+        @media only screen and (max-width: 1300px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         h2 {
             border-top: 1px solid black;
             border-bottom: 1px solid black;
@@ -23,8 +28,13 @@
 
         &:nth-child(odd) {
             h2 {
-                padding: 25px 0 25px 162px;
+                padding: 25px 25px 25px 162px;
                 text-align: left;
+
+                @media only screen and (max-width: 1300px) {
+                    padding: 25px 0;
+                    text-align: center;
+                }
             }
 
             .contenu_text {
@@ -42,9 +52,15 @@
 
         &:nth-child(even) {
             h2 {
-                padding: 25px 162px 25px 0;
+                padding: 25px 162px 25px 25px;
                 text-align: right;
                 order: 2;
+
+                @media only screen and (max-width: 1300px) {
+                    order: inherit;
+                    padding: 25px 0;
+                    text-align: center;
+                }
             }
 
             .contenu_text {
@@ -59,6 +75,10 @@
                 height: 100%;
 
                 order: 1;
+
+                @media only screen and (max-width: 1300px) {
+                    order: inherit;
+                }
             }
         }
     }

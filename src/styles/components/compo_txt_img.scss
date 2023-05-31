@@ -32,6 +32,7 @@
 
             @media only screen and (max-width: 1150px) {
                 padding-top: 75px;
+                text-align: center;
             }
         }
 
@@ -46,28 +47,28 @@
 }
 
 .composante_texte_image_1:nth-of-type(odd) {
-    .content {
-        padding-left: 162px;
-
-        @media only screen and (max-width: 1150px) {
-            padding: 0 162px;
-        }
+    .wrapper_gauche {
+        padding: 0 50px;
     }
 }
 
 .composante_texte_image_1 + .composante_texte_image_1:nth-of-type(even) {
+    .wrapper_droite {
+        padding: 0 50px;
+    }
+
     .content {
         h2 {
             text-align: right;
         }
 
         order: 2;
-        padding-right: 162px;
+        //padding-right: 162px;
         text-align: right;
 
         @media only screen and (max-width: 1150px) {
             order: initial;
-            padding: 0 162px;
+            //padding: 0 162px;
         }
     }
 }
