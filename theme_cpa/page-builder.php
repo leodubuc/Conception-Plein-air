@@ -1,62 +1,25 @@
 <?php if( have_rows('cpa_composantes') ): ?>
     <?php while( have_rows('cpa_composantes') ): the_row(); ?>
 
-    <?php if( get_row_layout() == 'hero' ): ?>
+        <?php if( get_row_layout() == 'hero' ): ?>
             <?php include 'partials/tpl-bloc-hero.php';?>
-
-
-
-        <?php if( get_row_layout() == 'bloc_titre_paragraphe_liste_image_bouton' ): ?>
-            <?php include 'partials/tpl-intro-service.php';?>
             <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_contact' ):  ?>
-            <?php include 'partials/tpl-bloc-contact.php';?>
-        <?php elseif ( get_row_layout() == 'call_to_action_simple' ):  ?> 
-            <?php include 'partials/tpl-cta-simple.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_download_prog' ):  ?> 
-            <?php include 'partials/tpl-bloc-download.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'call_to_action_list_middle' ):  ?> 
-            <?php include 'partials/tpl-cta-list-middle.php';?>
+
+        <?php elseif( get_row_layout() == 'bloc-img-text' ): ?>
+            <?php include 'partials/tpl-bloc-img-text.php';?>
             <?php #fini ?>    
-        <?php elseif ( get_row_layout() == 'call_to_action_list_left' ):  ?> 
-            <?php include 'partials/tpl-cta-list-left.php';?>
+
+        <?php elseif( get_row_layout() == 'swipper_titre_text' ): ?>
+            <?php include 'partials/tpl-bloc-swiper.php';?>
+            <?php #fini ?>    
+            
+        <?php elseif( get_row_layout() == 'trois_colonne' ): ?>
+            <?php include 'partials/tpl-bloc-trois-colonnes.php';?>
             <?php #fini ?> 
-        <?php elseif ( get_row_layout() == 'bloc_temoignages_carrousel' ):  ?> 
-            <?php include 'partials/tpl-carrousel.php';?>
-            <?php #fini ?> 
-        <?php elseif ( get_row_layout() == 'bloc_cartes_info_liste' ):  ?> 
-            <?php include 'partials/tpl-cards-info-list.php';?>
-            <?php #fini ?> 
-        <?php elseif ( get_row_layout() == 'bloc_cards_info_text' ):  ?> 
-            <?php include 'partials/tpl-cards-info-text.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'info_swiper_img' ):  ?> 
-            <?php include 'partials/tpl-info-swiper-img.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_info_text_img' ):  ?> 
-            <?php include 'partials/tpl-info-text-img.php';?>
-        <?php elseif ( get_row_layout() == 'bloc_info_list_img' ):  ?> 
-            <?php include 'partials/tpl-info-list-img.php';?>    
-        <?php elseif ( get_row_layout() == 'bloc_gallery' ):  ?> 
-            <?php include 'partials/tpl-gallery.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_video' ):  ?> 
-            <?php include 'partials/tpl-bloc-video.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_links' ):  ?> 
-            <?php include 'partials/tpl-bloc-links.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_team' ):  ?> 
-            <?php include 'partials/tpl-bloc-team.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_fiche_pratique' ):  ?> 
-            <?php include 'partials/tpl-fiches-pratiques.php';?>
-            <?php #fini ?>
-        <?php elseif ( get_row_layout() == 'bloc_info_columns' ):  ?> 
-            <?php include 'partials/tpl-bloc-deux-colonnes.php';?>
-            <?php #fini ?>
+            
+        <?php elseif( get_row_layout() == 'grid_hover' ): ?>
+            <?php include 'partials/tpl-bloc-grille-realisation.php';?>
+            <?php #fini ?>     
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>

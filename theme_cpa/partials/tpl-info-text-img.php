@@ -17,7 +17,7 @@
         </div>
 
         <?php if( get_sub_field('bloc_info_text_img_image') ): ?>
-                <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_info_text_img_image'); ?>" />
+            <img data-scrolly="fromBottom" src="<?php the_sub_field('bloc_info_text_img_image'); ?>" />
         <?php endif; ?>
         
     </div>

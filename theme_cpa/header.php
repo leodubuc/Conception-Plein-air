@@ -18,9 +18,9 @@
     <div class="content">
         <header class="header" data-component="Header">
             <div class="wrapper">
-                <a href="<?php bloginfo('url'); ?>">
-                    <img class="menu_mobile" src="<?php bloginfo('template_url'); ?>/assets/images/hero/logo_colore.png" alt="Logo de l'organisme">
-                </a>
+            <a class="logo" href="<?php bloginfo('url'); ?>">
+                <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Logo de l'organisme">
+            </a>
             
                 <div class="nav_content">
                     <nav>

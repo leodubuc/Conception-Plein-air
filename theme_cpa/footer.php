@@ -10,7 +10,7 @@
                         )); ?>
 
                     <a href="<?php bloginfo('url'); ?>">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/images/footer/logo_blanc.png" alt="Logo de l'organisme">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_blanc.png" alt="Logo de l'organisme">
                     </a>
 
                     <?php wp_nav_menu(array(

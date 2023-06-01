@@ -7,35 +7,10 @@
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
 
-    <section class="hero">
-        <div class="wrapper">
-        <?php if(have_rows('static_services_grid')) : ?>   
-            <?php while (have_rows('static_services_grid')) : the_row() ?> 
-            <div>
-                <?php $titre_service = get_sub_field('hero_titre') ?>
-                <h1 data-scrolly="fromBottom"><?php echo ($hero_titre); ?></h1>
-
-                <?php $titre_service = get_sub_field('hero_texte') ?>
-                <p data-scrolly="fromBottom"><?php echo ($hero_texte); ?></p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.
-                </p>
-
-                <a href="#" class="plus">En savoir plus</a>
-            </div>
-
-            <a href="#intro"><img src="assets/images/hero/fleche_bas.png" alt="" /></a>
-        </div>
-
-        <div class="bg_image">
-            <img src="/localhost/conception_plein_air/wp-content/themes/theme_cpa/assets/images/hero/hero_bg.jpg" alt="">
-        </div>
-    </section>
+    
 
 <?php /* Pour l'instant, je vais mettre seulement le hero avec un BG et le header ba rester blanc, comme ça on va pouvoir changer l'image
-dans chacune des pages */ ?>
+dans chacune des pages 
 
         <section class="services">
             <div class="wrapper">
@@ -210,7 +185,7 @@ dans chacune des pages */ ?>
                 <?php echo the_content(); ?>
             </div>
             <img data-scrolly="fromLeft" class="deco2" src="/pfe/ltdp/wp-content/themes/theme_ltdp/assets/images/illustrations/deco/bleu-fonce-pale.svg" alt="Cercles décoratifs bleus" />
-        </section>
+        </section>*/ ?>
         
         <?php include 'page-builder.php';?>
         
