@@ -28,6 +28,10 @@
         <?php elseif( get_row_layout() == 'texte_background_flou' ): ?>
             <?php include 'partials/tpl-bloc-propos.php';?>
             <?php #fini ?>
+
+        <?php elseif( get_row_layout() == 'bloc_liste_numero' ): ?>
+            <?php include 'partials/tpl-bloc-services.php';?>
+            <?php #fini ?>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
