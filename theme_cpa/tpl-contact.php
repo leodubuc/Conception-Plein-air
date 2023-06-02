@@ -4,89 +4,57 @@
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
-    
-        <section class="contact_page">
-            <div class="wrapper">
-                <h1 data-scrolly="fromBottom"><?php the_field('static_contact_titre'); ?></h1>
 
-                <div>
-                    <div class="info">
-                    <?php if( have_rows('static_contact_info') ): ?>
-                        <?php while( have_rows('static_contact_info') ) : the_row(); ?>
-                        <div>
-                            <h3><?php _e('Téléphone', 'ltdp'); ?></h3>
-                            <div>
-                                <?php 
-                                    $link = get_sub_field('static_contact_phone');
-                                    if( $link ): 
-                                    $link_url = $link['url'];
-                                    $link_title = $link['title'];
-                                    $link_target = $link['target'] ? $link['target'] : '_self';
-                                    ?>
-                                        <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                    <?php endif; ?>
-                            </div>
-                        </div>
-                            
-                        <div>
-                            <h3><?php _e('Courriel', 'ltdp'); ?></h3>
-                            <div>
-                                <?php 
-                                    $link = get_sub_field('static_contact_email');
-                                    if( $link ): 
-                                    $link_url = $link['url'];
-                                    $link_title = $link['title'];
-                                    $link_target = $link['target'] ? $link['target'] : '_self';
-                                    ?>
-                                        <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                    <?php endif; ?>
-                            </div>
-                        </div>
-                            
-                        <div>
-                            <h3><?php _e('Bureaux', 'ltdp'); ?></h3>
-                            <?php if( have_rows('static_contact_adress') ): ?>
-                                <?php while( have_rows('static_contact_adress') ) : the_row(); ?> 
-                                    <div> 
-                                        <?php 
-                                        $link = get_sub_field('static_contact_adresses');
-                                        if( $link ): 
-                                            $link_url = $link['url'];
-                                            $link_title = $link['title'];
-                                            $link_target = $link['target'] ? $link['target'] : '_blank';
-                                            ?>
-                                            <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                        <?php endif; ?>
+<section class="contact_page">
+    <?php if( get_sub_field('contact_image') ): ?>
+        <img data-scrolly="fromRight" src="<?php the_sub_field('contact_image'); ?>" />
+    <?php endif; ?>
 
-                                        <p><strong><?php the_sub_field('static_contact_days'); ?></strong></p>
-                                    </div>
-                                <?php endwhile; ?>
-                            <?php endif; ?> 
-                        </div>
-                            
+    <div class="content_contact">
+    <h2 data-scrolly="fromLeft"><?php the_sub_field('contact_titre'); ?></h2>
 
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                    </div>
-                    <div class="iframe">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5294583970817!2d-73.60410598514635!3d45.55979043508209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ecb21fdc06d%3A0x3d1eb87219f23114!2sCHSLD%20Joseph-Fran%C3%A7ois-Perrault%20(anciennement%20CHSLD%20des%20Quatre-Temps)!5e0!3m2!1sfr!2sca!4v1677532328389!5m2!1sfr!2sca"
-                            width="100%"
-                            height="100%"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
-                    </div>
-                </div>
+        <div>
+            <div class="list-contact phone">
+                <img src="assets/images/phone.png" alt="Icon de téléphone" />
+                <?php 
+                    $link = get_sub_field('contact_phone');
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                        <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
             </div>
-        </section>
+            <div class="list-contact mail">
+                <img src="assets/images/mail.png" alt="Icon de e-mail" />
+                <?php 
+                    $link = get_sub_field('contact_mail');
+                    if( $link ): 
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+                    ?>
+                        <a data-scrolly="fromLeft" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                <?php endif; ?>
+            </div>
 
+            <p data-scrolly="fromLeft"><?php the_sub_field('contact_adresse'); ?></p>
+        </div>
 
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22373.41630079585!2d-75.58765370640828!3d45.49644799368349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1092990d113f%3A0xa39759dcbf2c34bc!2s1243%20Rue%20Couture%2C%20Gatineau%2C%20QC%20J8P%201R5!5e0!3m2!1sfr!2sca!4v1685720562577!5m2!1sfr!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+</section>
 
-        
-    <?php endwhile; ?> 
+<?php endwhile; ?> 
 <?php endif; ?>
 
 <?php include 'page-builder.php';?>

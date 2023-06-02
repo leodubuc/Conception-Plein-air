@@ -30,58 +30,42 @@
     <?php if(have_rows('footer_contact', 'options')) : ?>   
         <?php while (have_rows('footer_contact', 'options')) : the_row() ?> 
         
-        <div class="contact">
-            <?php $titre_contact = get_sub_field('footer_contact_titre') ?>
-            <span><?php echo ($titre_contact); ?></span>
+            <div class="contact">
+                <?php $titre_contact = get_sub_field('footer_contact_titre') ?>
+                <span><?php echo ($titre_contact); ?></span>
                            
                 <div>  
                     <div class="list-contact phone">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-cell"></use>
-                                </svg>
-                                        
-                                <?php 
-                                $link = get_sub_field('footer_contact_phone');
-                                if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                <?php endif; ?>           
-                            </div> 
-                            
-                            <div class="list-contact mail">
-                            <svg class="icon">
-                                    <use xlink:href="#icon-email"></use>
-                                </svg>
-                                        
-                                <?php 
-                                $link = get_sub_field('footer_contact_email');
-                                if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                                <?php endif; ?>
-                            </div>
-
-                            <div class="list-contact map">
-                            <svg class="icon">
-                                    <use xlink:href="#icon-mao"></use>
-                                </svg>
-                                        
-                                <?php 
-                                $link = get_sub_field('footer_contact_adress');
-                                if( $link ): 
-                                $link_url = $link['url'];
-                                $link_target = $link['target'] ? $link['target'] : '_blank';
-                                ?>
-                                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Où nous trouver?', 'ltdp'); ?></a>
-                                <?php endif; ?>
-                    </div>
-                            
+                        <?php if( get_sub_field('image_telephone') ): ?>
+                            <img data-scrolly="fromBottom" src="<?php the_sub_field('image_telephone'); ?>" />
+                        <?php endif; ?>
+                                
+                        <?php 
+                        $link = get_sub_field('footer_contact_phone');
+                        if( $link ): 
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                        ?>
+                            <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                        <?php endif; ?>           
+                    </div> 
+                        
+                    <div class="list-contact mail">
+                        <?php if( get_sub_field('image_email') ): ?>
+                            <img data-scrolly="fromBottom" src="<?php the_sub_field('image_email'); ?>" />
+                        <?php endif; ?>
+                                
+                        <?php 
+                        $link = get_sub_field('footer_contact_email');
+                        if( $link ): 
+                        $link_url = $link['url'];
+                        $link_title = $link['title'];
+                        $link_target = $link['target'] ? $link['target'] : '_self';
+                        ?>
+                            <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                        <?php endif; ?>
+                    </div> 
                 </div>
             </div>
         <?php endwhile; ?>
@@ -108,38 +92,39 @@
         <?php endif; ?>      
     </div>
               
+    <div class="list-contact map">
+        <?php if(have_rows('footer_adresse', 'options')) : ?>   
+            <?php while (have_rows('footer_adresse', 'options')) : the_row() ?> 
 
-    <div class="infolettre">
-        <span><?php _e('Infolettre', 'ltdp'); ?></span>
+                <?php $titre_contact = get_sub_field('titre_adresse') ?>
+                <span><?php echo ($titre_contact); ?></span>
 
-        <div class="button"> 
-            <?php 
-                $link = get_sub_field('footer_infolettre');
+                <?php 
+                $link = get_sub_field('link_adress');
                 if( $link ): 
                 $link_url = $link['url'];
-                $link_target = $link['target'] ? $link['target'] : '_self';
+                $link_target = $link['target'] ? $link['target'] : '_blank';
                 ?>
-                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Inscription', 'ltdp'); ?></a>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Où nous trouver?', 'ltdp'); ?></a>
                 <?php endif; ?>
-        </div>
-        </form>
-        
+
+            <?php endwhile; ?>
+        <?php endif; ?>  
     </div>
-</div>
 
 <?php endwhile; ?>
 <?php endif; ?>  
 
 
-        <div class="partenaires">
-            <?php if(have_rows('footer_partenaire', 'options')) : ?>   
-                <?php while (have_rows('footer_partenaire', 'options')) : the_row() ?>   
-                    <?php $img = get_sub_field('image_partenaire') ?>
-                    <?php $url = $img['url'] ?>
-                <a href="<?php echo get_sub_field('url_partenaire')?>" target="_blank"><img src="<?php echo esc_url($url); ?>" alt="Logos de réseaux sociaux"></a>
-                <?php endwhile; ?>
-            <?php endif; ?> 
-        </div>
+<div class="partenaires">
+    <?php if(have_rows('footer_partenaire', 'options')) : ?>   
+        <?php while (have_rows('footer_partenaire', 'options')) : the_row() ?>   
+            <?php $img = get_sub_field('image_partenaire') ?>
+            <?php $url = $img['url'] ?>
+        <a href="<?php echo get_sub_field('url_partenaire')?>" target="_blank"><img src="<?php echo esc_url($url); ?>" alt="Logos de réseaux sociaux"></a>
+        <?php endwhile; ?>
+    <?php endif; ?> 
+</div>
 
         
     </div>

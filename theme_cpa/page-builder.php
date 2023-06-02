@@ -19,7 +19,15 @@
             
         <?php elseif( get_row_layout() == 'grid_hover' ): ?>
             <?php include 'partials/tpl-bloc-grille-realisation.php';?>
-            <?php #fini ?>     
+            <?php #fini ?>  
+            
+        <?php elseif( get_row_layout() == 'titre_texte_image_align' ): ?>
+            <?php include 'partials/tpl-bloc-projet.php';?>
+            <?php #fini ?>
+
+        <?php elseif( get_row_layout() == 'texte_background_flou' ): ?>
+            <?php include 'partials/tpl-bloc-propos.php';?>
+            <?php #fini ?>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
