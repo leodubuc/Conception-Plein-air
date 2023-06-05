@@ -48,8 +48,7 @@
 
 .composante_texte_image_1:nth-of-type(odd) {
     .content {
-        padding: 50px;
-        padding-left: 162px;
+        padding: 200px 0 200px 162px;
 
         @media screen and (max-width: 1500px) {
             padding-left: 100px;
@@ -71,8 +70,7 @@
 
 .composante_texte_image_1 + .composante_texte_image_1:nth-of-type(even) {
     .content {
-        padding: 50px;
-        padding-right: 162px;
+        padding: 200px 162px 200px 0;
 
         @media screen and (max-width: 1500px) {
             padding-right: 100px;

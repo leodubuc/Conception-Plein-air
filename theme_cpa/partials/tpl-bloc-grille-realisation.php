@@ -14,9 +14,9 @@
                     <?php endif; ?>
 
                     <div class="hover">
-                        <span data-scrolly="fromLeft"><?php the_sub_field('grid_tags'); ?></span>
-
-                        <p data-scrolly="fromLeft"><?php the_sub_field('grid_project_title'); ?></p>
+                        <span data-scrolly="fromLeft"><?php the_sub_field('grid_project_title'); ?></span>
+                        
+                        <p data-scrolly="fromLeft"><?php the_sub_field('grid_tags'); ?></p>
 
                         <div></div>
                     </div>

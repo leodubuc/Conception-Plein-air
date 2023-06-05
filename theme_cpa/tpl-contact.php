@@ -2,6 +2,8 @@
 
 <?php get_header(); ?>
 
+<?php include 'page-builder.php';?>
+
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
 
@@ -57,5 +59,4 @@
 <?php endwhile; ?> 
 <?php endif; ?>
 
-<?php include 'page-builder.php';?>
 <?php get_footer(); ?>

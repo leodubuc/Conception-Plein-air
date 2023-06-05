@@ -92,7 +92,7 @@
         <?php endif; ?>      
     </div>
               
-    <div class="list-contact map">
+    <div class="map">
         <?php if(have_rows('footer_adresse', 'options')) : ?>   
             <?php while (have_rows('footer_adresse', 'options')) : the_row() ?> 
 
@@ -105,7 +105,7 @@
                 $link_url = $link['url'];
                 $link_target = $link['target'] ? $link['target'] : '_blank';
                 ?>
-                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php _e('Où nous trouver?', 'ltdp'); ?></a>
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php the_sub_field('texte_adresse'); ?></a>
                 <?php endif; ?>
 
             <?php endwhile; ?>
@@ -115,7 +115,7 @@
 <?php endwhile; ?>
 <?php endif; ?>  
 
-
+</div>
 <div class="partenaires">
     <?php if(have_rows('footer_partenaire', 'options')) : ?>   
         <?php while (have_rows('footer_partenaire', 'options')) : the_row() ?>   
@@ -127,7 +127,7 @@
 </div>
 
         
-    </div>
+    
 </footer>
 <?php wp_footer(); ?>
 </body>

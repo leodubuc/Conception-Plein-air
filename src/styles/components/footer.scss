@@ -161,89 +161,44 @@ footer {
             }
         }
 
-        .infolettre {
-            align-items: center;
-            text-align: center;
-
-            .container {
-                padding: 15px 0;
-                input {
-                    color: rgba($color: #24243a, $alpha: 0.25);
-                    font-size: 1rem;
-                    padding: 5px 15px;
-                    background-color: var(--color-white);
-                    border-radius: 13px;
-                    border: solid 5px var(--color-very-pale-green);
-                    width: 100%;
-                }
-            }
-            .button {
-                a {
-                    display: inline-block;
-                    color: var(--color-black);
-                    font-weight: 700;
-                    background-color: #65d6ba;
-                    padding: 10px 30px;
-                    border-radius: 30px;
-                    border: none;
-                    filter: drop-shadow(4px 6px 0px #25a18e);
-                    transition: 0.4s $ease-in-out-back;
-                    display: inline-block;
-
-                    &:hover {
-                        cursor: pointer;
-                        transform: translateX(4px) translateY(6px);
-                        filter: none;
-                        transition: 0.4s $ease-in-out-back;
-                    }
-                }
-            }
-
-            @media only screen and (max-width: 1100px) {
-                margin-bottom: 50px;
-            }
-        }
-
-        .partenaires {
+        .map {
             display: flex;
-            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-end;
 
-            justify-content: space-around;
-            align-items: center;
+            a {
+                color: white;
+                text-align: right;
+                transition: 0.4s $ease-in-out-back;
 
-            img {
-                padding: 0 10px;
-            }
-
-            @media only screen and (max-width: 1680px) {
-                flex-wrap: wrap;
-            }
-
-            @media only screen and (max-width: 500px) {
-                a {
-                    width: 50%;
-                    padding: 10px;
+                &:hover {
+                    transform: translateX(-10px);
+                    transition: 0.4s $ease-in-out-back;
                 }
             }
         }
     }
-}
 
-.jauge + footer {
-    margin-top: -65px;
-}
+    .partenaires {
+        display: flex;
+        flex-wrap: nowrap;
 
-.galerie + footer {
-    margin-top: -65px;
-}
-.questionnaire + footer {
-    margin-top: -65px;
-}
+        justify-content: space-around;
+        align-items: center;
 
-.compcontact + footer {
-    margin-top: 150px;
+        img {
+            padding: 0 10px;
+        }
 
-    @media only screen and (max-width: 500px) {
-        margin-top: 100px;
+        @media only screen and (max-width: 1680px) {
+            flex-wrap: wrap;
+        }
+
+        @media only screen and (max-width: 500px) {
+            a {
+                width: 50%;
+                padding: 10px;
+            }
+        }
     }
 }

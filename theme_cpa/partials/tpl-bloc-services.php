@@ -12,7 +12,12 @@
                         </ul>
                     <?php endwhile; ?>
                 <?php endif; ?> 
+
                 <span data-scrolly="fromBottom"><?php the_sub_field('chiffre_services'); ?></span>
+                
+                <?php if( get_sub_field('image_services') ): ?>
+                    <img src="<?php the_sub_field('image_services'); ?>" />
+                <?php endif; ?>
             </article>
         <?php endwhile; ?>
     <?php endif; ?> 
