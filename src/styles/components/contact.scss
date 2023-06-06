@@ -39,10 +39,28 @@
 
             gap: 10px;
 
-            @media only screen and (max-width: 1885px) {
-                flex-direction: column;
+            flex-direction: column;
 
-                margin-bottom: 25px;
+            margin-bottom: 25px;
+
+            .mail {
+                flex-direction: row;
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    transition: 0.4s $ease-in-out-back;
+                    transform: translateY(-5px);
+                }
+            }
+
+            .phone {
+                flex-direction: row;
+                transition: 0.4s $ease-in-out-back;
+
+                &:hover {
+                    transition: 0.4s $ease-in-out-back;
+                    transform: translateY(-5px);
+                }
             }
         }
 

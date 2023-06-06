@@ -42,7 +42,7 @@
     <label for="active" class="menu-btn" onClick='showDialog()'><i class="fas fa-bars"></i></label>
     <div class="wrapper">
         <a class="logo" href="<?php bloginfo('url'); ?>">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="Logo de l'organisme">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/logo_blanc.png" alt="Logo de l'organisme">
         </a>
         
         <ul class="liste_gauche"> 

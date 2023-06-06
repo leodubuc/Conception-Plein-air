@@ -19,6 +19,12 @@
         height: 75vh;
         overflow-y: hidden;
 
+        &:hover {
+            .hover {
+                display: none;
+            }
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -29,10 +35,6 @@
             width: 100%;
             height: 100%;
             z-index: 2;
-
-            &:hover {
-                display: none;
-            }
 
             div {
                 position: absolute;
@@ -57,9 +59,10 @@
                 padding: 50px 25px;
             }
             p {
+                transform-origin: right;
                 position: absolute;
-                top: 100px;
-                left: -80px;
+                top: 0;
+                left: -150px;
 
                 z-index: 2;
                 color: white;

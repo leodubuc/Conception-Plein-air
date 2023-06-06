@@ -21,6 +21,8 @@
         <?php if( get_sub_field('hero_background') ): ?>
             <img data-scrolly="fromRight" src="<?php the_sub_field('hero_background'); ?>" />
         <?php endif; ?>
+
+        <div class="blur"></div>
     </div>
 
 </section>
