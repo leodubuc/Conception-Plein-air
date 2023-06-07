@@ -18,8 +18,10 @@
         position: relative;
         height: 75vh;
         overflow-y: hidden;
+        transition: 0.4s $ease-in-out-back;
 
         &:hover {
+            transition: 0.4s $ease-in-out-back;
             .hover {
                 display: none;
             }
@@ -62,11 +64,9 @@
                 transform-origin: right;
                 position: absolute;
                 top: 0;
-                left: -150px;
-
+                right: 50px;
                 z-index: 2;
-                color: white;
-
+                color: #fff;
                 rotate: -90deg;
             }
         }

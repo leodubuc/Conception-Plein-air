@@ -1,7 +1,7 @@
 .comp_realisation {
     padding: 100px 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 
     article {
         display: grid;
@@ -20,10 +20,12 @@
 
         div {
             height: 100%;
+            width: 100%;
 
             img {
                 height: 100%;
                 width: 100%;
+                object-fit: cover;
             }
         }
 

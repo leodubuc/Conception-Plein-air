@@ -1,4 +1,4 @@
-<section class="comp_grille">
+<section class="comp_grille" id="intro">
     <?php if( have_rows('grid_content') ): ?>
         <?php while( have_rows('grid_content') ) : the_row(); ?>
             <?php if( have_rows('organisateur_grille') ): ?>

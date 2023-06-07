@@ -10,6 +10,10 @@
             grid-template-columns: 1fr;
         }
 
+        @media only screen and (max-width: 500px) {
+            padding: 0;
+        }
+
         article {
             color: var(--color-white);
             padding: 0 25px;

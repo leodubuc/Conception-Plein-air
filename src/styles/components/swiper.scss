@@ -7,6 +7,11 @@
         text-align: center;
     }
 
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
     .swiper-slide {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -52,7 +57,7 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
-    --swiper-pagination-color: var(--color-deep-blue);
-    --swiper-pagination-bullet-inactive-color: var(--color-deep-blue);
+    --swiper-pagination-color: var(--color-primary);
+    --swiper-pagination-bullet-inactive-color: var(--color-primary);
 }
 //bravo Léo  je suis fière de toi

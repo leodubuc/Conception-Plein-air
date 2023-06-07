@@ -1,4 +1,4 @@
-<section class="comp_realisation">
+<section class="comp_realisation" id="intro">
     <?php if( have_rows('project_content') ): ?>
         <?php while( have_rows('project_content') ) : the_row(); ?>
             <article>

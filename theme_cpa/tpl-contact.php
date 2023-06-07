@@ -7,12 +7,12 @@
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
 
-        <section class="contact_page">
+        <section class="contact_page" >
             <?php if( get_field('contact_image') ): ?>
                 <img class="img_contact" data-scrolly="fromRight" src="<?php the_field('contact_image'); ?>" />
             <?php endif; ?>
             
-            <div class="content_contact">
+            <div class="content_contact" id="intro">
                 <h2 data-scrolly="fromLeft"><?php the_field('contact_titre'); ?></h2>
             
                 <div>

@@ -1,4 +1,4 @@
-<section class="services">
+<section class="services" id="intro">
     <div class="wrapper">
     <?php if( have_rows('contenu_bloc_liste_numero') ): ?>
         <?php while( have_rows('contenu_bloc_liste_numero') ) : the_row(); ?>

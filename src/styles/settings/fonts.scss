@@ -16,7 +16,7 @@
     --font-size-h4: 1.5rem;
 
     @media only screen and (max-width: 700px) {
-        --font-size-h1: 3rem;
+        --font-size-h1: 4rem;
         --font-size-h2: 2.75rem;
         --font-size-h3: 2rem;
 
@@ -25,13 +25,12 @@
     }
 
     @media only screen and (max-width: 500px) {
-        --font-size-h1: 2.5rem;
-        --font-size-h2: 2rem;
+        --font-size-h1: 3rem;
+        --font-size-h2: 2.5rem;
     }
 
     @media only screen and (max-width: 400px) {
-        --font-size-h1: 2.25rem;
-        --font-size-h2: 1.5rem;
+        --font-size-h2: 2rem;
         --font-size-h4: 1.15rem;
 
         --font-size-content: 1rem;

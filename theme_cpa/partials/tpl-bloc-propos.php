@@ -1,4 +1,4 @@
-<section class="compo_propos">
+<section class="compo_propos" id="intro">
     <?php if( have_rows('contenu_composante') ): ?>
         <?php while( have_rows('contenu_composante') ) : the_row(); ?>
             <article>
