@@ -1,6 +1,5 @@
 .composante_texte_image_1 {
     display: flex;
-    gap: 100px;
 
     @media only screen and (max-width: 1150px) {
         flex-direction: column;
@@ -25,33 +24,32 @@
         flex-direction: column;
         justify-content: center;
         margin: 0;
+        width: 50%;
 
         h2 {
             margin: 0 0 50px 0;
             text-align: left;
 
             @media only screen and (max-width: 1150px) {
-                padding-top: 75px;
-                text-align: center;
+                padding-top: 100px;
+                margin: 0;
+                margin-bottom: 10px;
             }
-        }
-
-        @media only screen and (max-width: 1080px) {
-            align-items: center;
         }
     }
 }
 
 .composante_texte_image_1:nth-of-type(odd) {
     .content {
-        padding: 200px 0 200px 162px;
+        padding: 200px 50px 200px 162px;
 
         @media screen and (max-width: 1500px) {
-            padding: 100px 0 100px 100px;
+            padding: 100px 50px 100px 100px;
         }
 
         @media only screen and (max-width: 1150px) {
             padding: 0 100px;
+            width: 100%;
         }
 
         @media screen and (max-width: 1000px) {
@@ -70,14 +68,15 @@
 
 .composante_texte_image_1 + .composante_texte_image_1:nth-of-type(even) {
     .content {
-        padding: 200px 162px 200px 0;
+        padding: 200px 162px 200px 50px;
 
         @media screen and (max-width: 1500px) {
-            padding: 100px 100px 100px 0;
+            padding: 100px 100px 100px 50px;
         }
 
         @media only screen and (max-width: 1150px) {
             padding: 0 100px;
+            width: 100%;
         }
 
         @media screen and (max-width: 1000px) {
